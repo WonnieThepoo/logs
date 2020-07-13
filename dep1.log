@@ -1,0 +1,1308 @@
+2020-07-13 17:56:48,306 p=4211 u=root n=ansible | PLAY [localhost] *******************************************************************************************************
+2020-07-13 17:56:48,572 p=4211 u=root n=ansible | Monday 13 July 2020  17:56:48 +0000 (0:00:00.289)       0:00:00.289 *********** 
+2020-07-13 17:56:48,595 p=4211 u=root n=ansible | TASK [Check ansible version >=2.8.0] ***********************************************************************************
+2020-07-13 17:56:48,597 p=4211 u=root n=ansible | ok: [localhost] => {
+    "changed": false, 
+    "msg": "All assertions passed"
+}
+2020-07-13 17:56:48,602 p=4211 u=root n=ansible | PLAY [all] *************************************************************************************************************
+2020-07-13 17:56:48,681 p=4211 u=root n=ansible | Monday 13 July 2020  17:56:48 +0000 (0:00:00.107)       0:00:00.397 *********** 
+2020-07-13 17:56:48,746 p=4211 u=root n=ansible | TASK [Set up proxy environment] ****************************************************************************************
+2020-07-13 17:56:48,747 p=4211 u=root n=ansible | ok: [master-1]
+2020-07-13 17:56:48,766 p=4211 u=root n=ansible | ok: [master-3]
+2020-07-13 17:56:48,768 p=4211 u=root n=ansible | ok: [master-2]
+2020-07-13 17:56:48,770 p=4211 u=root n=ansible | ok: [ingress1]
+2020-07-13 17:56:48,784 p=4211 u=root n=ansible | ok: [node1]
+2020-07-13 17:56:48,807 p=4211 u=root n=ansible | ok: [node2]
+2020-07-13 17:56:48,813 p=4211 u=root n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: bastion
+
+2020-07-13 17:56:48,815 p=4211 u=root n=ansible | PLAY [bastion[0]] ******************************************************************************************************
+2020-07-13 17:56:48,816 p=4211 u=root n=ansible | skipping: no hosts matched
+2020-07-13 17:56:48,822 p=4211 u=root n=ansible | PLAY [k8s-cluster:etcd] ************************************************************************************************
+2020-07-13 17:56:48,864 p=4211 u=root n=ansible | Monday 13 July 2020  17:56:48 +0000 (0:00:00.182)       0:00:00.580 *********** 
+2020-07-13 17:56:48,975 p=4211 u=root n=ansible | Monday 13 July 2020  17:56:48 +0000 (0:00:00.111)       0:00:00.691 *********** 
+2020-07-13 17:56:49,092 p=4211 u=root n=ansible | Monday 13 July 2020  17:56:49 +0000 (0:00:00.117)       0:00:00.809 *********** 
+2020-07-13 17:56:49,199 p=4211 u=root n=ansible | Monday 13 July 2020  17:56:49 +0000 (0:00:00.106)       0:00:00.915 *********** 
+2020-07-13 17:56:49,237 p=4211 u=root n=ansible | Monday 13 July 2020  17:56:49 +0000 (0:00:00.038)       0:00:00.954 *********** 
+2020-07-13 17:56:49,271 p=4211 u=root n=ansible | Monday 13 July 2020  17:56:49 +0000 (0:00:00.032)       0:00:00.986 *********** 
+2020-07-13 17:56:49,388 p=4211 u=root n=ansible | Monday 13 July 2020  17:56:49 +0000 (0:00:00.118)       0:00:01.104 *********** 
+2020-07-13 17:56:49,504 p=4211 u=root n=ansible | Monday 13 July 2020  17:56:49 +0000 (0:00:00.115)       0:00:01.220 *********** 
+2020-07-13 17:56:49,618 p=4211 u=root n=ansible | Monday 13 July 2020  17:56:49 +0000 (0:00:00.113)       0:00:01.334 *********** 
+2020-07-13 17:56:49,724 p=4211 u=root n=ansible | Monday 13 July 2020  17:56:49 +0000 (0:00:00.105)       0:00:01.440 *********** 
+2020-07-13 17:56:49,757 p=4211 u=root n=ansible | Monday 13 July 2020  17:56:49 +0000 (0:00:00.032)       0:00:01.473 *********** 
+2020-07-13 17:56:49,872 p=4211 u=root n=ansible | Monday 13 July 2020  17:56:49 +0000 (0:00:00.115)       0:00:01.588 *********** 
+2020-07-13 17:56:49,980 p=4211 u=root n=ansible | Monday 13 July 2020  17:56:49 +0000 (0:00:00.108)       0:00:01.696 *********** 
+2020-07-13 17:56:50,098 p=4211 u=root n=ansible | Monday 13 July 2020  17:56:50 +0000 (0:00:00.117)       0:00:01.814 *********** 
+2020-07-13 17:56:50,129 p=4211 u=root n=ansible | TASK [kubespray-defaults : Configure defaults] *************************************************************************
+2020-07-13 17:56:50,130 p=4211 u=root n=ansible | ok: [master-1] => {
+    "msg": "Check roles/kubespray-defaults/defaults/main.yml"
+}
+2020-07-13 17:56:50,196 p=4211 u=root n=ansible | ok: [master-3] => {
+    "msg": "Check roles/kubespray-defaults/defaults/main.yml"
+}
+2020-07-13 17:56:50,199 p=4211 u=root n=ansible | ok: [master-2] => {
+    "msg": "Check roles/kubespray-defaults/defaults/main.yml"
+}
+2020-07-13 17:56:50,214 p=4211 u=root n=ansible | ok: [node1] => {
+    "msg": "Check roles/kubespray-defaults/defaults/main.yml"
+}
+2020-07-13 17:56:50,215 p=4211 u=root n=ansible | ok: [node2] => {
+    "msg": "Check roles/kubespray-defaults/defaults/main.yml"
+}
+2020-07-13 17:56:50,228 p=4211 u=root n=ansible | ok: [ingress1] => {
+    "msg": "Check roles/kubespray-defaults/defaults/main.yml"
+}
+2020-07-13 17:56:50,235 p=4211 u=root n=ansible | Monday 13 July 2020  17:56:50 +0000 (0:00:00.137)       0:00:01.952 *********** 
+2020-07-13 17:56:50,375 p=4211 u=root n=ansible | Monday 13 July 2020  17:56:50 +0000 (0:00:00.139)       0:00:02.092 *********** 
+2020-07-13 17:56:50,407 p=4211 u=root n=ansible | Monday 13 July 2020  17:56:50 +0000 (0:00:00.031)       0:00:02.123 *********** 
+2020-07-13 17:56:50,523 p=4211 u=root n=ansible | Monday 13 July 2020  17:56:50 +0000 (0:00:00.115)       0:00:02.239 *********** 
+2020-07-13 17:56:50,556 p=4211 u=root n=ansible | Monday 13 July 2020  17:56:50 +0000 (0:00:00.033)       0:00:02.272 *********** 
+2020-07-13 17:56:50,672 p=4211 u=root n=ansible | Monday 13 July 2020  17:56:50 +0000 (0:00:00.116)       0:00:02.388 *********** 
+2020-07-13 17:56:50,708 p=4403 u=root n=paramiko.transport | starting thread (client mode): 0xbc0d6710L
+2020-07-13 17:56:50,708 p=4403 u=root n=paramiko.transport | Local version/idstring: SSH-2.0-paramiko_2.0.0
+2020-07-13 17:56:50,708 p=4403 u=root n=paramiko.transport | Remote version/idstring: SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.3
+2020-07-13 17:56:50,709 p=4403 u=root n=paramiko.transport | Connected (version 2.0, client OpenSSH_7.6p1)
+2020-07-13 17:56:50,724 p=4403 u=root n=paramiko.transport | kex algos:[u'curve25519-sha256', u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group16-sha512', u'diffie-hellman-group18-sha512', u'diffie-hellman-group14-sha256', u'diffie-hellman-group14-sha1'] server key:[u'ssh-rsa', u'rsa-sha2-512', u'rsa-sha2-256', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] server encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] client mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] server mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2020-07-13 17:56:50,724 p=4403 u=root n=paramiko.transport | Kex agreed: diffie-hellman-group-exchange-sha256
+2020-07-13 17:56:50,724 p=4403 u=root n=paramiko.transport | Cipher agreed: aes128-ctr
+2020-07-13 17:56:50,724 p=4403 u=root n=paramiko.transport | MAC agreed: hmac-sha2-256
+2020-07-13 17:56:50,724 p=4403 u=root n=paramiko.transport | Compression agreed: none
+2020-07-13 17:56:50,746 p=4405 u=root n=paramiko.transport | starting thread (client mode): 0xbc952210L
+2020-07-13 17:56:50,747 p=4405 u=root n=paramiko.transport | Local version/idstring: SSH-2.0-paramiko_2.0.0
+2020-07-13 17:56:50,747 p=4405 u=root n=paramiko.transport | Remote version/idstring: SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.3
+2020-07-13 17:56:50,747 p=4405 u=root n=paramiko.transport | Connected (version 2.0, client OpenSSH_7.6p1)
+2020-07-13 17:56:50,748 p=4404 u=root n=paramiko.transport | starting thread (client mode): 0xbc945810L
+2020-07-13 17:56:50,748 p=4404 u=root n=paramiko.transport | Local version/idstring: SSH-2.0-paramiko_2.0.0
+2020-07-13 17:56:50,749 p=4404 u=root n=paramiko.transport | Remote version/idstring: SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.3
+2020-07-13 17:56:50,749 p=4404 u=root n=paramiko.transport | Connected (version 2.0, client OpenSSH_7.6p1)
+2020-07-13 17:56:50,750 p=4405 u=root n=paramiko.transport | kex algos:[u'curve25519-sha256', u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group16-sha512', u'diffie-hellman-group18-sha512', u'diffie-hellman-group14-sha256', u'diffie-hellman-group14-sha1'] server key:[u'ssh-rsa', u'rsa-sha2-512', u'rsa-sha2-256', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] server encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] client mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] server mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2020-07-13 17:56:50,750 p=4405 u=root n=paramiko.transport | Kex agreed: diffie-hellman-group-exchange-sha256
+2020-07-13 17:56:50,750 p=4405 u=root n=paramiko.transport | Cipher agreed: aes128-ctr
+2020-07-13 17:56:50,750 p=4405 u=root n=paramiko.transport | MAC agreed: hmac-sha2-256
+2020-07-13 17:56:50,751 p=4405 u=root n=paramiko.transport | Compression agreed: none
+2020-07-13 17:56:50,756 p=4404 u=root n=paramiko.transport | kex algos:[u'curve25519-sha256', u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group16-sha512', u'diffie-hellman-group18-sha512', u'diffie-hellman-group14-sha256', u'diffie-hellman-group14-sha1'] server key:[u'ssh-rsa', u'rsa-sha2-512', u'rsa-sha2-256', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] server encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] client mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] server mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2020-07-13 17:56:50,756 p=4404 u=root n=paramiko.transport | Kex agreed: diffie-hellman-group-exchange-sha256
+2020-07-13 17:56:50,757 p=4404 u=root n=paramiko.transport | Cipher agreed: aes128-ctr
+2020-07-13 17:56:50,757 p=4404 u=root n=paramiko.transport | MAC agreed: hmac-sha2-256
+2020-07-13 17:56:50,757 p=4404 u=root n=paramiko.transport | Compression agreed: none
+2020-07-13 17:56:50,759 p=4410 u=root n=paramiko.transport | starting thread (client mode): 0xbc941c10L
+2020-07-13 17:56:50,760 p=4410 u=root n=paramiko.transport | Local version/idstring: SSH-2.0-paramiko_2.0.0
+2020-07-13 17:56:50,764 p=4410 u=root n=paramiko.transport | Remote version/idstring: SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.3
+2020-07-13 17:56:50,765 p=4410 u=root n=paramiko.transport | Connected (version 2.0, client OpenSSH_7.6p1)
+2020-07-13 17:56:50,774 p=4410 u=root n=paramiko.transport | kex algos:[u'curve25519-sha256', u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group16-sha512', u'diffie-hellman-group18-sha512', u'diffie-hellman-group14-sha256', u'diffie-hellman-group14-sha1'] server key:[u'ssh-rsa', u'rsa-sha2-512', u'rsa-sha2-256', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] server encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] client mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] server mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2020-07-13 17:56:50,774 p=4410 u=root n=paramiko.transport | Kex agreed: diffie-hellman-group-exchange-sha256
+2020-07-13 17:56:50,774 p=4410 u=root n=paramiko.transport | Cipher agreed: aes128-ctr
+2020-07-13 17:56:50,774 p=4410 u=root n=paramiko.transport | MAC agreed: hmac-sha2-256
+2020-07-13 17:56:50,774 p=4410 u=root n=paramiko.transport | Compression agreed: none
+2020-07-13 17:56:50,776 p=4412 u=root n=paramiko.transport | starting thread (client mode): 0xbc941c10L
+2020-07-13 17:56:50,776 p=4412 u=root n=paramiko.transport | Local version/idstring: SSH-2.0-paramiko_2.0.0
+2020-07-13 17:56:50,782 p=4412 u=root n=paramiko.transport | Remote version/idstring: SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.3
+2020-07-13 17:56:50,782 p=4412 u=root n=paramiko.transport | Connected (version 2.0, client OpenSSH_7.6p1)
+2020-07-13 17:56:50,783 p=4412 u=root n=paramiko.transport | kex algos:[u'curve25519-sha256', u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group16-sha512', u'diffie-hellman-group18-sha512', u'diffie-hellman-group14-sha256', u'diffie-hellman-group14-sha1'] server key:[u'ssh-rsa', u'rsa-sha2-512', u'rsa-sha2-256', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] server encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] client mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] server mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2020-07-13 17:56:50,783 p=4412 u=root n=paramiko.transport | Kex agreed: diffie-hellman-group-exchange-sha256
+2020-07-13 17:56:50,783 p=4412 u=root n=paramiko.transport | Cipher agreed: aes128-ctr
+2020-07-13 17:56:50,784 p=4412 u=root n=paramiko.transport | MAC agreed: hmac-sha2-256
+2020-07-13 17:56:50,784 p=4412 u=root n=paramiko.transport | Compression agreed: none
+2020-07-13 17:56:50,930 p=4412 u=root n=paramiko.transport | Got server p (2048 bits)
+2020-07-13 17:56:50,931 p=4405 u=root n=paramiko.transport | Got server p (2048 bits)
+2020-07-13 17:56:50,973 p=4410 u=root n=paramiko.transport | Got server p (2048 bits)
+2020-07-13 17:56:50,974 p=4404 u=root n=paramiko.transport | Got server p (2048 bits)
+2020-07-13 17:56:50,986 p=4403 u=root n=paramiko.transport | Got server p (2048 bits)
+2020-07-13 17:56:51,022 p=4405 u=root n=paramiko.transport | kex engine KexGexSHA256 specified hash_algo <built-in function openssl_sha256>
+2020-07-13 17:56:51,023 p=4405 u=root n=paramiko.transport | Switch to new keys ...
+2020-07-13 17:56:51,028 p=4405 u=root n=paramiko.transport | Trying discovered key 34865c0c941133d046e30121a4991953 in /root/.ssh/id_rsa
+2020-07-13 17:56:51,057 p=4412 u=root n=paramiko.transport | kex engine KexGexSHA256 specified hash_algo <built-in function openssl_sha256>
+2020-07-13 17:56:51,057 p=4412 u=root n=paramiko.transport | Switch to new keys ...
+2020-07-13 17:56:51,066 p=4412 u=root n=paramiko.transport | Trying discovered key 34865c0c941133d046e30121a4991953 in /root/.ssh/id_rsa
+2020-07-13 17:56:51,067 p=4405 u=root n=paramiko.transport | userauth is OK
+2020-07-13 17:56:51,072 p=4405 u=root n=paramiko.transport | Authentication (publickey) successful!
+2020-07-13 17:56:51,078 p=4410 u=root n=paramiko.transport | kex engine KexGexSHA256 specified hash_algo <built-in function openssl_sha256>
+2020-07-13 17:56:51,079 p=4410 u=root n=paramiko.transport | Switch to new keys ...
+2020-07-13 17:56:51,084 p=4403 u=root n=paramiko.transport | kex engine KexGexSHA256 specified hash_algo <built-in function openssl_sha256>
+2020-07-13 17:56:51,084 p=4410 u=root n=paramiko.transport | Trying discovered key 34865c0c941133d046e30121a4991953 in /root/.ssh/id_rsa
+2020-07-13 17:56:51,085 p=4403 u=root n=paramiko.transport | Switch to new keys ...
+2020-07-13 17:56:51,092 p=4403 u=root n=paramiko.transport | Trying discovered key 34865c0c941133d046e30121a4991953 in /root/.ssh/id_rsa
+2020-07-13 17:56:51,095 p=4405 u=root n=paramiko.transport | [chan 0] Max packet in: 32768 bytes
+2020-07-13 17:56:51,101 p=4412 u=root n=paramiko.transport | userauth is OK
+2020-07-13 17:56:51,106 p=4412 u=root n=paramiko.transport | Authentication (publickey) successful!
+2020-07-13 17:56:51,107 p=4404 u=root n=paramiko.transport | kex engine KexGexSHA256 specified hash_algo <built-in function openssl_sha256>
+2020-07-13 17:56:51,107 p=4404 u=root n=paramiko.transport | Switch to new keys ...
+2020-07-13 17:56:51,120 p=4404 u=root n=paramiko.transport | Trying discovered key 34865c0c941133d046e30121a4991953 in /root/.ssh/id_rsa
+2020-07-13 17:56:51,121 p=4410 u=root n=paramiko.transport | userauth is OK
+2020-07-13 17:56:51,127 p=4410 u=root n=paramiko.transport | Authentication (publickey) successful!
+2020-07-13 17:56:51,134 p=4403 u=root n=paramiko.transport | userauth is OK
+2020-07-13 17:56:51,135 p=4412 u=root n=paramiko.transport | [chan 0] Max packet in: 32768 bytes
+2020-07-13 17:56:51,140 p=4403 u=root n=paramiko.transport | Authentication (publickey) successful!
+2020-07-13 17:56:51,148 p=4404 u=root n=paramiko.transport | userauth is OK
+2020-07-13 17:56:51,151 p=4410 u=root n=paramiko.transport | [chan 0] Max packet in: 32768 bytes
+2020-07-13 17:56:51,155 p=4404 u=root n=paramiko.transport | Authentication (publickey) successful!
+2020-07-13 17:56:51,163 p=4403 u=root n=paramiko.transport | [chan 0] Max packet in: 32768 bytes
+2020-07-13 17:56:51,188 p=4404 u=root n=paramiko.transport | [chan 0] Max packet in: 32768 bytes
+2020-07-13 17:56:51,867 p=4403 u=root n=paramiko.transport | Received global request "hostkeys-00@openssh.com"
+2020-07-13 17:56:51,867 p=4403 u=root n=paramiko.transport | Rejecting "hostkeys-00@openssh.com" global request from server.
+2020-07-13 17:56:51,912 p=4403 u=root n=paramiko.transport | [chan 0] Max packet out: 32768 bytes
+2020-07-13 17:56:51,912 p=4403 u=root n=paramiko.transport | Secsh channel 0 opened.
+2020-07-13 17:56:51,948 p=4403 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:56:51,949 p=4403 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:56:51,969 p=4403 u=root n=paramiko.transport | [chan 0] EOF received (0)
+2020-07-13 17:56:51,970 p=4403 u=root n=paramiko.transport | [chan 0] EOF sent (0)
+2020-07-13 17:56:52,072 p=4403 u=root n=paramiko.transport | EOF in transport thread
+2020-07-13 17:56:52,095 p=4211 u=root n=ansible | TASK [bootstrap-os : Fetch /etc/os-release] ****************************************************************************
+2020-07-13 17:56:52,096 p=4211 u=root n=ansible | ok: [master-1]
+2020-07-13 17:56:52,123 p=4492 u=root n=paramiko.transport | starting thread (client mode): 0xbc952c50L
+2020-07-13 17:56:52,123 p=4492 u=root n=paramiko.transport | Local version/idstring: SSH-2.0-paramiko_2.0.0
+2020-07-13 17:56:52,127 p=4492 u=root n=paramiko.transport | Remote version/idstring: SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.3
+2020-07-13 17:56:52,128 p=4492 u=root n=paramiko.transport | Connected (version 2.0, client OpenSSH_7.6p1)
+2020-07-13 17:56:52,129 p=4492 u=root n=paramiko.transport | kex algos:[u'curve25519-sha256', u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group16-sha512', u'diffie-hellman-group18-sha512', u'diffie-hellman-group14-sha256', u'diffie-hellman-group14-sha1'] server key:[u'ssh-rsa', u'rsa-sha2-512', u'rsa-sha2-256', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] server encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] client mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] server mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2020-07-13 17:56:52,129 p=4492 u=root n=paramiko.transport | Kex agreed: diffie-hellman-group-exchange-sha256
+2020-07-13 17:56:52,129 p=4492 u=root n=paramiko.transport | Cipher agreed: aes128-ctr
+2020-07-13 17:56:52,129 p=4492 u=root n=paramiko.transport | MAC agreed: hmac-sha2-256
+2020-07-13 17:56:52,130 p=4492 u=root n=paramiko.transport | Compression agreed: none
+2020-07-13 17:56:52,177 p=4492 u=root n=paramiko.transport | Got server p (2048 bits)
+2020-07-13 17:56:52,239 p=4492 u=root n=paramiko.transport | kex engine KexGexSHA256 specified hash_algo <built-in function openssl_sha256>
+2020-07-13 17:56:52,240 p=4492 u=root n=paramiko.transport | Switch to new keys ...
+2020-07-13 17:56:52,242 p=4492 u=root n=paramiko.transport | Trying discovered key 34865c0c941133d046e30121a4991953 in /root/.ssh/id_rsa
+2020-07-13 17:56:52,284 p=4492 u=root n=paramiko.transport | userauth is OK
+2020-07-13 17:56:52,290 p=4492 u=root n=paramiko.transport | Authentication (publickey) successful!
+2020-07-13 17:56:52,314 p=4492 u=root n=paramiko.transport | [chan 0] Max packet in: 32768 bytes
+2020-07-13 17:56:52,537 p=4405 u=root n=paramiko.transport | Received global request "hostkeys-00@openssh.com"
+2020-07-13 17:56:52,537 p=4405 u=root n=paramiko.transport | Rejecting "hostkeys-00@openssh.com" global request from server.
+2020-07-13 17:56:52,556 p=4412 u=root n=paramiko.transport | Received global request "hostkeys-00@openssh.com"
+2020-07-13 17:56:52,556 p=4412 u=root n=paramiko.transport | Rejecting "hostkeys-00@openssh.com" global request from server.
+2020-07-13 17:56:52,580 p=4405 u=root n=paramiko.transport | [chan 0] Max packet out: 32768 bytes
+2020-07-13 17:56:52,580 p=4405 u=root n=paramiko.transport | Secsh channel 0 opened.
+2020-07-13 17:56:52,600 p=4412 u=root n=paramiko.transport | [chan 0] Max packet out: 32768 bytes
+2020-07-13 17:56:52,600 p=4412 u=root n=paramiko.transport | Secsh channel 0 opened.
+2020-07-13 17:56:52,603 p=4405 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:56:52,605 p=4405 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:56:52,609 p=4410 u=root n=paramiko.transport | Received global request "hostkeys-00@openssh.com"
+2020-07-13 17:56:52,609 p=4410 u=root n=paramiko.transport | Rejecting "hostkeys-00@openssh.com" global request from server.
+2020-07-13 17:56:52,617 p=4412 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:56:52,619 p=4412 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:56:52,620 p=4404 u=root n=paramiko.transport | Received global request "hostkeys-00@openssh.com"
+2020-07-13 17:56:52,620 p=4404 u=root n=paramiko.transport | Rejecting "hostkeys-00@openssh.com" global request from server.
+2020-07-13 17:56:52,628 p=4405 u=root n=paramiko.transport | [chan 0] EOF received (0)
+2020-07-13 17:56:52,628 p=4405 u=root n=paramiko.transport | [chan 0] EOF sent (0)
+2020-07-13 17:56:52,643 p=4412 u=root n=paramiko.transport | [chan 0] EOF received (0)
+2020-07-13 17:56:52,644 p=4412 u=root n=paramiko.transport | [chan 0] EOF sent (0)
+2020-07-13 17:56:52,652 p=4410 u=root n=paramiko.transport | [chan 0] Max packet out: 32768 bytes
+2020-07-13 17:56:52,652 p=4410 u=root n=paramiko.transport | Secsh channel 0 opened.
+2020-07-13 17:56:52,661 p=4410 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:56:52,662 p=4410 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:56:52,664 p=4404 u=root n=paramiko.transport | [chan 0] Max packet out: 32768 bytes
+2020-07-13 17:56:52,664 p=4404 u=root n=paramiko.transport | Secsh channel 0 opened.
+2020-07-13 17:56:52,684 p=4410 u=root n=paramiko.transport | [chan 0] EOF received (0)
+2020-07-13 17:56:52,685 p=4410 u=root n=paramiko.transport | [chan 0] EOF sent (0)
+2020-07-13 17:56:52,687 p=4410 u=root n=paramiko.transport | Dropping user packet because connection is dead.
+2020-07-13 17:56:52,687 p=4410 u=root n=paramiko.transport | Dropping user packet because connection is dead.
+2020-07-13 17:56:52,693 p=4211 u=root n=ansible | ok: [node1]
+2020-07-13 17:56:52,696 p=4404 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:56:52,698 p=4404 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:56:52,720 p=4404 u=root n=paramiko.transport | [chan 0] EOF received (0)
+2020-07-13 17:56:52,724 p=4211 u=root n=ansible | ok: [master-2]
+2020-07-13 17:56:52,729 p=4405 u=root n=paramiko.transport | EOF in transport thread
+2020-07-13 17:56:52,746 p=4412 u=root n=paramiko.transport | EOF in transport thread
+2020-07-13 17:56:52,754 p=4211 u=root n=ansible | ok: [master-3]
+2020-07-13 17:56:52,765 p=4211 u=root n=ansible | ok: [node2]
+2020-07-13 17:56:53,042 p=4492 u=root n=paramiko.transport | Received global request "hostkeys-00@openssh.com"
+2020-07-13 17:56:53,042 p=4492 u=root n=paramiko.transport | Rejecting "hostkeys-00@openssh.com" global request from server.
+2020-07-13 17:56:53,083 p=4492 u=root n=paramiko.transport | [chan 0] Max packet out: 32768 bytes
+2020-07-13 17:56:53,084 p=4492 u=root n=paramiko.transport | Secsh channel 0 opened.
+2020-07-13 17:56:53,086 p=4492 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:56:53,087 p=4492 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:56:53,103 p=4492 u=root n=paramiko.transport | [chan 0] EOF received (0)
+2020-07-13 17:56:53,103 p=4492 u=root n=paramiko.transport | [chan 0] EOF sent (0)
+2020-07-13 17:56:53,222 p=4492 u=root n=paramiko.transport | EOF in transport thread
+2020-07-13 17:56:53,231 p=4211 u=root n=ansible | ok: [ingress1]
+2020-07-13 17:56:53,237 p=4211 u=root n=ansible | Monday 13 July 2020  17:56:53 +0000 (0:00:02.564)       0:00:04.953 *********** 
+2020-07-13 17:56:53,351 p=4211 u=root n=ansible | Monday 13 July 2020  17:56:53 +0000 (0:00:00.114)       0:00:05.068 *********** 
+2020-07-13 17:56:53,453 p=4211 u=root n=ansible | Monday 13 July 2020  17:56:53 +0000 (0:00:00.101)       0:00:05.169 *********** 
+2020-07-13 17:56:53,561 p=4211 u=root n=ansible | Monday 13 July 2020  17:56:53 +0000 (0:00:00.107)       0:00:05.277 *********** 
+2020-07-13 17:56:53,684 p=4211 u=root n=ansible | Monday 13 July 2020  17:56:53 +0000 (0:00:00.122)       0:00:05.400 *********** 
+2020-07-13 17:56:53,840 p=4211 u=root n=ansible | included: /root/kubespray/roles/bootstrap-os/tasks/bootstrap-debian.yml for master-1, master-3, master-2, node1, node2, ingress1
+2020-07-13 17:56:53,880 p=4211 u=root n=ansible | Monday 13 July 2020  17:56:53 +0000 (0:00:00.196)       0:00:05.596 *********** 
+2020-07-13 17:56:53,911 p=4633 u=root n=paramiko.transport | starting thread (client mode): 0xbc9292d0L
+2020-07-13 17:56:53,912 p=4633 u=root n=paramiko.transport | Local version/idstring: SSH-2.0-paramiko_2.0.0
+2020-07-13 17:56:53,912 p=4633 u=root n=paramiko.transport | Remote version/idstring: SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.3
+2020-07-13 17:56:53,912 p=4633 u=root n=paramiko.transport | Connected (version 2.0, client OpenSSH_7.6p1)
+2020-07-13 17:56:53,913 p=4633 u=root n=paramiko.transport | kex algos:[u'curve25519-sha256', u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group16-sha512', u'diffie-hellman-group18-sha512', u'diffie-hellman-group14-sha256', u'diffie-hellman-group14-sha1'] server key:[u'ssh-rsa', u'rsa-sha2-512', u'rsa-sha2-256', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] server encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] client mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] server mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2020-07-13 17:56:53,913 p=4633 u=root n=paramiko.transport | Kex agreed: diffie-hellman-group-exchange-sha256
+2020-07-13 17:56:53,913 p=4633 u=root n=paramiko.transport | Cipher agreed: aes128-ctr
+2020-07-13 17:56:53,913 p=4633 u=root n=paramiko.transport | MAC agreed: hmac-sha2-256
+2020-07-13 17:56:53,914 p=4633 u=root n=paramiko.transport | Compression agreed: none
+2020-07-13 17:56:53,939 p=4634 u=root n=paramiko.transport | starting thread (client mode): 0xbc068810L
+2020-07-13 17:56:53,940 p=4634 u=root n=paramiko.transport | Local version/idstring: SSH-2.0-paramiko_2.0.0
+2020-07-13 17:56:53,940 p=4634 u=root n=paramiko.transport | Remote version/idstring: SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.3
+2020-07-13 17:56:53,940 p=4634 u=root n=paramiko.transport | Connected (version 2.0, client OpenSSH_7.6p1)
+2020-07-13 17:56:53,948 p=4634 u=root n=paramiko.transport | kex algos:[u'curve25519-sha256', u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group16-sha512', u'diffie-hellman-group18-sha512', u'diffie-hellman-group14-sha256', u'diffie-hellman-group14-sha1'] server key:[u'ssh-rsa', u'rsa-sha2-512', u'rsa-sha2-256', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] server encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] client mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] server mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2020-07-13 17:56:53,948 p=4634 u=root n=paramiko.transport | Kex agreed: diffie-hellman-group-exchange-sha256
+2020-07-13 17:56:53,948 p=4634 u=root n=paramiko.transport | Cipher agreed: aes128-ctr
+2020-07-13 17:56:53,949 p=4634 u=root n=paramiko.transport | MAC agreed: hmac-sha2-256
+2020-07-13 17:56:53,949 p=4634 u=root n=paramiko.transport | Compression agreed: none
+2020-07-13 17:56:53,959 p=4633 u=root n=paramiko.transport | Got server p (2048 bits)
+2020-07-13 17:56:53,981 p=4640 u=root n=paramiko.transport | starting thread (client mode): 0xb7fc1e10L
+2020-07-13 17:56:53,981 p=4640 u=root n=paramiko.transport | Local version/idstring: SSH-2.0-paramiko_2.0.0
+2020-07-13 17:56:53,982 p=4640 u=root n=paramiko.transport | Remote version/idstring: SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.3
+2020-07-13 17:56:53,982 p=4640 u=root n=paramiko.transport | Connected (version 2.0, client OpenSSH_7.6p1)
+2020-07-13 17:56:53,984 p=4636 u=root n=paramiko.transport | starting thread (client mode): 0xbc068bd0L
+2020-07-13 17:56:53,984 p=4640 u=root n=paramiko.transport | kex algos:[u'curve25519-sha256', u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group16-sha512', u'diffie-hellman-group18-sha512', u'diffie-hellman-group14-sha256', u'diffie-hellman-group14-sha1'] server key:[u'ssh-rsa', u'rsa-sha2-512', u'rsa-sha2-256', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] server encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] client mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] server mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2020-07-13 17:56:53,985 p=4640 u=root n=paramiko.transport | Kex agreed: diffie-hellman-group-exchange-sha256
+2020-07-13 17:56:53,985 p=4640 u=root n=paramiko.transport | Cipher agreed: aes128-ctr
+2020-07-13 17:56:53,985 p=4640 u=root n=paramiko.transport | MAC agreed: hmac-sha2-256
+2020-07-13 17:56:53,985 p=4640 u=root n=paramiko.transport | Compression agreed: none
+2020-07-13 17:56:53,984 p=4636 u=root n=paramiko.transport | Local version/idstring: SSH-2.0-paramiko_2.0.0
+2020-07-13 17:56:53,986 p=4636 u=root n=paramiko.transport | Remote version/idstring: SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.3
+2020-07-13 17:56:53,986 p=4636 u=root n=paramiko.transport | Connected (version 2.0, client OpenSSH_7.6p1)
+2020-07-13 17:56:53,988 p=4636 u=root n=paramiko.transport | kex algos:[u'curve25519-sha256', u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group16-sha512', u'diffie-hellman-group18-sha512', u'diffie-hellman-group14-sha256', u'diffie-hellman-group14-sha1'] server key:[u'ssh-rsa', u'rsa-sha2-512', u'rsa-sha2-256', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] server encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] client mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] server mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2020-07-13 17:56:53,988 p=4636 u=root n=paramiko.transport | Kex agreed: diffie-hellman-group-exchange-sha256
+2020-07-13 17:56:53,989 p=4636 u=root n=paramiko.transport | Cipher agreed: aes128-ctr
+2020-07-13 17:56:53,989 p=4636 u=root n=paramiko.transport | MAC agreed: hmac-sha2-256
+2020-07-13 17:56:53,989 p=4636 u=root n=paramiko.transport | Compression agreed: none
+2020-07-13 17:56:53,989 p=4643 u=root n=paramiko.transport | starting thread (client mode): 0xbc9292d0L
+2020-07-13 17:56:53,989 p=4643 u=root n=paramiko.transport | Local version/idstring: SSH-2.0-paramiko_2.0.0
+2020-07-13 17:56:53,993 p=4643 u=root n=paramiko.transport | Remote version/idstring: SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.3
+2020-07-13 17:56:53,993 p=4643 u=root n=paramiko.transport | Connected (version 2.0, client OpenSSH_7.6p1)
+2020-07-13 17:56:53,994 p=4643 u=root n=paramiko.transport | kex algos:[u'curve25519-sha256', u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group16-sha512', u'diffie-hellman-group18-sha512', u'diffie-hellman-group14-sha256', u'diffie-hellman-group14-sha1'] server key:[u'ssh-rsa', u'rsa-sha2-512', u'rsa-sha2-256', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] server encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] client mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] server mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2020-07-13 17:56:53,994 p=4643 u=root n=paramiko.transport | Kex agreed: diffie-hellman-group-exchange-sha256
+2020-07-13 17:56:53,994 p=4643 u=root n=paramiko.transport | Cipher agreed: aes128-ctr
+2020-07-13 17:56:53,994 p=4643 u=root n=paramiko.transport | MAC agreed: hmac-sha2-256
+2020-07-13 17:56:53,994 p=4643 u=root n=paramiko.transport | Compression agreed: none
+2020-07-13 17:56:53,995 p=4634 u=root n=paramiko.transport | Got server p (2048 bits)
+2020-07-13 17:56:54,030 p=4640 u=root n=paramiko.transport | Got server p (2048 bits)
+2020-07-13 17:56:54,034 p=4636 u=root n=paramiko.transport | Got server p (2048 bits)
+2020-07-13 17:56:54,041 p=4643 u=root n=paramiko.transport | Got server p (2048 bits)
+2020-07-13 17:56:54,073 p=4634 u=root n=paramiko.transport | kex engine KexGexSHA256 specified hash_algo <built-in function openssl_sha256>
+2020-07-13 17:56:54,074 p=4634 u=root n=paramiko.transport | Switch to new keys ...
+2020-07-13 17:56:54,081 p=4634 u=root n=paramiko.transport | Trying discovered key 34865c0c941133d046e30121a4991953 in /root/.ssh/id_rsa
+2020-07-13 17:56:54,083 p=4633 u=root n=paramiko.transport | kex engine KexGexSHA256 specified hash_algo <built-in function openssl_sha256>
+2020-07-13 17:56:54,086 p=4633 u=root n=paramiko.transport | Switch to new keys ...
+2020-07-13 17:56:54,089 p=4633 u=root n=paramiko.transport | Trying discovered key 34865c0c941133d046e30121a4991953 in /root/.ssh/id_rsa
+2020-07-13 17:56:54,117 p=4634 u=root n=paramiko.transport | userauth is OK
+2020-07-13 17:56:54,123 p=4634 u=root n=paramiko.transport | Authentication (publickey) successful!
+2020-07-13 17:56:54,124 p=4633 u=root n=paramiko.transport | userauth is OK
+2020-07-13 17:56:54,129 p=4633 u=root n=paramiko.transport | Authentication (publickey) successful!
+2020-07-13 17:56:54,136 p=4640 u=root n=paramiko.transport | kex engine KexGexSHA256 specified hash_algo <built-in function openssl_sha256>
+2020-07-13 17:56:54,137 p=4640 u=root n=paramiko.transport | Switch to new keys ...
+2020-07-13 17:56:54,142 p=4640 u=root n=paramiko.transport | Trying discovered key 34865c0c941133d046e30121a4991953 in /root/.ssh/id_rsa
+2020-07-13 17:56:54,148 p=4634 u=root n=paramiko.transport | [chan 0] Max packet in: 32768 bytes
+2020-07-13 17:56:54,156 p=4633 u=root n=paramiko.transport | [chan 0] Max packet in: 32768 bytes
+2020-07-13 17:56:54,169 p=4643 u=root n=paramiko.transport | kex engine KexGexSHA256 specified hash_algo <built-in function openssl_sha256>
+2020-07-13 17:56:54,170 p=4643 u=root n=paramiko.transport | Switch to new keys ...
+2020-07-13 17:56:54,171 p=4636 u=root n=paramiko.transport | kex engine KexGexSHA256 specified hash_algo <built-in function openssl_sha256>
+2020-07-13 17:56:54,172 p=4636 u=root n=paramiko.transport | Switch to new keys ...
+2020-07-13 17:56:54,177 p=4640 u=root n=paramiko.transport | userauth is OK
+2020-07-13 17:56:54,182 p=4636 u=root n=paramiko.transport | Trying discovered key 34865c0c941133d046e30121a4991953 in /root/.ssh/id_rsa
+2020-07-13 17:56:54,185 p=4643 u=root n=paramiko.transport | Trying discovered key 34865c0c941133d046e30121a4991953 in /root/.ssh/id_rsa
+2020-07-13 17:56:54,185 p=4640 u=root n=paramiko.transport | Authentication (publickey) successful!
+2020-07-13 17:56:54,207 p=4640 u=root n=paramiko.transport | [chan 0] Max packet in: 32768 bytes
+2020-07-13 17:56:54,213 p=4636 u=root n=paramiko.transport | userauth is OK
+2020-07-13 17:56:54,213 p=4643 u=root n=paramiko.transport | userauth is OK
+2020-07-13 17:56:54,222 p=4643 u=root n=paramiko.transport | Authentication (publickey) successful!
+2020-07-13 17:56:54,224 p=4636 u=root n=paramiko.transport | Authentication (publickey) successful!
+2020-07-13 17:56:54,248 p=4636 u=root n=paramiko.transport | [chan 0] Max packet in: 32768 bytes
+2020-07-13 17:56:54,250 p=4643 u=root n=paramiko.transport | [chan 0] Max packet in: 32768 bytes
+2020-07-13 17:56:54,993 p=4633 u=root n=paramiko.transport | Received global request "hostkeys-00@openssh.com"
+2020-07-13 17:56:54,994 p=4633 u=root n=paramiko.transport | Rejecting "hostkeys-00@openssh.com" global request from server.
+2020-07-13 17:56:55,035 p=4633 u=root n=paramiko.transport | [chan 0] Max packet out: 32768 bytes
+2020-07-13 17:56:55,036 p=4633 u=root n=paramiko.transport | Secsh channel 0 opened.
+2020-07-13 17:56:55,064 p=4633 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:56:55,065 p=4633 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:56:55,082 p=4633 u=root n=paramiko.transport | [chan 0] EOF received (0)
+2020-07-13 17:56:55,083 p=4633 u=root n=paramiko.transport | [chan 0] EOF sent (0)
+2020-07-13 17:56:55,184 p=4633 u=root n=paramiko.transport | EOF in transport thread
+2020-07-13 17:56:55,211 p=4211 u=root n=ansible | TASK [bootstrap-os : Check if bootstrap is needed] *********************************************************************
+2020-07-13 17:56:55,212 p=4211 u=root n=ansible | ok: [master-1]
+2020-07-13 17:56:55,235 p=4720 u=root n=paramiko.transport | starting thread (client mode): 0xbc9292d0L
+2020-07-13 17:56:55,236 p=4720 u=root n=paramiko.transport | Local version/idstring: SSH-2.0-paramiko_2.0.0
+2020-07-13 17:56:55,240 p=4720 u=root n=paramiko.transport | Remote version/idstring: SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.3
+2020-07-13 17:56:55,240 p=4720 u=root n=paramiko.transport | Connected (version 2.0, client OpenSSH_7.6p1)
+2020-07-13 17:56:55,241 p=4720 u=root n=paramiko.transport | kex algos:[u'curve25519-sha256', u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group16-sha512', u'diffie-hellman-group18-sha512', u'diffie-hellman-group14-sha256', u'diffie-hellman-group14-sha1'] server key:[u'ssh-rsa', u'rsa-sha2-512', u'rsa-sha2-256', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] server encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] client mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] server mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2020-07-13 17:56:55,241 p=4720 u=root n=paramiko.transport | Kex agreed: diffie-hellman-group-exchange-sha256
+2020-07-13 17:56:55,241 p=4720 u=root n=paramiko.transport | Cipher agreed: aes128-ctr
+2020-07-13 17:56:55,241 p=4720 u=root n=paramiko.transport | MAC agreed: hmac-sha2-256
+2020-07-13 17:56:55,241 p=4720 u=root n=paramiko.transport | Compression agreed: none
+2020-07-13 17:56:55,291 p=4720 u=root n=paramiko.transport | Got server p (2048 bits)
+2020-07-13 17:56:55,353 p=4720 u=root n=paramiko.transport | kex engine KexGexSHA256 specified hash_algo <built-in function openssl_sha256>
+2020-07-13 17:56:55,354 p=4720 u=root n=paramiko.transport | Switch to new keys ...
+2020-07-13 17:56:55,358 p=4720 u=root n=paramiko.transport | Trying discovered key 34865c0c941133d046e30121a4991953 in /root/.ssh/id_rsa
+2020-07-13 17:56:55,397 p=4720 u=root n=paramiko.transport | userauth is OK
+2020-07-13 17:56:55,405 p=4720 u=root n=paramiko.transport | Authentication (publickey) successful!
+2020-07-13 17:56:55,424 p=4720 u=root n=paramiko.transport | [chan 0] Max packet in: 32768 bytes
+2020-07-13 17:56:55,629 p=4634 u=root n=paramiko.transport | Received global request "hostkeys-00@openssh.com"
+2020-07-13 17:56:55,629 p=4634 u=root n=paramiko.transport | Rejecting "hostkeys-00@openssh.com" global request from server.
+2020-07-13 17:56:55,671 p=4640 u=root n=paramiko.transport | Received global request "hostkeys-00@openssh.com"
+2020-07-13 17:56:55,671 p=4640 u=root n=paramiko.transport | Rejecting "hostkeys-00@openssh.com" global request from server.
+2020-07-13 17:56:55,672 p=4634 u=root n=paramiko.transport | [chan 0] Max packet out: 32768 bytes
+2020-07-13 17:56:55,672 p=4634 u=root n=paramiko.transport | Secsh channel 0 opened.
+2020-07-13 17:56:55,675 p=4634 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:56:55,677 p=4634 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:56:55,694 p=4634 u=root n=paramiko.transport | [chan 0] EOF received (0)
+2020-07-13 17:56:55,695 p=4634 u=root n=paramiko.transport | [chan 0] EOF sent (0)
+2020-07-13 17:56:55,715 p=4640 u=root n=paramiko.transport | [chan 0] Max packet out: 32768 bytes
+2020-07-13 17:56:55,716 p=4640 u=root n=paramiko.transport | Secsh channel 0 opened.
+2020-07-13 17:56:55,719 p=4640 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:56:55,720 p=4640 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:56:55,736 p=4640 u=root n=paramiko.transport | [chan 0] EOF received (0)
+2020-07-13 17:56:55,737 p=4640 u=root n=paramiko.transport | [chan 0] EOF sent (0)
+2020-07-13 17:56:55,741 p=4643 u=root n=paramiko.transport | Received global request "hostkeys-00@openssh.com"
+2020-07-13 17:56:55,741 p=4643 u=root n=paramiko.transport | Rejecting "hostkeys-00@openssh.com" global request from server.
+2020-07-13 17:56:55,744 p=4636 u=root n=paramiko.transport | Received global request "hostkeys-00@openssh.com"
+2020-07-13 17:56:55,745 p=4636 u=root n=paramiko.transport | Rejecting "hostkeys-00@openssh.com" global request from server.
+2020-07-13 17:56:55,784 p=4643 u=root n=paramiko.transport | [chan 0] Max packet out: 32768 bytes
+2020-07-13 17:56:55,784 p=4643 u=root n=paramiko.transport | Secsh channel 0 opened.
+2020-07-13 17:56:55,788 p=4636 u=root n=paramiko.transport | [chan 0] Max packet out: 32768 bytes
+2020-07-13 17:56:55,788 p=4636 u=root n=paramiko.transport | Secsh channel 0 opened.
+2020-07-13 17:56:55,796 p=4634 u=root n=paramiko.transport | EOF in transport thread
+2020-07-13 17:56:55,801 p=4643 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:56:55,802 p=4636 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:56:55,803 p=4636 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:56:55,803 p=4643 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:56:55,816 p=4211 u=root n=ansible | ok: [master-2]
+2020-07-13 17:56:55,831 p=4643 u=root n=paramiko.transport | [chan 0] EOF received (0)
+2020-07-13 17:56:55,838 p=4211 u=root n=ansible | ok: [node2]
+2020-07-13 17:56:55,838 p=4640 u=root n=paramiko.transport | EOF in transport thread
+2020-07-13 17:56:55,834 p=4636 u=root n=paramiko.transport | [chan 0] EOF received (0)
+2020-07-13 17:56:55,849 p=4211 u=root n=ansible | ok: [master-3]
+2020-07-13 17:56:55,858 p=4211 u=root n=ansible | ok: [node1]
+2020-07-13 17:56:56,145 p=4720 u=root n=paramiko.transport | Received global request "hostkeys-00@openssh.com"
+2020-07-13 17:56:56,145 p=4720 u=root n=paramiko.transport | Rejecting "hostkeys-00@openssh.com" global request from server.
+2020-07-13 17:56:56,187 p=4720 u=root n=paramiko.transport | [chan 0] Max packet out: 32768 bytes
+2020-07-13 17:56:56,187 p=4720 u=root n=paramiko.transport | Secsh channel 0 opened.
+2020-07-13 17:56:56,194 p=4720 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:56:56,195 p=4720 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:56:56,212 p=4720 u=root n=paramiko.transport | [chan 0] EOF received (0)
+2020-07-13 17:56:56,213 p=4720 u=root n=paramiko.transport | [chan 0] EOF sent (0)
+2020-07-13 17:56:56,315 p=4720 u=root n=paramiko.transport | EOF in transport thread
+2020-07-13 17:56:56,336 p=4211 u=root n=ansible | ok: [ingress1]
+2020-07-13 17:56:56,342 p=4211 u=root n=ansible | Monday 13 July 2020  17:56:56 +0000 (0:00:02.461)       0:00:08.058 *********** 
+2020-07-13 17:56:56,460 p=4211 u=root n=ansible | Monday 13 July 2020  17:56:56 +0000 (0:00:00.118)       0:00:08.176 *********** 
+2020-07-13 17:56:56,573 p=4211 u=root n=ansible | Monday 13 July 2020  17:56:56 +0000 (0:00:00.113)       0:00:08.289 *********** 
+2020-07-13 17:56:56,679 p=4211 u=root n=ansible | Monday 13 July 2020  17:56:56 +0000 (0:00:00.105)       0:00:08.395 *********** 
+2020-07-13 17:56:56,784 p=4211 u=root n=ansible | Monday 13 July 2020  17:56:56 +0000 (0:00:00.104)       0:00:08.500 *********** 
+2020-07-13 17:56:56,823 p=4847 u=root n=paramiko.transport | starting thread (client mode): 0xbc068910L
+2020-07-13 17:56:56,823 p=4847 u=root n=paramiko.transport | Local version/idstring: SSH-2.0-paramiko_2.0.0
+2020-07-13 17:56:56,826 p=4847 u=root n=paramiko.transport | Remote version/idstring: SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.3
+2020-07-13 17:56:56,827 p=4847 u=root n=paramiko.transport | Connected (version 2.0, client OpenSSH_7.6p1)
+2020-07-13 17:56:56,832 p=4847 u=root n=paramiko.transport | kex algos:[u'curve25519-sha256', u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group16-sha512', u'diffie-hellman-group18-sha512', u'diffie-hellman-group14-sha256', u'diffie-hellman-group14-sha1'] server key:[u'ssh-rsa', u'rsa-sha2-512', u'rsa-sha2-256', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] server encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] client mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] server mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2020-07-13 17:56:56,832 p=4847 u=root n=paramiko.transport | Kex agreed: diffie-hellman-group-exchange-sha256
+2020-07-13 17:56:56,832 p=4847 u=root n=paramiko.transport | Cipher agreed: aes128-ctr
+2020-07-13 17:56:56,832 p=4847 u=root n=paramiko.transport | MAC agreed: hmac-sha2-256
+2020-07-13 17:56:56,832 p=4847 u=root n=paramiko.transport | Compression agreed: none
+2020-07-13 17:56:56,871 p=4849 u=root n=paramiko.transport | starting thread (client mode): 0xb7fe6990L
+2020-07-13 17:56:56,871 p=4848 u=root n=paramiko.transport | starting thread (client mode): 0xb7fe6250L
+2020-07-13 17:56:56,871 p=4849 u=root n=paramiko.transport | Local version/idstring: SSH-2.0-paramiko_2.0.0
+2020-07-13 17:56:56,871 p=4848 u=root n=paramiko.transport | Local version/idstring: SSH-2.0-paramiko_2.0.0
+2020-07-13 17:56:56,872 p=4849 u=root n=paramiko.transport | Remote version/idstring: SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.3
+2020-07-13 17:56:56,872 p=4849 u=root n=paramiko.transport | Connected (version 2.0, client OpenSSH_7.6p1)
+2020-07-13 17:56:56,872 p=4848 u=root n=paramiko.transport | Remote version/idstring: SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.3
+2020-07-13 17:56:56,872 p=4848 u=root n=paramiko.transport | Connected (version 2.0, client OpenSSH_7.6p1)
+2020-07-13 17:56:56,873 p=4848 u=root n=paramiko.transport | kex algos:[u'curve25519-sha256', u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group16-sha512', u'diffie-hellman-group18-sha512', u'diffie-hellman-group14-sha256', u'diffie-hellman-group14-sha1'] server key:[u'ssh-rsa', u'rsa-sha2-512', u'rsa-sha2-256', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] server encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] client mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] server mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2020-07-13 17:56:56,873 p=4848 u=root n=paramiko.transport | Kex agreed: diffie-hellman-group-exchange-sha256
+2020-07-13 17:56:56,873 p=4848 u=root n=paramiko.transport | Cipher agreed: aes128-ctr
+2020-07-13 17:56:56,873 p=4848 u=root n=paramiko.transport | MAC agreed: hmac-sha2-256
+2020-07-13 17:56:56,874 p=4848 u=root n=paramiko.transport | Compression agreed: none
+2020-07-13 17:56:56,875 p=4849 u=root n=paramiko.transport | kex algos:[u'curve25519-sha256', u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group16-sha512', u'diffie-hellman-group18-sha512', u'diffie-hellman-group14-sha256', u'diffie-hellman-group14-sha1'] server key:[u'ssh-rsa', u'rsa-sha2-512', u'rsa-sha2-256', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] server encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] client mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] server mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2020-07-13 17:56:56,875 p=4849 u=root n=paramiko.transport | Kex agreed: diffie-hellman-group-exchange-sha256
+2020-07-13 17:56:56,875 p=4849 u=root n=paramiko.transport | Cipher agreed: aes128-ctr
+2020-07-13 17:56:56,875 p=4849 u=root n=paramiko.transport | MAC agreed: hmac-sha2-256
+2020-07-13 17:56:56,875 p=4849 u=root n=paramiko.transport | Compression agreed: none
+2020-07-13 17:56:56,876 p=4854 u=root n=paramiko.transport | starting thread (client mode): 0xbc945950L
+2020-07-13 17:56:56,876 p=4854 u=root n=paramiko.transport | Local version/idstring: SSH-2.0-paramiko_2.0.0
+2020-07-13 17:56:56,884 p=4847 u=root n=paramiko.transport | Got server p (2048 bits)
+2020-07-13 17:56:56,894 p=4854 u=root n=paramiko.transport | Remote version/idstring: SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.3
+2020-07-13 17:56:56,894 p=4854 u=root n=paramiko.transport | Connected (version 2.0, client OpenSSH_7.6p1)
+2020-07-13 17:56:56,898 p=4854 u=root n=paramiko.transport | kex algos:[u'curve25519-sha256', u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group16-sha512', u'diffie-hellman-group18-sha512', u'diffie-hellman-group14-sha256', u'diffie-hellman-group14-sha1'] server key:[u'ssh-rsa', u'rsa-sha2-512', u'rsa-sha2-256', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] server encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] client mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] server mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2020-07-13 17:56:56,898 p=4854 u=root n=paramiko.transport | Kex agreed: diffie-hellman-group-exchange-sha256
+2020-07-13 17:56:56,898 p=4855 u=root n=paramiko.transport | starting thread (client mode): 0xb7fe6e50L
+2020-07-13 17:56:56,898 p=4854 u=root n=paramiko.transport | Cipher agreed: aes128-ctr
+2020-07-13 17:56:56,898 p=4854 u=root n=paramiko.transport | MAC agreed: hmac-sha2-256
+2020-07-13 17:56:56,898 p=4854 u=root n=paramiko.transport | Compression agreed: none
+2020-07-13 17:56:56,898 p=4855 u=root n=paramiko.transport | Local version/idstring: SSH-2.0-paramiko_2.0.0
+2020-07-13 17:56:56,903 p=4855 u=root n=paramiko.transport | Remote version/idstring: SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.3
+2020-07-13 17:56:56,903 p=4855 u=root n=paramiko.transport | Connected (version 2.0, client OpenSSH_7.6p1)
+2020-07-13 17:56:56,904 p=4855 u=root n=paramiko.transport | kex algos:[u'curve25519-sha256', u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group16-sha512', u'diffie-hellman-group18-sha512', u'diffie-hellman-group14-sha256', u'diffie-hellman-group14-sha1'] server key:[u'ssh-rsa', u'rsa-sha2-512', u'rsa-sha2-256', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] server encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] client mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] server mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2020-07-13 17:56:56,904 p=4855 u=root n=paramiko.transport | Kex agreed: diffie-hellman-group-exchange-sha256
+2020-07-13 17:56:56,904 p=4855 u=root n=paramiko.transport | Cipher agreed: aes128-ctr
+2020-07-13 17:56:56,904 p=4855 u=root n=paramiko.transport | MAC agreed: hmac-sha2-256
+2020-07-13 17:56:56,904 p=4855 u=root n=paramiko.transport | Compression agreed: none
+2020-07-13 17:56:56,918 p=4848 u=root n=paramiko.transport | Got server p (2048 bits)
+2020-07-13 17:56:56,921 p=4849 u=root n=paramiko.transport | Got server p (2048 bits)
+2020-07-13 17:56:56,948 p=4854 u=root n=paramiko.transport | Got server p (2048 bits)
+2020-07-13 17:56:56,949 p=4855 u=root n=paramiko.transport | Got server p (2048 bits)
+2020-07-13 17:56:57,021 p=4848 u=root n=paramiko.transport | kex engine KexGexSHA256 specified hash_algo <built-in function openssl_sha256>
+2020-07-13 17:56:57,023 p=4848 u=root n=paramiko.transport | Switch to new keys ...
+2020-07-13 17:56:57,026 p=4848 u=root n=paramiko.transport | Trying discovered key 34865c0c941133d046e30121a4991953 in /root/.ssh/id_rsa
+2020-07-13 17:56:57,040 p=4847 u=root n=paramiko.transport | kex engine KexGexSHA256 specified hash_algo <built-in function openssl_sha256>
+2020-07-13 17:56:57,040 p=4847 u=root n=paramiko.transport | Switch to new keys ...
+2020-07-13 17:56:57,042 p=4847 u=root n=paramiko.transport | Trying discovered key 34865c0c941133d046e30121a4991953 in /root/.ssh/id_rsa
+2020-07-13 17:56:57,050 p=4855 u=root n=paramiko.transport | kex engine KexGexSHA256 specified hash_algo <built-in function openssl_sha256>
+2020-07-13 17:56:57,051 p=4855 u=root n=paramiko.transport | Switch to new keys ...
+2020-07-13 17:56:57,054 p=4855 u=root n=paramiko.transport | Trying discovered key 34865c0c941133d046e30121a4991953 in /root/.ssh/id_rsa
+2020-07-13 17:56:57,063 p=4848 u=root n=paramiko.transport | userauth is OK
+2020-07-13 17:56:57,068 p=4848 u=root n=paramiko.transport | Authentication (publickey) successful!
+2020-07-13 17:56:57,072 p=4849 u=root n=paramiko.transport | kex engine KexGexSHA256 specified hash_algo <built-in function openssl_sha256>
+2020-07-13 17:56:57,072 p=4849 u=root n=paramiko.transport | Switch to new keys ...
+2020-07-13 17:56:57,077 p=4847 u=root n=paramiko.transport | userauth is OK
+2020-07-13 17:56:57,080 p=4854 u=root n=paramiko.transport | kex engine KexGexSHA256 specified hash_algo <built-in function openssl_sha256>
+2020-07-13 17:56:57,080 p=4849 u=root n=paramiko.transport | Trying discovered key 34865c0c941133d046e30121a4991953 in /root/.ssh/id_rsa
+2020-07-13 17:56:57,081 p=4854 u=root n=paramiko.transport | Switch to new keys ...
+2020-07-13 17:56:57,087 p=4847 u=root n=paramiko.transport | Authentication (publickey) successful!
+2020-07-13 17:56:57,092 p=4854 u=root n=paramiko.transport | Trying discovered key 34865c0c941133d046e30121a4991953 in /root/.ssh/id_rsa
+2020-07-13 17:56:57,094 p=4848 u=root n=paramiko.transport | [chan 0] Max packet in: 32768 bytes
+2020-07-13 17:56:57,094 p=4855 u=root n=paramiko.transport | userauth is OK
+2020-07-13 17:56:57,102 p=4855 u=root n=paramiko.transport | Authentication (publickey) successful!
+2020-07-13 17:56:57,109 p=4847 u=root n=paramiko.transport | [chan 0] Max packet in: 32768 bytes
+2020-07-13 17:56:57,114 p=4849 u=root n=paramiko.transport | userauth is OK
+2020-07-13 17:56:57,119 p=4855 u=root n=paramiko.transport | [chan 0] Max packet in: 32768 bytes
+2020-07-13 17:56:57,121 p=4849 u=root n=paramiko.transport | Authentication (publickey) successful!
+2020-07-13 17:56:57,122 p=4854 u=root n=paramiko.transport | userauth is OK
+2020-07-13 17:56:57,122 p=4849 u=root n=paramiko.transport | [chan 0] Max packet in: 32768 bytes
+2020-07-13 17:56:57,128 p=4854 u=root n=paramiko.transport | Authentication (publickey) successful!
+2020-07-13 17:56:57,156 p=4854 u=root n=paramiko.transport | [chan 0] Max packet in: 32768 bytes
+2020-07-13 17:56:57,841 p=4847 u=root n=paramiko.transport | Received global request "hostkeys-00@openssh.com"
+2020-07-13 17:56:57,842 p=4847 u=root n=paramiko.transport | Rejecting "hostkeys-00@openssh.com" global request from server.
+2020-07-13 17:56:57,883 p=4847 u=root n=paramiko.transport | [chan 0] Max packet out: 32768 bytes
+2020-07-13 17:56:57,883 p=4847 u=root n=paramiko.transport | Secsh channel 0 opened.
+2020-07-13 17:56:57,915 p=4847 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:56:57,916 p=4847 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:56:57,935 p=4847 u=root n=paramiko.transport | [chan 0] EOF received (0)
+2020-07-13 17:56:57,935 p=4847 u=root n=paramiko.transport | [chan 0] EOF sent (0)
+2020-07-13 17:56:58,036 p=4847 u=root n=paramiko.transport | EOF in transport thread
+2020-07-13 17:56:58,062 p=4211 u=root n=ansible | TASK [bootstrap-os : Check Network Name Resolution configuration] ******************************************************
+2020-07-13 17:56:58,063 p=4211 u=root n=ansible | ok: [master-1]
+2020-07-13 17:56:58,094 p=4934 u=root n=paramiko.transport | starting thread (client mode): 0xbc952310L
+2020-07-13 17:56:58,094 p=4934 u=root n=paramiko.transport | Local version/idstring: SSH-2.0-paramiko_2.0.0
+2020-07-13 17:56:58,098 p=4934 u=root n=paramiko.transport | Remote version/idstring: SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.3
+2020-07-13 17:56:58,099 p=4934 u=root n=paramiko.transport | Connected (version 2.0, client OpenSSH_7.6p1)
+2020-07-13 17:56:58,100 p=4934 u=root n=paramiko.transport | kex algos:[u'curve25519-sha256', u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group16-sha512', u'diffie-hellman-group18-sha512', u'diffie-hellman-group14-sha256', u'diffie-hellman-group14-sha1'] server key:[u'ssh-rsa', u'rsa-sha2-512', u'rsa-sha2-256', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] server encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] client mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] server mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2020-07-13 17:56:58,100 p=4934 u=root n=paramiko.transport | Kex agreed: diffie-hellman-group-exchange-sha256
+2020-07-13 17:56:58,100 p=4934 u=root n=paramiko.transport | Cipher agreed: aes128-ctr
+2020-07-13 17:56:58,100 p=4934 u=root n=paramiko.transport | MAC agreed: hmac-sha2-256
+2020-07-13 17:56:58,100 p=4934 u=root n=paramiko.transport | Compression agreed: none
+2020-07-13 17:56:58,148 p=4934 u=root n=paramiko.transport | Got server p (2048 bits)
+2020-07-13 17:56:58,218 p=4934 u=root n=paramiko.transport | kex engine KexGexSHA256 specified hash_algo <built-in function openssl_sha256>
+2020-07-13 17:56:58,219 p=4934 u=root n=paramiko.transport | Switch to new keys ...
+2020-07-13 17:56:58,222 p=4934 u=root n=paramiko.transport | Trying discovered key 34865c0c941133d046e30121a4991953 in /root/.ssh/id_rsa
+2020-07-13 17:56:58,260 p=4934 u=root n=paramiko.transport | userauth is OK
+2020-07-13 17:56:58,267 p=4934 u=root n=paramiko.transport | Authentication (publickey) successful!
+2020-07-13 17:56:58,289 p=4934 u=root n=paramiko.transport | [chan 0] Max packet in: 32768 bytes
+2020-07-13 17:56:58,502 p=4848 u=root n=paramiko.transport | Received global request "hostkeys-00@openssh.com"
+2020-07-13 17:56:58,502 p=4848 u=root n=paramiko.transport | Rejecting "hostkeys-00@openssh.com" global request from server.
+2020-07-13 17:56:58,521 p=4854 u=root n=paramiko.transport | Received global request "hostkeys-00@openssh.com"
+2020-07-13 17:56:58,522 p=4854 u=root n=paramiko.transport | Rejecting "hostkeys-00@openssh.com" global request from server.
+2020-07-13 17:56:58,540 p=4855 u=root n=paramiko.transport | Received global request "hostkeys-00@openssh.com"
+2020-07-13 17:56:58,540 p=4855 u=root n=paramiko.transport | Rejecting "hostkeys-00@openssh.com" global request from server.
+2020-07-13 17:56:58,543 p=4848 u=root n=paramiko.transport | [chan 0] Max packet out: 32768 bytes
+2020-07-13 17:56:58,543 p=4848 u=root n=paramiko.transport | Secsh channel 0 opened.
+2020-07-13 17:56:58,551 p=4849 u=root n=paramiko.transport | Received global request "hostkeys-00@openssh.com"
+2020-07-13 17:56:58,551 p=4849 u=root n=paramiko.transport | Rejecting "hostkeys-00@openssh.com" global request from server.
+2020-07-13 17:56:58,564 p=4854 u=root n=paramiko.transport | [chan 0] Max packet out: 32768 bytes
+2020-07-13 17:56:58,564 p=4854 u=root n=paramiko.transport | Secsh channel 0 opened.
+2020-07-13 17:56:58,566 p=4848 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:56:58,567 p=4848 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:56:58,567 p=4854 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:56:58,569 p=4854 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:56:58,584 p=4855 u=root n=paramiko.transport | [chan 0] Max packet out: 32768 bytes
+2020-07-13 17:56:58,584 p=4855 u=root n=paramiko.transport | Secsh channel 0 opened.
+2020-07-13 17:56:58,592 p=4849 u=root n=paramiko.transport | [chan 0] Max packet out: 32768 bytes
+2020-07-13 17:56:58,593 p=4849 u=root n=paramiko.transport | Secsh channel 0 opened.
+2020-07-13 17:56:58,593 p=4855 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:56:58,595 p=4855 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:56:58,597 p=4848 u=root n=paramiko.transport | [chan 0] EOF received (0)
+2020-07-13 17:56:58,597 p=4848 u=root n=paramiko.transport | [chan 0] EOF sent (0)
+2020-07-13 17:56:58,597 p=4849 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:56:58,601 p=4854 u=root n=paramiko.transport | [chan 0] EOF received (0)
+2020-07-13 17:56:58,602 p=4854 u=root n=paramiko.transport | [chan 0] EOF sent (0)
+2020-07-13 17:56:58,602 p=4849 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:56:58,604 p=4854 u=root n=paramiko.transport | EOF in transport thread
+2020-07-13 17:56:58,608 p=4211 u=root n=ansible | ok: [node1]
+2020-07-13 17:56:58,628 p=4855 u=root n=paramiko.transport | [chan 0] EOF received (0)
+2020-07-13 17:56:58,635 p=4211 u=root n=ansible | ok: [node2]
+2020-07-13 17:56:58,640 p=4849 u=root n=paramiko.transport | [chan 0] EOF received (0)
+2020-07-13 17:56:58,641 p=4849 u=root n=paramiko.transport | [chan 0] EOF sent (0)
+2020-07-13 17:56:58,648 p=4211 u=root n=ansible | ok: [master-3]
+2020-07-13 17:56:58,699 p=4848 u=root n=paramiko.transport | EOF in transport thread
+2020-07-13 17:56:58,720 p=4211 u=root n=ansible | ok: [master-2]
+2020-07-13 17:56:59,021 p=4934 u=root n=paramiko.transport | Received global request "hostkeys-00@openssh.com"
+2020-07-13 17:56:59,021 p=4934 u=root n=paramiko.transport | Rejecting "hostkeys-00@openssh.com" global request from server.
+2020-07-13 17:56:59,063 p=4934 u=root n=paramiko.transport | [chan 0] Max packet out: 32768 bytes
+2020-07-13 17:56:59,063 p=4934 u=root n=paramiko.transport | Secsh channel 0 opened.
+2020-07-13 17:56:59,113 p=4934 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:56:59,114 p=4934 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:56:59,131 p=4934 u=root n=paramiko.transport | [chan 0] EOF received (0)
+2020-07-13 17:56:59,133 p=4934 u=root n=paramiko.transport | EOF in transport thread
+2020-07-13 17:56:59,139 p=4211 u=root n=ansible | ok: [ingress1]
+2020-07-13 17:56:59,145 p=4211 u=root n=ansible | Monday 13 July 2020  17:56:59 +0000 (0:00:02.361)       0:00:10.862 *********** 
+2020-07-13 17:56:59,195 p=5013 u=root n=paramiko.transport | starting thread (client mode): 0xbc9455d0L
+2020-07-13 17:56:59,200 p=5013 u=root n=paramiko.transport | Local version/idstring: SSH-2.0-paramiko_2.0.0
+2020-07-13 17:56:59,200 p=5013 u=root n=paramiko.transport | Remote version/idstring: SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.3
+2020-07-13 17:56:59,200 p=5013 u=root n=paramiko.transport | Connected (version 2.0, client OpenSSH_7.6p1)
+2020-07-13 17:56:59,212 p=5013 u=root n=paramiko.transport | kex algos:[u'curve25519-sha256', u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group16-sha512', u'diffie-hellman-group18-sha512', u'diffie-hellman-group14-sha256', u'diffie-hellman-group14-sha1'] server key:[u'ssh-rsa', u'rsa-sha2-512', u'rsa-sha2-256', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] server encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] client mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] server mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2020-07-13 17:56:59,212 p=5013 u=root n=paramiko.transport | Kex agreed: diffie-hellman-group-exchange-sha256
+2020-07-13 17:56:59,212 p=5013 u=root n=paramiko.transport | Cipher agreed: aes128-ctr
+2020-07-13 17:56:59,212 p=5013 u=root n=paramiko.transport | MAC agreed: hmac-sha2-256
+2020-07-13 17:56:59,213 p=5013 u=root n=paramiko.transport | Compression agreed: none
+2020-07-13 17:56:59,224 p=5015 u=root n=paramiko.transport | starting thread (client mode): 0xbc114550L
+2020-07-13 17:56:59,224 p=5015 u=root n=paramiko.transport | Local version/idstring: SSH-2.0-paramiko_2.0.0
+2020-07-13 17:56:59,224 p=5015 u=root n=paramiko.transport | Remote version/idstring: SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.3
+2020-07-13 17:56:59,224 p=5015 u=root n=paramiko.transport | Connected (version 2.0, client OpenSSH_7.6p1)
+2020-07-13 17:56:59,232 p=5015 u=root n=paramiko.transport | kex algos:[u'curve25519-sha256', u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group16-sha512', u'diffie-hellman-group18-sha512', u'diffie-hellman-group14-sha256', u'diffie-hellman-group14-sha1'] server key:[u'ssh-rsa', u'rsa-sha2-512', u'rsa-sha2-256', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] server encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] client mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] server mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2020-07-13 17:56:59,232 p=5015 u=root n=paramiko.transport | Kex agreed: diffie-hellman-group-exchange-sha256
+2020-07-13 17:56:59,232 p=5015 u=root n=paramiko.transport | Cipher agreed: aes128-ctr
+2020-07-13 17:56:59,233 p=5015 u=root n=paramiko.transport | MAC agreed: hmac-sha2-256
+2020-07-13 17:56:59,233 p=5015 u=root n=paramiko.transport | Compression agreed: none
+2020-07-13 17:56:59,245 p=5014 u=root n=paramiko.transport | starting thread (client mode): 0xbc0c5b10L
+2020-07-13 17:56:59,245 p=5014 u=root n=paramiko.transport | Local version/idstring: SSH-2.0-paramiko_2.0.0
+2020-07-13 17:56:59,246 p=5014 u=root n=paramiko.transport | Remote version/idstring: SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.3
+2020-07-13 17:56:59,246 p=5014 u=root n=paramiko.transport | Connected (version 2.0, client OpenSSH_7.6p1)
+2020-07-13 17:56:59,246 p=5019 u=root n=paramiko.transport | starting thread (client mode): 0xbc114ad0L
+2020-07-13 17:56:59,247 p=5019 u=root n=paramiko.transport | Local version/idstring: SSH-2.0-paramiko_2.0.0
+2020-07-13 17:56:59,250 p=5019 u=root n=paramiko.transport | Remote version/idstring: SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.3
+2020-07-13 17:56:59,250 p=5019 u=root n=paramiko.transport | Connected (version 2.0, client OpenSSH_7.6p1)
+2020-07-13 17:56:59,251 p=5014 u=root n=paramiko.transport | kex algos:[u'curve25519-sha256', u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group16-sha512', u'diffie-hellman-group18-sha512', u'diffie-hellman-group14-sha256', u'diffie-hellman-group14-sha1'] server key:[u'ssh-rsa', u'rsa-sha2-512', u'rsa-sha2-256', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] server encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] client mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] server mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2020-07-13 17:56:59,251 p=5014 u=root n=paramiko.transport | Kex agreed: diffie-hellman-group-exchange-sha256
+2020-07-13 17:56:59,251 p=5014 u=root n=paramiko.transport | Cipher agreed: aes128-ctr
+2020-07-13 17:56:59,252 p=5014 u=root n=paramiko.transport | MAC agreed: hmac-sha2-256
+2020-07-13 17:56:59,252 p=5014 u=root n=paramiko.transport | Compression agreed: none
+2020-07-13 17:56:59,253 p=5019 u=root n=paramiko.transport | kex algos:[u'curve25519-sha256', u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group16-sha512', u'diffie-hellman-group18-sha512', u'diffie-hellman-group14-sha256', u'diffie-hellman-group14-sha1'] server key:[u'ssh-rsa', u'rsa-sha2-512', u'rsa-sha2-256', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] server encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] client mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] server mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2020-07-13 17:56:59,253 p=5019 u=root n=paramiko.transport | Kex agreed: diffie-hellman-group-exchange-sha256
+2020-07-13 17:56:59,253 p=5019 u=root n=paramiko.transport | Cipher agreed: aes128-ctr
+2020-07-13 17:56:59,253 p=5019 u=root n=paramiko.transport | MAC agreed: hmac-sha2-256
+2020-07-13 17:56:59,253 p=5019 u=root n=paramiko.transport | Compression agreed: none
+2020-07-13 17:56:59,256 p=5014 u=root n=paramiko.transport | Got server p (2048 bits)
+2020-07-13 17:56:59,263 p=5013 u=root n=paramiko.transport | Got server p (2048 bits)
+2020-07-13 17:56:59,277 p=5015 u=root n=paramiko.transport | Got server p (2048 bits)
+2020-07-13 17:56:59,297 p=5021 u=root n=paramiko.transport | starting thread (client mode): 0xb7fe6350L
+2020-07-13 17:56:59,297 p=5021 u=root n=paramiko.transport | Local version/idstring: SSH-2.0-paramiko_2.0.0
+2020-07-13 17:56:59,300 p=5019 u=root n=paramiko.transport | Got server p (2048 bits)
+2020-07-13 17:56:59,300 p=5021 u=root n=paramiko.transport | Remote version/idstring: SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.3
+2020-07-13 17:56:59,303 p=5021 u=root n=paramiko.transport | Connected (version 2.0, client OpenSSH_7.6p1)
+2020-07-13 17:56:59,312 p=5021 u=root n=paramiko.transport | kex algos:[u'curve25519-sha256', u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group16-sha512', u'diffie-hellman-group18-sha512', u'diffie-hellman-group14-sha256', u'diffie-hellman-group14-sha1'] server key:[u'ssh-rsa', u'rsa-sha2-512', u'rsa-sha2-256', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] server encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] client mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] server mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2020-07-13 17:56:59,312 p=5021 u=root n=paramiko.transport | Kex agreed: diffie-hellman-group-exchange-sha256
+2020-07-13 17:56:59,312 p=5021 u=root n=paramiko.transport | Cipher agreed: aes128-ctr
+2020-07-13 17:56:59,312 p=5021 u=root n=paramiko.transport | MAC agreed: hmac-sha2-256
+2020-07-13 17:56:59,312 p=5021 u=root n=paramiko.transport | Compression agreed: none
+2020-07-13 17:56:59,357 p=5021 u=root n=paramiko.transport | Got server p (2048 bits)
+2020-07-13 17:56:59,373 p=5013 u=root n=paramiko.transport | kex engine KexGexSHA256 specified hash_algo <built-in function openssl_sha256>
+2020-07-13 17:56:59,373 p=5013 u=root n=paramiko.transport | Switch to new keys ...
+2020-07-13 17:56:59,380 p=5013 u=root n=paramiko.transport | Trying discovered key 34865c0c941133d046e30121a4991953 in /root/.ssh/id_rsa
+2020-07-13 17:56:59,381 p=5014 u=root n=paramiko.transport | kex engine KexGexSHA256 specified hash_algo <built-in function openssl_sha256>
+2020-07-13 17:56:59,381 p=5014 u=root n=paramiko.transport | Switch to new keys ...
+2020-07-13 17:56:59,386 p=5014 u=root n=paramiko.transport | Trying discovered key 34865c0c941133d046e30121a4991953 in /root/.ssh/id_rsa
+2020-07-13 17:56:59,401 p=5019 u=root n=paramiko.transport | kex engine KexGexSHA256 specified hash_algo <built-in function openssl_sha256>
+2020-07-13 17:56:59,402 p=5019 u=root n=paramiko.transport | Switch to new keys ...
+2020-07-13 17:56:59,404 p=5015 u=root n=paramiko.transport | kex engine KexGexSHA256 specified hash_algo <built-in function openssl_sha256>
+2020-07-13 17:56:59,405 p=5015 u=root n=paramiko.transport | Switch to new keys ...
+2020-07-13 17:56:59,405 p=5019 u=root n=paramiko.transport | Trying discovered key 34865c0c941133d046e30121a4991953 in /root/.ssh/id_rsa
+2020-07-13 17:56:59,415 p=5013 u=root n=paramiko.transport | userauth is OK
+2020-07-13 17:56:59,421 p=5013 u=root n=paramiko.transport | Authentication (publickey) successful!
+2020-07-13 17:56:59,424 p=5014 u=root n=paramiko.transport | userauth is OK
+2020-07-13 17:56:59,427 p=5015 u=root n=paramiko.transport | Trying discovered key 34865c0c941133d046e30121a4991953 in /root/.ssh/id_rsa
+2020-07-13 17:56:59,430 p=5014 u=root n=paramiko.transport | Authentication (publickey) successful!
+2020-07-13 17:56:59,443 p=5019 u=root n=paramiko.transport | userauth is OK
+2020-07-13 17:56:59,447 p=5013 u=root n=paramiko.transport | [chan 0] Max packet in: 32768 bytes
+2020-07-13 17:56:59,448 p=5015 u=root n=paramiko.transport | userauth is OK
+2020-07-13 17:56:59,452 p=5014 u=root n=paramiko.transport | [chan 0] Max packet in: 32768 bytes
+2020-07-13 17:56:59,452 p=5019 u=root n=paramiko.transport | Authentication (publickey) successful!
+2020-07-13 17:56:59,456 p=5021 u=root n=paramiko.transport | kex engine KexGexSHA256 specified hash_algo <built-in function openssl_sha256>
+2020-07-13 17:56:59,456 p=5015 u=root n=paramiko.transport | Authentication (publickey) successful!
+2020-07-13 17:56:59,457 p=5021 u=root n=paramiko.transport | Switch to new keys ...
+2020-07-13 17:56:59,460 p=5021 u=root n=paramiko.transport | Trying discovered key 34865c0c941133d046e30121a4991953 in /root/.ssh/id_rsa
+2020-07-13 17:56:59,463 p=5015 u=root n=paramiko.transport | [chan 0] Max packet in: 32768 bytes
+2020-07-13 17:56:59,478 p=5019 u=root n=paramiko.transport | [chan 0] Max packet in: 32768 bytes
+2020-07-13 17:56:59,498 p=5021 u=root n=paramiko.transport | userauth is OK
+2020-07-13 17:56:59,505 p=5021 u=root n=paramiko.transport | Authentication (publickey) successful!
+2020-07-13 17:56:59,526 p=5021 u=root n=paramiko.transport | [chan 0] Max packet in: 32768 bytes
+2020-07-13 17:57:00,193 p=5013 u=root n=paramiko.transport | Received global request "hostkeys-00@openssh.com"
+2020-07-13 17:57:00,193 p=5013 u=root n=paramiko.transport | Rejecting "hostkeys-00@openssh.com" global request from server.
+2020-07-13 17:57:00,235 p=5013 u=root n=paramiko.transport | [chan 0] Max packet out: 32768 bytes
+2020-07-13 17:57:00,236 p=5013 u=root n=paramiko.transport | Secsh channel 0 opened.
+2020-07-13 17:57:00,252 p=5013 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:57:00,253 p=5013 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:57:00,333 p=5013 u=root n=paramiko.transport | [chan 0] EOF received (0)
+2020-07-13 17:57:00,335 p=5013 u=root n=paramiko.transport | EOF in transport thread
+2020-07-13 17:57:00,347 p=4211 u=root n=ansible | TASK [bootstrap-os : Change Network Name Resolution configuration] *****************************************************
+2020-07-13 17:57:00,348 p=4211 u=root n=ansible | changed: [master-1]
+2020-07-13 17:57:00,381 p=5100 u=root n=paramiko.transport | starting thread (client mode): 0xbc0c5ed0L
+2020-07-13 17:57:00,381 p=5100 u=root n=paramiko.transport | Local version/idstring: SSH-2.0-paramiko_2.0.0
+2020-07-13 17:57:00,391 p=5100 u=root n=paramiko.transport | Remote version/idstring: SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.3
+2020-07-13 17:57:00,391 p=5100 u=root n=paramiko.transport | Connected (version 2.0, client OpenSSH_7.6p1)
+2020-07-13 17:57:00,392 p=5100 u=root n=paramiko.transport | kex algos:[u'curve25519-sha256', u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group16-sha512', u'diffie-hellman-group18-sha512', u'diffie-hellman-group14-sha256', u'diffie-hellman-group14-sha1'] server key:[u'ssh-rsa', u'rsa-sha2-512', u'rsa-sha2-256', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] server encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] client mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] server mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2020-07-13 17:57:00,393 p=5100 u=root n=paramiko.transport | Kex agreed: diffie-hellman-group-exchange-sha256
+2020-07-13 17:57:00,393 p=5100 u=root n=paramiko.transport | Cipher agreed: aes128-ctr
+2020-07-13 17:57:00,393 p=5100 u=root n=paramiko.transport | MAC agreed: hmac-sha2-256
+2020-07-13 17:57:00,393 p=5100 u=root n=paramiko.transport | Compression agreed: none
+2020-07-13 17:57:00,398 p=5100 u=root n=paramiko.transport | Got server p (2048 bits)
+2020-07-13 17:57:00,462 p=5100 u=root n=paramiko.transport | kex engine KexGexSHA256 specified hash_algo <built-in function openssl_sha256>
+2020-07-13 17:57:00,464 p=5100 u=root n=paramiko.transport | Switch to new keys ...
+2020-07-13 17:57:00,483 p=5100 u=root n=paramiko.transport | Trying discovered key 34865c0c941133d046e30121a4991953 in /root/.ssh/id_rsa
+2020-07-13 17:57:00,507 p=5100 u=root n=paramiko.transport | userauth is OK
+2020-07-13 17:57:00,514 p=5100 u=root n=paramiko.transport | Authentication (publickey) successful!
+2020-07-13 17:57:00,519 p=5100 u=root n=paramiko.transport | [chan 0] Max packet in: 32768 bytes
+2020-07-13 17:57:00,899 p=5014 u=root n=paramiko.transport | Received global request "hostkeys-00@openssh.com"
+2020-07-13 17:57:00,899 p=5014 u=root n=paramiko.transport | Rejecting "hostkeys-00@openssh.com" global request from server.
+2020-07-13 17:57:00,916 p=5019 u=root n=paramiko.transport | Received global request "hostkeys-00@openssh.com"
+2020-07-13 17:57:00,916 p=5019 u=root n=paramiko.transport | Rejecting "hostkeys-00@openssh.com" global request from server.
+2020-07-13 17:57:00,926 p=5015 u=root n=paramiko.transport | Received global request "hostkeys-00@openssh.com"
+2020-07-13 17:57:00,926 p=5015 u=root n=paramiko.transport | Rejecting "hostkeys-00@openssh.com" global request from server.
+2020-07-13 17:57:00,939 p=5014 u=root n=paramiko.transport | [chan 0] Max packet out: 32768 bytes
+2020-07-13 17:57:00,940 p=5014 u=root n=paramiko.transport | Secsh channel 0 opened.
+2020-07-13 17:57:00,955 p=5021 u=root n=paramiko.transport | Received global request "hostkeys-00@openssh.com"
+2020-07-13 17:57:00,955 p=5021 u=root n=paramiko.transport | Rejecting "hostkeys-00@openssh.com" global request from server.
+2020-07-13 17:57:00,960 p=5014 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:57:00,961 p=5019 u=root n=paramiko.transport | [chan 0] Max packet out: 32768 bytes
+2020-07-13 17:57:00,961 p=5019 u=root n=paramiko.transport | Secsh channel 0 opened.
+2020-07-13 17:57:00,962 p=5014 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:57:00,972 p=5015 u=root n=paramiko.transport | [chan 0] Max packet out: 32768 bytes
+2020-07-13 17:57:00,972 p=5015 u=root n=paramiko.transport | Secsh channel 0 opened.
+2020-07-13 17:57:00,974 p=5015 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:57:00,975 p=5015 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:57:00,980 p=5014 u=root n=paramiko.transport | [chan 0] EOF received (0)
+2020-07-13 17:57:00,988 p=4211 u=root n=ansible | changed: [master-2]
+2020-07-13 17:57:00,990 p=5019 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:57:00,992 p=5019 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:57:00,994 p=5015 u=root n=paramiko.transport | [chan 0] EOF received (0)
+2020-07-13 17:57:00,994 p=5015 u=root n=paramiko.transport | [chan 0] EOF sent (0)
+2020-07-13 17:57:00,995 p=5021 u=root n=paramiko.transport | [chan 0] Max packet out: 32768 bytes
+2020-07-13 17:57:00,996 p=5021 u=root n=paramiko.transport | Secsh channel 0 opened.
+2020-07-13 17:57:01,003 p=5021 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:57:01,004 p=5021 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:57:01,014 p=5019 u=root n=paramiko.transport | [chan 0] EOF received (0)
+2020-07-13 17:57:01,015 p=5019 u=root n=paramiko.transport | EOF in transport thread
+2020-07-13 17:57:01,022 p=4211 u=root n=ansible | changed: [node1]
+2020-07-13 17:57:01,022 p=5021 u=root n=paramiko.transport | [chan 0] EOF received (0)
+2020-07-13 17:57:01,022 p=5021 u=root n=paramiko.transport | [chan 0] EOF sent (0)
+2020-07-13 17:57:01,096 p=5015 u=root n=paramiko.transport | EOF in transport thread
+2020-07-13 17:57:01,116 p=4211 u=root n=ansible | changed: [master-3]
+2020-07-13 17:57:01,123 p=5021 u=root n=paramiko.transport | EOF in transport thread
+2020-07-13 17:57:01,141 p=4211 u=root n=ansible | changed: [node2]
+2020-07-13 17:57:01,266 p=5100 u=root n=paramiko.transport | Received global request "hostkeys-00@openssh.com"
+2020-07-13 17:57:01,266 p=5100 u=root n=paramiko.transport | Rejecting "hostkeys-00@openssh.com" global request from server.
+2020-07-13 17:57:01,308 p=5100 u=root n=paramiko.transport | [chan 0] Max packet out: 32768 bytes
+2020-07-13 17:57:01,308 p=5100 u=root n=paramiko.transport | Secsh channel 0 opened.
+2020-07-13 17:57:01,324 p=5100 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:57:01,325 p=5100 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:57:01,342 p=5100 u=root n=paramiko.transport | [chan 0] EOF received (0)
+2020-07-13 17:57:01,342 p=5100 u=root n=paramiko.transport | [chan 0] EOF sent (0)
+2020-07-13 17:57:01,443 p=5100 u=root n=paramiko.transport | EOF in transport thread
+2020-07-13 17:57:01,462 p=4211 u=root n=ansible | changed: [ingress1]
+2020-07-13 17:57:01,469 p=4211 u=root n=ansible | Monday 13 July 2020  17:57:01 +0000 (0:00:02.323)       0:00:13.185 *********** 
+2020-07-13 17:57:01,505 p=5179 u=root n=paramiko.transport | starting thread (client mode): 0xb7ffead0L
+2020-07-13 17:57:01,505 p=5179 u=root n=paramiko.transport | Local version/idstring: SSH-2.0-paramiko_2.0.0
+2020-07-13 17:57:01,505 p=5179 u=root n=paramiko.transport | Remote version/idstring: SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.3
+2020-07-13 17:57:01,505 p=5179 u=root n=paramiko.transport | Connected (version 2.0, client OpenSSH_7.6p1)
+2020-07-13 17:57:01,506 p=5179 u=root n=paramiko.transport | kex algos:[u'curve25519-sha256', u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group16-sha512', u'diffie-hellman-group18-sha512', u'diffie-hellman-group14-sha256', u'diffie-hellman-group14-sha1'] server key:[u'ssh-rsa', u'rsa-sha2-512', u'rsa-sha2-256', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] server encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] client mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] server mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2020-07-13 17:57:01,506 p=5179 u=root n=paramiko.transport | Kex agreed: diffie-hellman-group-exchange-sha256
+2020-07-13 17:57:01,506 p=5179 u=root n=paramiko.transport | Cipher agreed: aes128-ctr
+2020-07-13 17:57:01,506 p=5179 u=root n=paramiko.transport | MAC agreed: hmac-sha2-256
+2020-07-13 17:57:01,506 p=5179 u=root n=paramiko.transport | Compression agreed: none
+2020-07-13 17:57:01,547 p=5180 u=root n=paramiko.transport | starting thread (client mode): 0xb7fc7b10L
+2020-07-13 17:57:01,548 p=5180 u=root n=paramiko.transport | Local version/idstring: SSH-2.0-paramiko_2.0.0
+2020-07-13 17:57:01,548 p=5180 u=root n=paramiko.transport | Remote version/idstring: SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.3
+2020-07-13 17:57:01,548 p=5180 u=root n=paramiko.transport | Connected (version 2.0, client OpenSSH_7.6p1)
+2020-07-13 17:57:01,556 p=5179 u=root n=paramiko.transport | Got server p (2048 bits)
+2020-07-13 17:57:01,560 p=5180 u=root n=paramiko.transport | kex algos:[u'curve25519-sha256', u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group16-sha512', u'diffie-hellman-group18-sha512', u'diffie-hellman-group14-sha256', u'diffie-hellman-group14-sha1'] server key:[u'ssh-rsa', u'rsa-sha2-512', u'rsa-sha2-256', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] server encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] client mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] server mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2020-07-13 17:57:01,560 p=5180 u=root n=paramiko.transport | Kex agreed: diffie-hellman-group-exchange-sha256
+2020-07-13 17:57:01,560 p=5180 u=root n=paramiko.transport | Cipher agreed: aes128-ctr
+2020-07-13 17:57:01,560 p=5180 u=root n=paramiko.transport | MAC agreed: hmac-sha2-256
+2020-07-13 17:57:01,560 p=5180 u=root n=paramiko.transport | Compression agreed: none
+2020-07-13 17:57:01,584 p=5182 u=root n=paramiko.transport | starting thread (client mode): 0xbc952310L
+2020-07-13 17:57:01,585 p=5182 u=root n=paramiko.transport | Local version/idstring: SSH-2.0-paramiko_2.0.0
+2020-07-13 17:57:01,586 p=5182 u=root n=paramiko.transport | Remote version/idstring: SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.3
+2020-07-13 17:57:01,586 p=5182 u=root n=paramiko.transport | Connected (version 2.0, client OpenSSH_7.6p1)
+2020-07-13 17:57:01,589 p=5186 u=root n=paramiko.transport | starting thread (client mode): 0xb7fc7f10L
+2020-07-13 17:57:01,589 p=5186 u=root n=paramiko.transport | Local version/idstring: SSH-2.0-paramiko_2.0.0
+2020-07-13 17:57:01,589 p=5186 u=root n=paramiko.transport | Remote version/idstring: SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.3
+2020-07-13 17:57:01,589 p=5186 u=root n=paramiko.transport | Connected (version 2.0, client OpenSSH_7.6p1)
+2020-07-13 17:57:01,590 p=5186 u=root n=paramiko.transport | kex algos:[u'curve25519-sha256', u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group16-sha512', u'diffie-hellman-group18-sha512', u'diffie-hellman-group14-sha256', u'diffie-hellman-group14-sha1'] server key:[u'ssh-rsa', u'rsa-sha2-512', u'rsa-sha2-256', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] server encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] client mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] server mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2020-07-13 17:57:01,590 p=5186 u=root n=paramiko.transport | Kex agreed: diffie-hellman-group-exchange-sha256
+2020-07-13 17:57:01,591 p=5186 u=root n=paramiko.transport | Cipher agreed: aes128-ctr
+2020-07-13 17:57:01,591 p=5186 u=root n=paramiko.transport | MAC agreed: hmac-sha2-256
+2020-07-13 17:57:01,591 p=5186 u=root n=paramiko.transport | Compression agreed: none
+2020-07-13 17:57:01,592 p=5182 u=root n=paramiko.transport | kex algos:[u'curve25519-sha256', u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group16-sha512', u'diffie-hellman-group18-sha512', u'diffie-hellman-group14-sha256', u'diffie-hellman-group14-sha1'] server key:[u'ssh-rsa', u'rsa-sha2-512', u'rsa-sha2-256', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] server encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] client mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] server mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2020-07-13 17:57:01,592 p=5182 u=root n=paramiko.transport | Kex agreed: diffie-hellman-group-exchange-sha256
+2020-07-13 17:57:01,592 p=5182 u=root n=paramiko.transport | Cipher agreed: aes128-ctr
+2020-07-13 17:57:01,592 p=5182 u=root n=paramiko.transport | MAC agreed: hmac-sha2-256
+2020-07-13 17:57:01,592 p=5182 u=root n=paramiko.transport | Compression agreed: none
+2020-07-13 17:57:01,603 p=5187 u=root n=paramiko.transport | starting thread (client mode): 0xbc952310L
+2020-07-13 17:57:01,603 p=5187 u=root n=paramiko.transport | Local version/idstring: SSH-2.0-paramiko_2.0.0
+2020-07-13 17:57:01,606 p=5187 u=root n=paramiko.transport | Remote version/idstring: SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.3
+2020-07-13 17:57:01,606 p=5187 u=root n=paramiko.transport | Connected (version 2.0, client OpenSSH_7.6p1)
+2020-07-13 17:57:01,607 p=5187 u=root n=paramiko.transport | kex algos:[u'curve25519-sha256', u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group16-sha512', u'diffie-hellman-group18-sha512', u'diffie-hellman-group14-sha256', u'diffie-hellman-group14-sha1'] server key:[u'ssh-rsa', u'rsa-sha2-512', u'rsa-sha2-256', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] server encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] client mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] server mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2020-07-13 17:57:01,607 p=5187 u=root n=paramiko.transport | Kex agreed: diffie-hellman-group-exchange-sha256
+2020-07-13 17:57:01,607 p=5187 u=root n=paramiko.transport | Cipher agreed: aes128-ctr
+2020-07-13 17:57:01,608 p=5187 u=root n=paramiko.transport | MAC agreed: hmac-sha2-256
+2020-07-13 17:57:01,608 p=5187 u=root n=paramiko.transport | Compression agreed: none
+2020-07-13 17:57:01,608 p=5180 u=root n=paramiko.transport | Got server p (2048 bits)
+2020-07-13 17:57:01,631 p=5179 u=root n=paramiko.transport | kex engine KexGexSHA256 specified hash_algo <built-in function openssl_sha256>
+2020-07-13 17:57:01,632 p=5179 u=root n=paramiko.transport | Switch to new keys ...
+2020-07-13 17:57:01,635 p=5179 u=root n=paramiko.transport | Trying discovered key 34865c0c941133d046e30121a4991953 in /root/.ssh/id_rsa
+2020-07-13 17:57:01,636 p=5186 u=root n=paramiko.transport | Got server p (2048 bits)
+2020-07-13 17:57:01,638 p=5182 u=root n=paramiko.transport | Got server p (2048 bits)
+2020-07-13 17:57:01,654 p=5187 u=root n=paramiko.transport | Got server p (2048 bits)
+2020-07-13 17:57:01,680 p=5179 u=root n=paramiko.transport | userauth is OK
+2020-07-13 17:57:01,686 p=5179 u=root n=paramiko.transport | Authentication (publickey) successful!
+2020-07-13 17:57:01,704 p=5179 u=root n=paramiko.transport | [chan 0] Max packet in: 32768 bytes
+2020-07-13 17:57:01,722 p=5180 u=root n=paramiko.transport | kex engine KexGexSHA256 specified hash_algo <built-in function openssl_sha256>
+2020-07-13 17:57:01,723 p=5180 u=root n=paramiko.transport | Switch to new keys ...
+2020-07-13 17:57:01,730 p=5180 u=root n=paramiko.transport | Trying discovered key 34865c0c941133d046e30121a4991953 in /root/.ssh/id_rsa
+2020-07-13 17:57:01,739 p=5186 u=root n=paramiko.transport | kex engine KexGexSHA256 specified hash_algo <built-in function openssl_sha256>
+2020-07-13 17:57:01,740 p=5186 u=root n=paramiko.transport | Switch to new keys ...
+2020-07-13 17:57:01,743 p=5186 u=root n=paramiko.transport | Trying discovered key 34865c0c941133d046e30121a4991953 in /root/.ssh/id_rsa
+2020-07-13 17:57:01,750 p=5182 u=root n=paramiko.transport | kex engine KexGexSHA256 specified hash_algo <built-in function openssl_sha256>
+2020-07-13 17:57:01,751 p=5182 u=root n=paramiko.transport | Switch to new keys ...
+2020-07-13 17:57:01,753 p=5182 u=root n=paramiko.transport | Trying discovered key 34865c0c941133d046e30121a4991953 in /root/.ssh/id_rsa
+2020-07-13 17:57:01,764 p=5187 u=root n=paramiko.transport | kex engine KexGexSHA256 specified hash_algo <built-in function openssl_sha256>
+2020-07-13 17:57:01,764 p=5180 u=root n=paramiko.transport | userauth is OK
+2020-07-13 17:57:01,765 p=5187 u=root n=paramiko.transport | Switch to new keys ...
+2020-07-13 17:57:01,767 p=5187 u=root n=paramiko.transport | Trying discovered key 34865c0c941133d046e30121a4991953 in /root/.ssh/id_rsa
+2020-07-13 17:57:01,770 p=5180 u=root n=paramiko.transport | Authentication (publickey) successful!
+2020-07-13 17:57:01,780 p=5186 u=root n=paramiko.transport | userauth is OK
+2020-07-13 17:57:01,792 p=5186 u=root n=paramiko.transport | Authentication (publickey) successful!
+2020-07-13 17:57:01,795 p=5182 u=root n=paramiko.transport | userauth is OK
+2020-07-13 17:57:01,797 p=5180 u=root n=paramiko.transport | [chan 0] Max packet in: 32768 bytes
+2020-07-13 17:57:01,800 p=5182 u=root n=paramiko.transport | Authentication (publickey) successful!
+2020-07-13 17:57:01,808 p=5186 u=root n=paramiko.transport | [chan 0] Max packet in: 32768 bytes
+2020-07-13 17:57:01,811 p=5187 u=root n=paramiko.transport | userauth is OK
+2020-07-13 17:57:01,817 p=5187 u=root n=paramiko.transport | Authentication (publickey) successful!
+2020-07-13 17:57:01,818 p=5182 u=root n=paramiko.transport | [chan 0] Max packet in: 32768 bytes
+2020-07-13 17:57:01,834 p=5187 u=root n=paramiko.transport | [chan 0] Max packet in: 32768 bytes
+2020-07-13 17:57:02,511 p=5179 u=root n=paramiko.transport | Received global request "hostkeys-00@openssh.com"
+2020-07-13 17:57:02,512 p=5179 u=root n=paramiko.transport | Rejecting "hostkeys-00@openssh.com" global request from server.
+2020-07-13 17:57:02,555 p=5179 u=root n=paramiko.transport | [chan 0] Max packet out: 32768 bytes
+2020-07-13 17:57:02,555 p=5179 u=root n=paramiko.transport | Secsh channel 0 opened.
+2020-07-13 17:57:02,574 p=5179 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:57:02,575 p=5179 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:57:02,855 p=5179 u=root n=paramiko.transport | [chan 0] EOF received (0)
+2020-07-13 17:57:02,856 p=5179 u=root n=paramiko.transport | [chan 0] EOF sent (0)
+2020-07-13 17:57:02,957 p=5179 u=root n=paramiko.transport | EOF in transport thread
+2020-07-13 17:57:02,980 p=4211 u=root n=ansible | TASK [bootstrap-os : Restart systemd-resolved service] *****************************************************************
+2020-07-13 17:57:02,980 p=4211 u=root n=ansible | changed: [master-1]
+2020-07-13 17:57:03,011 p=5294 u=root n=paramiko.transport | starting thread (client mode): 0xbc945110L
+2020-07-13 17:57:03,012 p=5294 u=root n=paramiko.transport | Local version/idstring: SSH-2.0-paramiko_2.0.0
+2020-07-13 17:57:03,016 p=5294 u=root n=paramiko.transport | Remote version/idstring: SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.3
+2020-07-13 17:57:03,017 p=5294 u=root n=paramiko.transport | Connected (version 2.0, client OpenSSH_7.6p1)
+2020-07-13 17:57:03,018 p=5294 u=root n=paramiko.transport | kex algos:[u'curve25519-sha256', u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group16-sha512', u'diffie-hellman-group18-sha512', u'diffie-hellman-group14-sha256', u'diffie-hellman-group14-sha1'] server key:[u'ssh-rsa', u'rsa-sha2-512', u'rsa-sha2-256', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] server encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] client mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] server mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2020-07-13 17:57:03,019 p=5294 u=root n=paramiko.transport | Kex agreed: diffie-hellman-group-exchange-sha256
+2020-07-13 17:57:03,019 p=5294 u=root n=paramiko.transport | Cipher agreed: aes128-ctr
+2020-07-13 17:57:03,019 p=5294 u=root n=paramiko.transport | MAC agreed: hmac-sha2-256
+2020-07-13 17:57:03,019 p=5294 u=root n=paramiko.transport | Compression agreed: none
+2020-07-13 17:57:03,066 p=5294 u=root n=paramiko.transport | Got server p (2048 bits)
+2020-07-13 17:57:03,125 p=5294 u=root n=paramiko.transport | kex engine KexGexSHA256 specified hash_algo <built-in function openssl_sha256>
+2020-07-13 17:57:03,126 p=5294 u=root n=paramiko.transport | Switch to new keys ...
+2020-07-13 17:57:03,139 p=5294 u=root n=paramiko.transport | Trying discovered key 34865c0c941133d046e30121a4991953 in /root/.ssh/id_rsa
+2020-07-13 17:57:03,172 p=5294 u=root n=paramiko.transport | userauth is OK
+2020-07-13 17:57:03,178 p=5294 u=root n=paramiko.transport | Authentication (publickey) successful!
+2020-07-13 17:57:03,205 p=5294 u=root n=paramiko.transport | [chan 0] Max packet in: 32768 bytes
+2020-07-13 17:57:03,229 p=5180 u=root n=paramiko.transport | Received global request "hostkeys-00@openssh.com"
+2020-07-13 17:57:03,229 p=5180 u=root n=paramiko.transport | Rejecting "hostkeys-00@openssh.com" global request from server.
+2020-07-13 17:57:03,238 p=5182 u=root n=paramiko.transport | Received global request "hostkeys-00@openssh.com"
+2020-07-13 17:57:03,238 p=5182 u=root n=paramiko.transport | Rejecting "hostkeys-00@openssh.com" global request from server.
+2020-07-13 17:57:03,242 p=5186 u=root n=paramiko.transport | Received global request "hostkeys-00@openssh.com"
+2020-07-13 17:57:03,242 p=5186 u=root n=paramiko.transport | Rejecting "hostkeys-00@openssh.com" global request from server.
+2020-07-13 17:57:03,249 p=5187 u=root n=paramiko.transport | Received global request "hostkeys-00@openssh.com"
+2020-07-13 17:57:03,249 p=5187 u=root n=paramiko.transport | Rejecting "hostkeys-00@openssh.com" global request from server.
+2020-07-13 17:57:03,272 p=5180 u=root n=paramiko.transport | [chan 0] Max packet out: 32768 bytes
+2020-07-13 17:57:03,272 p=5180 u=root n=paramiko.transport | Secsh channel 0 opened.
+2020-07-13 17:57:03,280 p=5182 u=root n=paramiko.transport | [chan 0] Max packet out: 32768 bytes
+2020-07-13 17:57:03,280 p=5182 u=root n=paramiko.transport | Secsh channel 0 opened.
+2020-07-13 17:57:03,284 p=5186 u=root n=paramiko.transport | [chan 0] Max packet out: 32768 bytes
+2020-07-13 17:57:03,284 p=5186 u=root n=paramiko.transport | Secsh channel 0 opened.
+2020-07-13 17:57:03,292 p=5187 u=root n=paramiko.transport | [chan 0] Max packet out: 32768 bytes
+2020-07-13 17:57:03,292 p=5187 u=root n=paramiko.transport | Secsh channel 0 opened.
+2020-07-13 17:57:03,295 p=5180 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:57:03,295 p=5187 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:57:03,297 p=5180 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:57:03,297 p=5187 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:57:03,298 p=5182 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:57:03,299 p=5182 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:57:03,301 p=5186 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:57:03,302 p=5186 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:57:03,461 p=5180 u=root n=paramiko.transport | [chan 0] EOF received (0)
+2020-07-13 17:57:03,464 p=5186 u=root n=paramiko.transport | [chan 0] EOF received (0)
+2020-07-13 17:57:03,466 p=5186 u=root n=paramiko.transport | [chan 0] EOF sent (0)
+2020-07-13 17:57:03,470 p=4211 u=root n=ansible | changed: [master-2]
+2020-07-13 17:57:03,471 p=5187 u=root n=paramiko.transport | [chan 0] EOF received (0)
+2020-07-13 17:57:03,473 p=5187 u=root n=paramiko.transport | EOF in transport thread
+2020-07-13 17:57:03,475 p=5182 u=root n=paramiko.transport | [chan 0] EOF received (0)
+2020-07-13 17:57:03,481 p=4211 u=root n=ansible | changed: [node2]
+2020-07-13 17:57:03,484 p=4211 u=root n=ansible | changed: [master-3]
+2020-07-13 17:57:03,567 p=5186 u=root n=paramiko.transport | EOF in transport thread
+2020-07-13 17:57:03,588 p=4211 u=root n=ansible | changed: [node1]
+2020-07-13 17:57:03,940 p=5294 u=root n=paramiko.transport | Received global request "hostkeys-00@openssh.com"
+2020-07-13 17:57:03,940 p=5294 u=root n=paramiko.transport | Rejecting "hostkeys-00@openssh.com" global request from server.
+2020-07-13 17:57:03,988 p=5294 u=root n=paramiko.transport | [chan 0] Max packet out: 32768 bytes
+2020-07-13 17:57:03,988 p=5294 u=root n=paramiko.transport | Secsh channel 0 opened.
+2020-07-13 17:57:04,023 p=5294 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:57:04,023 p=5294 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:57:04,285 p=5294 u=root n=paramiko.transport | [chan 0] EOF received (0)
+2020-07-13 17:57:04,285 p=5294 u=root n=paramiko.transport | [chan 0] EOF sent (0)
+2020-07-13 17:57:04,404 p=5294 u=root n=paramiko.transport | EOF in transport thread
+2020-07-13 17:57:04,415 p=4211 u=root n=ansible | changed: [ingress1]
+2020-07-13 17:57:04,422 p=4211 u=root n=ansible | Monday 13 July 2020  17:57:04 +0000 (0:00:02.953)       0:00:16.138 *********** 
+2020-07-13 17:57:04,540 p=4211 u=root n=ansible | Monday 13 July 2020  17:57:04 +0000 (0:00:00.117)       0:00:16.256 *********** 
+2020-07-13 17:57:04,573 p=5417 u=root n=paramiko.transport | starting thread (client mode): 0xbc9292d0L
+2020-07-13 17:57:04,573 p=5417 u=root n=paramiko.transport | Local version/idstring: SSH-2.0-paramiko_2.0.0
+2020-07-13 17:57:04,573 p=5417 u=root n=paramiko.transport | Remote version/idstring: SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.3
+2020-07-13 17:57:04,573 p=5417 u=root n=paramiko.transport | Connected (version 2.0, client OpenSSH_7.6p1)
+2020-07-13 17:57:04,574 p=5417 u=root n=paramiko.transport | kex algos:[u'curve25519-sha256', u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group16-sha512', u'diffie-hellman-group18-sha512', u'diffie-hellman-group14-sha256', u'diffie-hellman-group14-sha1'] server key:[u'ssh-rsa', u'rsa-sha2-512', u'rsa-sha2-256', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] server encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] client mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] server mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2020-07-13 17:57:04,574 p=5417 u=root n=paramiko.transport | Kex agreed: diffie-hellman-group-exchange-sha256
+2020-07-13 17:57:04,574 p=5417 u=root n=paramiko.transport | Cipher agreed: aes128-ctr
+2020-07-13 17:57:04,574 p=5417 u=root n=paramiko.transport | MAC agreed: hmac-sha2-256
+2020-07-13 17:57:04,574 p=5417 u=root n=paramiko.transport | Compression agreed: none
+2020-07-13 17:57:04,612 p=5420 u=root n=paramiko.transport | starting thread (client mode): 0xbc929250L
+2020-07-13 17:57:04,612 p=5420 u=root n=paramiko.transport | Local version/idstring: SSH-2.0-paramiko_2.0.0
+2020-07-13 17:57:04,612 p=5420 u=root n=paramiko.transport | Remote version/idstring: SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.3
+2020-07-13 17:57:04,612 p=5420 u=root n=paramiko.transport | Connected (version 2.0, client OpenSSH_7.6p1)
+2020-07-13 17:57:04,614 p=5418 u=root n=paramiko.transport | starting thread (client mode): 0xbc929250L
+2020-07-13 17:57:04,614 p=5418 u=root n=paramiko.transport | Local version/idstring: SSH-2.0-paramiko_2.0.0
+2020-07-13 17:57:04,614 p=5418 u=root n=paramiko.transport | Remote version/idstring: SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.3
+2020-07-13 17:57:04,614 p=5418 u=root n=paramiko.transport | Connected (version 2.0, client OpenSSH_7.6p1)
+2020-07-13 17:57:04,619 p=5418 u=root n=paramiko.transport | kex algos:[u'curve25519-sha256', u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group16-sha512', u'diffie-hellman-group18-sha512', u'diffie-hellman-group14-sha256', u'diffie-hellman-group14-sha1'] server key:[u'ssh-rsa', u'rsa-sha2-512', u'rsa-sha2-256', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] server encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] client mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] server mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2020-07-13 17:57:04,619 p=5418 u=root n=paramiko.transport | Kex agreed: diffie-hellman-group-exchange-sha256
+2020-07-13 17:57:04,619 p=5418 u=root n=paramiko.transport | Cipher agreed: aes128-ctr
+2020-07-13 17:57:04,619 p=5418 u=root n=paramiko.transport | MAC agreed: hmac-sha2-256
+2020-07-13 17:57:04,619 p=5418 u=root n=paramiko.transport | Compression agreed: none
+2020-07-13 17:57:04,620 p=5417 u=root n=paramiko.transport | Got server p (2048 bits)
+2020-07-13 17:57:04,627 p=5418 u=root n=paramiko.transport | Got server p (2048 bits)
+2020-07-13 17:57:04,632 p=5420 u=root n=paramiko.transport | kex algos:[u'curve25519-sha256', u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group16-sha512', u'diffie-hellman-group18-sha512', u'diffie-hellman-group14-sha256', u'diffie-hellman-group14-sha1'] server key:[u'ssh-rsa', u'rsa-sha2-512', u'rsa-sha2-256', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] server encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] client mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] server mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2020-07-13 17:57:04,632 p=5420 u=root n=paramiko.transport | Kex agreed: diffie-hellman-group-exchange-sha256
+2020-07-13 17:57:04,633 p=5420 u=root n=paramiko.transport | Cipher agreed: aes128-ctr
+2020-07-13 17:57:04,633 p=5420 u=root n=paramiko.transport | MAC agreed: hmac-sha2-256
+2020-07-13 17:57:04,633 p=5420 u=root n=paramiko.transport | Compression agreed: none
+2020-07-13 17:57:04,646 p=5426 u=root n=paramiko.transport | starting thread (client mode): 0xbc929090L
+2020-07-13 17:57:04,646 p=5426 u=root n=paramiko.transport | Local version/idstring: SSH-2.0-paramiko_2.0.0
+2020-07-13 17:57:04,656 p=5426 u=root n=paramiko.transport | Remote version/idstring: SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.3
+2020-07-13 17:57:04,656 p=5426 u=root n=paramiko.transport | Connected (version 2.0, client OpenSSH_7.6p1)
+2020-07-13 17:57:04,657 p=5426 u=root n=paramiko.transport | kex algos:[u'curve25519-sha256', u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group16-sha512', u'diffie-hellman-group18-sha512', u'diffie-hellman-group14-sha256', u'diffie-hellman-group14-sha1'] server key:[u'ssh-rsa', u'rsa-sha2-512', u'rsa-sha2-256', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] server encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] client mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] server mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2020-07-13 17:57:04,657 p=5426 u=root n=paramiko.transport | Kex agreed: diffie-hellman-group-exchange-sha256
+2020-07-13 17:57:04,657 p=5426 u=root n=paramiko.transport | Cipher agreed: aes128-ctr
+2020-07-13 17:57:04,657 p=5426 u=root n=paramiko.transport | MAC agreed: hmac-sha2-256
+2020-07-13 17:57:04,657 p=5426 u=root n=paramiko.transport | Compression agreed: none
+2020-07-13 17:57:04,658 p=5424 u=root n=paramiko.transport | starting thread (client mode): 0xbc929250L
+2020-07-13 17:57:04,659 p=5424 u=root n=paramiko.transport | Local version/idstring: SSH-2.0-paramiko_2.0.0
+2020-07-13 17:57:04,662 p=5424 u=root n=paramiko.transport | Remote version/idstring: SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.3
+2020-07-13 17:57:04,662 p=5424 u=root n=paramiko.transport | Connected (version 2.0, client OpenSSH_7.6p1)
+2020-07-13 17:57:04,663 p=5424 u=root n=paramiko.transport | kex algos:[u'curve25519-sha256', u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group16-sha512', u'diffie-hellman-group18-sha512', u'diffie-hellman-group14-sha256', u'diffie-hellman-group14-sha1'] server key:[u'ssh-rsa', u'rsa-sha2-512', u'rsa-sha2-256', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] server encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] client mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] server mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2020-07-13 17:57:04,663 p=5424 u=root n=paramiko.transport | Kex agreed: diffie-hellman-group-exchange-sha256
+2020-07-13 17:57:04,663 p=5424 u=root n=paramiko.transport | Cipher agreed: aes128-ctr
+2020-07-13 17:57:04,664 p=5424 u=root n=paramiko.transport | MAC agreed: hmac-sha2-256
+2020-07-13 17:57:04,664 p=5424 u=root n=paramiko.transport | Compression agreed: none
+2020-07-13 17:57:04,681 p=5420 u=root n=paramiko.transport | Got server p (2048 bits)
+2020-07-13 17:57:04,702 p=5426 u=root n=paramiko.transport | Got server p (2048 bits)
+2020-07-13 17:57:04,708 p=5424 u=root n=paramiko.transport | Got server p (2048 bits)
+2020-07-13 17:57:04,719 p=5417 u=root n=paramiko.transport | kex engine KexGexSHA256 specified hash_algo <built-in function openssl_sha256>
+2020-07-13 17:57:04,720 p=5417 u=root n=paramiko.transport | Switch to new keys ...
+2020-07-13 17:57:04,737 p=5417 u=root n=paramiko.transport | Trying discovered key 34865c0c941133d046e30121a4991953 in /root/.ssh/id_rsa
+2020-07-13 17:57:04,755 p=5417 u=root n=paramiko.transport | userauth is OK
+2020-07-13 17:57:04,761 p=5418 u=root n=paramiko.transport | kex engine KexGexSHA256 specified hash_algo <built-in function openssl_sha256>
+2020-07-13 17:57:04,761 p=5417 u=root n=paramiko.transport | Authentication (publickey) successful!
+2020-07-13 17:57:04,764 p=5418 u=root n=paramiko.transport | Switch to new keys ...
+2020-07-13 17:57:04,772 p=5417 u=root n=paramiko.transport | [chan 0] Max packet in: 32768 bytes
+2020-07-13 17:57:04,775 p=5418 u=root n=paramiko.transport | Trying discovered key 34865c0c941133d046e30121a4991953 in /root/.ssh/id_rsa
+2020-07-13 17:57:04,797 p=5418 u=root n=paramiko.transport | userauth is OK
+2020-07-13 17:57:04,803 p=5418 u=root n=paramiko.transport | Authentication (publickey) successful!
+2020-07-13 17:57:04,810 p=5418 u=root n=paramiko.transport | [chan 0] Max packet in: 32768 bytes
+2020-07-13 17:57:04,841 p=5420 u=root n=paramiko.transport | kex engine KexGexSHA256 specified hash_algo <built-in function openssl_sha256>
+2020-07-13 17:57:04,844 p=5420 u=root n=paramiko.transport | Switch to new keys ...
+2020-07-13 17:57:04,849 p=5420 u=root n=paramiko.transport | Trying discovered key 34865c0c941133d046e30121a4991953 in /root/.ssh/id_rsa
+2020-07-13 17:57:04,861 p=5426 u=root n=paramiko.transport | kex engine KexGexSHA256 specified hash_algo <built-in function openssl_sha256>
+2020-07-13 17:57:04,863 p=5424 u=root n=paramiko.transport | kex engine KexGexSHA256 specified hash_algo <built-in function openssl_sha256>
+2020-07-13 17:57:04,864 p=5426 u=root n=paramiko.transport | Switch to new keys ...
+2020-07-13 17:57:04,866 p=5424 u=root n=paramiko.transport | Switch to new keys ...
+2020-07-13 17:57:04,869 p=5424 u=root n=paramiko.transport | Trying discovered key 34865c0c941133d046e30121a4991953 in /root/.ssh/id_rsa
+2020-07-13 17:57:04,870 p=5426 u=root n=paramiko.transport | Trying discovered key 34865c0c941133d046e30121a4991953 in /root/.ssh/id_rsa
+2020-07-13 17:57:04,884 p=5420 u=root n=paramiko.transport | userauth is OK
+2020-07-13 17:57:04,889 p=5420 u=root n=paramiko.transport | Authentication (publickey) successful!
+2020-07-13 17:57:04,903 p=5426 u=root n=paramiko.transport | userauth is OK
+2020-07-13 17:57:04,905 p=5424 u=root n=paramiko.transport | userauth is OK
+2020-07-13 17:57:04,913 p=5426 u=root n=paramiko.transport | Authentication (publickey) successful!
+2020-07-13 17:57:04,913 p=5424 u=root n=paramiko.transport | Authentication (publickey) successful!
+2020-07-13 17:57:04,915 p=5420 u=root n=paramiko.transport | [chan 0] Max packet in: 32768 bytes
+2020-07-13 17:57:04,935 p=5424 u=root n=paramiko.transport | [chan 0] Max packet in: 32768 bytes
+2020-07-13 17:57:04,937 p=5426 u=root n=paramiko.transport | [chan 0] Max packet in: 32768 bytes
+2020-07-13 17:57:05,520 p=5417 u=root n=paramiko.transport | Received global request "hostkeys-00@openssh.com"
+2020-07-13 17:57:05,520 p=5417 u=root n=paramiko.transport | Rejecting "hostkeys-00@openssh.com" global request from server.
+2020-07-13 17:57:05,564 p=5417 u=root n=paramiko.transport | [chan 0] Max packet out: 32768 bytes
+2020-07-13 17:57:05,564 p=5417 u=root n=paramiko.transport | Secsh channel 0 opened.
+2020-07-13 17:57:05,584 p=5417 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:57:05,592 p=5417 u=root n=paramiko.transport | [chan 0] EOF received (0)
+2020-07-13 17:57:05,593 p=5417 u=root n=paramiko.transport | [chan 1] Max packet in: 32768 bytes
+2020-07-13 17:57:05,594 p=5417 u=root n=paramiko.transport | [chan 0] EOF sent (0)
+2020-07-13 17:57:05,594 p=5417 u=root n=paramiko.transport | [chan 1] Max packet out: 32768 bytes
+2020-07-13 17:57:05,595 p=5417 u=root n=paramiko.transport | Secsh channel 1 opened.
+2020-07-13 17:57:05,643 p=5417 u=root n=paramiko.transport | [chan 1] Sesch channel 1 request ok
+2020-07-13 17:57:05,652 p=5417 u=root n=paramiko.transport | [chan 1] EOF received (1)
+2020-07-13 17:57:05,653 p=5417 u=root n=paramiko.transport | [chan 1] EOF sent (1)
+2020-07-13 17:57:06,070 p=5417 u=root n=paramiko.transport | [chan 2] Max packet in: 32768 bytes
+2020-07-13 17:57:06,070 p=5417 u=root n=paramiko.transport | [chan 2] Max packet out: 32768 bytes
+2020-07-13 17:57:06,070 p=5417 u=root n=paramiko.transport | Secsh channel 2 opened.
+2020-07-13 17:57:06,071 p=5417 u=root n=paramiko.transport | [chan 2] Sesch channel 2 request ok
+2020-07-13 17:57:06,077 p=5417 u=root n=paramiko.transport | [chan 2] EOF received (2)
+2020-07-13 17:57:06,077 p=5417 u=root n=paramiko.transport | [chan 2] EOF sent (2)
+2020-07-13 17:57:06,083 p=5417 u=root n=paramiko.transport | [chan 3] Max packet in: 32768 bytes
+2020-07-13 17:57:06,119 p=5417 u=root n=paramiko.transport | [chan 3] Max packet out: 32768 bytes
+2020-07-13 17:57:06,120 p=5417 u=root n=paramiko.transport | Secsh channel 3 opened.
+2020-07-13 17:57:06,177 p=5418 u=root n=paramiko.transport | Received global request "hostkeys-00@openssh.com"
+2020-07-13 17:57:06,178 p=5418 u=root n=paramiko.transport | Rejecting "hostkeys-00@openssh.com" global request from server.
+2020-07-13 17:57:06,191 p=5417 u=root n=paramiko.transport | [chan 3] Sesch channel 3 request ok
+2020-07-13 17:57:06,204 p=5417 u=root n=paramiko.transport.sftp | [chan 3] Opened sftp connection (server version 3)
+2020-07-13 17:57:06,204 p=5417 u=root n=paramiko.transport.sftp | [chan 3] open('/home/kurkin/.ansible/tmp/ansible-tmp-1594663024.57-48074905736588/AnsiballZ_apt.py', 'wb')
+2020-07-13 17:57:06,205 p=5417 u=root n=paramiko.transport.sftp | [chan 3] open('/home/kurkin/.ansible/tmp/ansible-tmp-1594663024.57-48074905736588/AnsiballZ_apt.py', 'wb') -> 00000000
+2020-07-13 17:57:06,208 p=5417 u=root n=paramiko.transport.sftp | [chan 3] close(00000000)
+2020-07-13 17:57:06,209 p=5417 u=root n=paramiko.transport.sftp | [chan 3] stat('/home/kurkin/.ansible/tmp/ansible-tmp-1594663024.57-48074905736588/AnsiballZ_apt.py')
+2020-07-13 17:57:06,210 p=5417 u=root n=paramiko.transport | [chan 4] Max packet in: 32768 bytes
+2020-07-13 17:57:06,211 p=5417 u=root n=paramiko.transport | [chan 4] Max packet out: 32768 bytes
+2020-07-13 17:57:06,211 p=5417 u=root n=paramiko.transport | Secsh channel 4 opened.
+2020-07-13 17:57:06,213 p=5417 u=root n=paramiko.transport | [chan 4] Sesch channel 4 request ok
+2020-07-13 17:57:06,219 p=5417 u=root n=paramiko.transport | [chan 4] EOF received (4)
+2020-07-13 17:57:06,220 p=5418 u=root n=paramiko.transport | [chan 0] Max packet out: 32768 bytes
+2020-07-13 17:57:06,220 p=5417 u=root n=paramiko.transport | [chan 4] EOF sent (4)
+2020-07-13 17:57:06,220 p=5418 u=root n=paramiko.transport | Secsh channel 0 opened.
+2020-07-13 17:57:06,221 p=5417 u=root n=paramiko.transport | [chan 5] Max packet in: 32768 bytes
+2020-07-13 17:57:06,221 p=5418 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:57:06,251 p=5424 u=root n=paramiko.transport | Received global request "hostkeys-00@openssh.com"
+2020-07-13 17:57:06,251 p=5424 u=root n=paramiko.transport | Rejecting "hostkeys-00@openssh.com" global request from server.
+2020-07-13 17:57:06,264 p=5417 u=root n=paramiko.transport | [chan 5] Max packet out: 32768 bytes
+2020-07-13 17:57:06,264 p=5417 u=root n=paramiko.transport | Secsh channel 5 opened.
+2020-07-13 17:57:06,275 p=5418 u=root n=paramiko.transport | [chan 0] EOF received (0)
+2020-07-13 17:57:06,276 p=5418 u=root n=paramiko.transport | [chan 0] EOF sent (0)
+2020-07-13 17:57:06,276 p=5418 u=root n=paramiko.transport | [chan 1] Max packet in: 32768 bytes
+2020-07-13 17:57:06,290 p=5417 u=root n=paramiko.transport | [chan 5] Sesch channel 5 request ok
+2020-07-13 17:57:06,291 p=5417 u=root n=paramiko.transport | [chan 5] Sesch channel 5 request ok
+2020-07-13 17:57:06,292 p=5424 u=root n=paramiko.transport | [chan 0] Max packet out: 32768 bytes
+2020-07-13 17:57:06,292 p=5424 u=root n=paramiko.transport | Secsh channel 0 opened.
+2020-07-13 17:57:06,316 p=5424 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:57:06,317 p=5418 u=root n=paramiko.transport | [chan 1] Max packet out: 32768 bytes
+2020-07-13 17:57:06,317 p=5418 u=root n=paramiko.transport | Secsh channel 1 opened.
+2020-07-13 17:57:06,323 p=5424 u=root n=paramiko.transport | [chan 0] EOF received (0)
+2020-07-13 17:57:06,323 p=5424 u=root n=paramiko.transport | [chan 0] EOF sent (0)
+2020-07-13 17:57:06,324 p=5424 u=root n=paramiko.transport | [chan 1] Max packet in: 32768 bytes
+2020-07-13 17:57:06,345 p=5418 u=root n=paramiko.transport | [chan 1] Sesch channel 1 request ok
+2020-07-13 17:57:06,351 p=5418 u=root n=paramiko.transport | [chan 1] EOF received (1)
+2020-07-13 17:57:06,352 p=5418 u=root n=paramiko.transport | [chan 1] EOF sent (1)
+2020-07-13 17:57:06,354 p=5418 u=root n=paramiko.transport | [chan 2] Max packet in: 32768 bytes
+2020-07-13 17:57:06,357 p=5420 u=root n=paramiko.transport | Received global request "hostkeys-00@openssh.com"
+2020-07-13 17:57:06,358 p=5420 u=root n=paramiko.transport | Rejecting "hostkeys-00@openssh.com" global request from server.
+2020-07-13 17:57:06,365 p=5424 u=root n=paramiko.transport | [chan 1] Max packet out: 32768 bytes
+2020-07-13 17:57:06,365 p=5424 u=root n=paramiko.transport | Secsh channel 1 opened.
+2020-07-13 17:57:06,369 p=5426 u=root n=paramiko.transport | Received global request "hostkeys-00@openssh.com"
+2020-07-13 17:57:06,370 p=5426 u=root n=paramiko.transport | Rejecting "hostkeys-00@openssh.com" global request from server.
+2020-07-13 17:57:06,390 p=5424 u=root n=paramiko.transport | [chan 1] Sesch channel 1 request ok
+2020-07-13 17:57:06,393 p=5418 u=root n=paramiko.transport | [chan 2] Max packet out: 32768 bytes
+2020-07-13 17:57:06,393 p=5418 u=root n=paramiko.transport | Secsh channel 2 opened.
+2020-07-13 17:57:06,394 p=5424 u=root n=paramiko.transport | [chan 1] EOF received (1)
+2020-07-13 17:57:06,395 p=5424 u=root n=paramiko.transport | [chan 1] EOF sent (1)
+2020-07-13 17:57:06,397 p=5424 u=root n=paramiko.transport | [chan 2] Max packet in: 32768 bytes
+2020-07-13 17:57:06,404 p=5420 u=root n=paramiko.transport | [chan 0] Max packet out: 32768 bytes
+2020-07-13 17:57:06,404 p=5420 u=root n=paramiko.transport | Secsh channel 0 opened.
+2020-07-13 17:57:06,416 p=5426 u=root n=paramiko.transport | [chan 0] Max packet out: 32768 bytes
+2020-07-13 17:57:06,416 p=5426 u=root n=paramiko.transport | Secsh channel 0 opened.
+2020-07-13 17:57:06,424 p=5418 u=root n=paramiko.transport | [chan 2] Sesch channel 2 request ok
+2020-07-13 17:57:06,424 p=5426 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:57:06,426 p=5420 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:57:06,428 p=5418 u=root n=paramiko.transport | [chan 2] EOF received (2)
+2020-07-13 17:57:06,429 p=5418 u=root n=paramiko.transport | [chan 2] EOF sent (2)
+2020-07-13 17:57:06,434 p=5418 u=root n=paramiko.transport | [chan 3] Max packet in: 32768 bytes
+2020-07-13 17:57:06,437 p=5424 u=root n=paramiko.transport | [chan 2] Max packet out: 32768 bytes
+2020-07-13 17:57:06,437 p=5424 u=root n=paramiko.transport | Secsh channel 2 opened.
+2020-07-13 17:57:06,452 p=5426 u=root n=paramiko.transport | [chan 0] EOF received (0)
+2020-07-13 17:57:06,452 p=5420 u=root n=paramiko.transport | [chan 0] EOF received (0)
+2020-07-13 17:57:06,452 p=5426 u=root n=paramiko.transport | [chan 0] EOF sent (0)
+2020-07-13 17:57:06,452 p=5420 u=root n=paramiko.transport | [chan 0] EOF sent (0)
+2020-07-13 17:57:06,453 p=5426 u=root n=paramiko.transport | [chan 1] Max packet in: 32768 bytes
+2020-07-13 17:57:06,453 p=5420 u=root n=paramiko.transport | [chan 1] Max packet in: 32768 bytes
+2020-07-13 17:57:06,464 p=5424 u=root n=paramiko.transport | [chan 2] Sesch channel 2 request ok
+2020-07-13 17:57:06,468 p=5424 u=root n=paramiko.transport | [chan 2] EOF received (2)
+2020-07-13 17:57:06,468 p=5424 u=root n=paramiko.transport | [chan 2] EOF sent (2)
+2020-07-13 17:57:06,475 p=5418 u=root n=paramiko.transport | [chan 3] Max packet out: 32768 bytes
+2020-07-13 17:57:06,476 p=5418 u=root n=paramiko.transport | Secsh channel 3 opened.
+2020-07-13 17:57:06,477 p=5424 u=root n=paramiko.transport | [chan 3] Max packet in: 32768 bytes
+2020-07-13 17:57:06,496 p=5426 u=root n=paramiko.transport | [chan 1] Max packet out: 32768 bytes
+2020-07-13 17:57:06,496 p=5420 u=root n=paramiko.transport | [chan 1] Max packet out: 32768 bytes
+2020-07-13 17:57:06,496 p=5426 u=root n=paramiko.transport | Secsh channel 1 opened.
+2020-07-13 17:57:06,496 p=5420 u=root n=paramiko.transport | Secsh channel 1 opened.
+2020-07-13 17:57:06,514 p=5424 u=root n=paramiko.transport | [chan 3] Max packet out: 32768 bytes
+2020-07-13 17:57:06,514 p=5424 u=root n=paramiko.transport | Secsh channel 3 opened.
+2020-07-13 17:57:06,516 p=5418 u=root n=paramiko.transport | [chan 3] Sesch channel 3 request ok
+2020-07-13 17:57:06,529 p=5426 u=root n=paramiko.transport | [chan 1] Sesch channel 1 request ok
+2020-07-13 17:57:06,530 p=5420 u=root n=paramiko.transport | [chan 1] Sesch channel 1 request ok
+2020-07-13 17:57:06,537 p=5426 u=root n=paramiko.transport | [chan 1] EOF received (1)
+2020-07-13 17:57:06,538 p=5420 u=root n=paramiko.transport | [chan 1] EOF received (1)
+2020-07-13 17:57:06,538 p=5426 u=root n=paramiko.transport | [chan 1] EOF sent (1)
+2020-07-13 17:57:06,538 p=5420 u=root n=paramiko.transport | [chan 1] EOF sent (1)
+2020-07-13 17:57:06,546 p=5426 u=root n=paramiko.transport | [chan 2] Max packet in: 32768 bytes
+2020-07-13 17:57:06,547 p=5418 u=root n=paramiko.transport.sftp | [chan 3] Opened sftp connection (server version 3)
+2020-07-13 17:57:06,547 p=5418 u=root n=paramiko.transport.sftp | [chan 3] open('/home/kurkin/.ansible/tmp/ansible-tmp-1594663024.6-100817971400747/AnsiballZ_apt.py', 'wb')
+2020-07-13 17:57:06,548 p=5424 u=root n=paramiko.transport | [chan 3] Sesch channel 3 request ok
+2020-07-13 17:57:06,554 p=5418 u=root n=paramiko.transport.sftp | [chan 3] open('/home/kurkin/.ansible/tmp/ansible-tmp-1594663024.6-100817971400747/AnsiballZ_apt.py', 'wb') -> 00000000
+2020-07-13 17:57:06,554 p=5424 u=root n=paramiko.transport.sftp | [chan 3] Opened sftp connection (server version 3)
+2020-07-13 17:57:06,554 p=5424 u=root n=paramiko.transport.sftp | [chan 3] open('/home/kurkin/.ansible/tmp/ansible-tmp-1594663024.66-120435892064775/AnsiballZ_apt.py', 'wb')
+2020-07-13 17:57:06,556 p=5418 u=root n=paramiko.transport.sftp | [chan 3] close(00000000)
+2020-07-13 17:57:06,558 p=5418 u=root n=paramiko.transport.sftp | [chan 3] stat('/home/kurkin/.ansible/tmp/ansible-tmp-1594663024.6-100817971400747/AnsiballZ_apt.py')
+2020-07-13 17:57:06,558 p=5424 u=root n=paramiko.transport.sftp | [chan 3] open('/home/kurkin/.ansible/tmp/ansible-tmp-1594663024.66-120435892064775/AnsiballZ_apt.py', 'wb') -> 00000000
+2020-07-13 17:57:06,559 p=5418 u=root n=paramiko.transport | [chan 4] Max packet in: 32768 bytes
+2020-07-13 17:57:06,561 p=5418 u=root n=paramiko.transport | [chan 4] Max packet out: 32768 bytes
+2020-07-13 17:57:06,561 p=5418 u=root n=paramiko.transport | Secsh channel 4 opened.
+2020-07-13 17:57:06,562 p=5418 u=root n=paramiko.transport | [chan 4] Sesch channel 4 request ok
+2020-07-13 17:57:06,564 p=5420 u=root n=paramiko.transport | [chan 2] Max packet in: 32768 bytes
+2020-07-13 17:57:06,567 p=5418 u=root n=paramiko.transport | [chan 4] EOF received (4)
+2020-07-13 17:57:06,568 p=5418 u=root n=paramiko.transport | [chan 5] Max packet in: 32768 bytes
+2020-07-13 17:57:06,569 p=5418 u=root n=paramiko.transport | [chan 4] EOF sent (4)
+2020-07-13 17:57:06,569 p=5418 u=root n=paramiko.transport | [chan 5] Max packet out: 32768 bytes
+2020-07-13 17:57:06,569 p=5418 u=root n=paramiko.transport | Secsh channel 5 opened.
+2020-07-13 17:57:06,571 p=5424 u=root n=paramiko.transport.sftp | [chan 3] close(00000000)
+2020-07-13 17:57:06,573 p=5424 u=root n=paramiko.transport.sftp | [chan 3] stat('/home/kurkin/.ansible/tmp/ansible-tmp-1594663024.66-120435892064775/AnsiballZ_apt.py')
+2020-07-13 17:57:06,574 p=5424 u=root n=paramiko.transport | [chan 4] Max packet in: 32768 bytes
+2020-07-13 17:57:06,575 p=5424 u=root n=paramiko.transport | [chan 4] Max packet out: 32768 bytes
+2020-07-13 17:57:06,575 p=5424 u=root n=paramiko.transport | Secsh channel 4 opened.
+2020-07-13 17:57:06,577 p=5424 u=root n=paramiko.transport | [chan 4] Sesch channel 4 request ok
+2020-07-13 17:57:06,580 p=5426 u=root n=paramiko.transport | [chan 2] Max packet out: 32768 bytes
+2020-07-13 17:57:06,580 p=5426 u=root n=paramiko.transport | Secsh channel 2 opened.
+2020-07-13 17:57:06,581 p=5424 u=root n=paramiko.transport | [chan 4] EOF received (4)
+2020-07-13 17:57:06,581 p=5424 u=root n=paramiko.transport | [chan 4] EOF sent (4)
+2020-07-13 17:57:06,582 p=5424 u=root n=paramiko.transport | [chan 5] Max packet in: 32768 bytes
+2020-07-13 17:57:06,584 p=5420 u=root n=paramiko.transport | [chan 2] Max packet out: 32768 bytes
+2020-07-13 17:57:06,584 p=5426 u=root n=paramiko.transport | [chan 2] Sesch channel 2 request ok
+2020-07-13 17:57:06,584 p=5420 u=root n=paramiko.transport | Secsh channel 2 opened.
+2020-07-13 17:57:06,592 p=5426 u=root n=paramiko.transport | [chan 2] EOF received (2)
+2020-07-13 17:57:06,594 p=5426 u=root n=paramiko.transport | [chan 2] EOF sent (2)
+2020-07-13 17:57:06,598 p=5420 u=root n=paramiko.transport | [chan 2] Sesch channel 2 request ok
+2020-07-13 17:57:06,605 p=5420 u=root n=paramiko.transport | [chan 2] EOF received (2)
+2020-07-13 17:57:06,605 p=5420 u=root n=paramiko.transport | [chan 2] EOF sent (2)
+2020-07-13 17:57:06,615 p=5426 u=root n=paramiko.transport | [chan 3] Max packet in: 32768 bytes
+2020-07-13 17:57:06,616 p=5418 u=root n=paramiko.transport | [chan 5] Sesch channel 5 request ok
+2020-07-13 17:57:06,617 p=5420 u=root n=paramiko.transport | [chan 3] Max packet in: 32768 bytes
+2020-07-13 17:57:06,617 p=5418 u=root n=paramiko.transport | [chan 5] Sesch channel 5 request ok
+2020-07-13 17:57:06,625 p=5424 u=root n=paramiko.transport | [chan 5] Max packet out: 32768 bytes
+2020-07-13 17:57:06,625 p=5424 u=root n=paramiko.transport | Secsh channel 5 opened.
+2020-07-13 17:57:06,639 p=5426 u=root n=paramiko.transport | [chan 3] Max packet out: 32768 bytes
+2020-07-13 17:57:06,639 p=5426 u=root n=paramiko.transport | Secsh channel 3 opened.
+2020-07-13 17:57:06,647 p=5420 u=root n=paramiko.transport | [chan 3] Max packet out: 32768 bytes
+2020-07-13 17:57:06,647 p=5420 u=root n=paramiko.transport | Secsh channel 3 opened.
+2020-07-13 17:57:06,654 p=5424 u=root n=paramiko.transport | [chan 5] Sesch channel 5 request ok
+2020-07-13 17:57:06,656 p=5424 u=root n=paramiko.transport | [chan 5] Sesch channel 5 request ok
+2020-07-13 17:57:06,663 p=5420 u=root n=paramiko.transport | [chan 3] Sesch channel 3 request ok
+2020-07-13 17:57:06,663 p=5426 u=root n=paramiko.transport | [chan 3] Sesch channel 3 request ok
+2020-07-13 17:57:06,680 p=5420 u=root n=paramiko.transport.sftp | [chan 3] Opened sftp connection (server version 3)
+2020-07-13 17:57:06,680 p=5420 u=root n=paramiko.transport.sftp | [chan 3] open('/home/kurkin/.ansible/tmp/ansible-tmp-1594663024.6-240775219429460/AnsiballZ_apt.py', 'wb')
+2020-07-13 17:57:06,680 p=5426 u=root n=paramiko.transport.sftp | [chan 3] Opened sftp connection (server version 3)
+2020-07-13 17:57:06,681 p=5426 u=root n=paramiko.transport.sftp | [chan 3] open('/home/kurkin/.ansible/tmp/ansible-tmp-1594663024.64-201001117909781/AnsiballZ_apt.py', 'wb')
+2020-07-13 17:57:06,681 p=5420 u=root n=paramiko.transport.sftp | [chan 3] open('/home/kurkin/.ansible/tmp/ansible-tmp-1594663024.6-240775219429460/AnsiballZ_apt.py', 'wb') -> 00000000
+2020-07-13 17:57:06,683 p=5426 u=root n=paramiko.transport.sftp | [chan 3] open('/home/kurkin/.ansible/tmp/ansible-tmp-1594663024.64-201001117909781/AnsiballZ_apt.py', 'wb') -> 00000000
+2020-07-13 17:57:06,686 p=5426 u=root n=paramiko.transport.sftp | [chan 3] close(00000000)
+2020-07-13 17:57:06,687 p=5420 u=root n=paramiko.transport.sftp | [chan 3] close(00000000)
+2020-07-13 17:57:06,690 p=5420 u=root n=paramiko.transport.sftp | [chan 3] stat('/home/kurkin/.ansible/tmp/ansible-tmp-1594663024.6-240775219429460/AnsiballZ_apt.py')
+2020-07-13 17:57:06,692 p=5426 u=root n=paramiko.transport.sftp | [chan 3] stat('/home/kurkin/.ansible/tmp/ansible-tmp-1594663024.64-201001117909781/AnsiballZ_apt.py')
+2020-07-13 17:57:06,694 p=5420 u=root n=paramiko.transport | [chan 4] Max packet in: 32768 bytes
+2020-07-13 17:57:06,699 p=5426 u=root n=paramiko.transport | [chan 4] Max packet in: 32768 bytes
+2020-07-13 17:57:06,700 p=5426 u=root n=paramiko.transport | [chan 4] Max packet out: 32768 bytes
+2020-07-13 17:57:06,700 p=5426 u=root n=paramiko.transport | Secsh channel 4 opened.
+2020-07-13 17:57:06,700 p=5420 u=root n=paramiko.transport | [chan 4] Max packet out: 32768 bytes
+2020-07-13 17:57:06,701 p=5420 u=root n=paramiko.transport | Secsh channel 4 opened.
+2020-07-13 17:57:06,702 p=5426 u=root n=paramiko.transport | [chan 4] Sesch channel 4 request ok
+2020-07-13 17:57:06,702 p=5420 u=root n=paramiko.transport | [chan 4] Sesch channel 4 request ok
+2020-07-13 17:57:06,708 p=5426 u=root n=paramiko.transport | [chan 4] EOF received (4)
+2020-07-13 17:57:06,708 p=5426 u=root n=paramiko.transport | [chan 4] EOF sent (4)
+2020-07-13 17:57:06,709 p=5420 u=root n=paramiko.transport | [chan 4] EOF received (4)
+2020-07-13 17:57:06,709 p=5420 u=root n=paramiko.transport | [chan 4] EOF sent (4)
+2020-07-13 17:57:06,710 p=5426 u=root n=paramiko.transport | [chan 5] Max packet in: 32768 bytes
+2020-07-13 17:57:06,711 p=5420 u=root n=paramiko.transport | [chan 5] Max packet in: 32768 bytes
+2020-07-13 17:57:06,751 p=5426 u=root n=paramiko.transport | [chan 5] Max packet out: 32768 bytes
+2020-07-13 17:57:06,751 p=5426 u=root n=paramiko.transport | Secsh channel 5 opened.
+2020-07-13 17:57:06,752 p=5420 u=root n=paramiko.transport | [chan 5] Max packet out: 32768 bytes
+2020-07-13 17:57:06,752 p=5420 u=root n=paramiko.transport | Secsh channel 5 opened.
+2020-07-13 17:57:06,779 p=5426 u=root n=paramiko.transport | [chan 5] Sesch channel 5 request ok
+2020-07-13 17:57:06,780 p=5426 u=root n=paramiko.transport | [chan 5] Sesch channel 5 request ok
+2020-07-13 17:57:06,781 p=5420 u=root n=paramiko.transport | [chan 5] Sesch channel 5 request ok
+2020-07-13 17:57:06,782 p=5420 u=root n=paramiko.transport | [chan 5] Sesch channel 5 request ok
+2020-07-13 17:57:10,032 p=5424 u=root n=paramiko.transport | [chan 5] EOF received (5)
+2020-07-13 17:57:10,033 p=5424 u=root n=paramiko.transport | [chan 5] EOF sent (5)
+2020-07-13 17:57:10,035 p=5424 u=root n=paramiko.transport | [chan 6] Max packet in: 32768 bytes
+2020-07-13 17:57:10,078 p=5424 u=root n=paramiko.transport | [chan 6] Max packet out: 32768 bytes
+2020-07-13 17:57:10,079 p=5424 u=root n=paramiko.transport | Secsh channel 6 opened.
+2020-07-13 17:57:10,081 p=5420 u=root n=paramiko.transport | [chan 5] EOF received (5)
+2020-07-13 17:57:10,081 p=5420 u=root n=paramiko.transport | [chan 5] EOF sent (5)
+2020-07-13 17:57:10,083 p=5420 u=root n=paramiko.transport | [chan 6] Max packet in: 32768 bytes
+2020-07-13 17:57:10,122 p=5424 u=root n=paramiko.transport | [chan 6] Sesch channel 6 request ok
+2020-07-13 17:57:10,124 p=5420 u=root n=paramiko.transport | [chan 6] Max packet out: 32768 bytes
+2020-07-13 17:57:10,124 p=5420 u=root n=paramiko.transport | Secsh channel 6 opened.
+2020-07-13 17:57:10,126 p=5420 u=root n=paramiko.transport | [chan 6] Sesch channel 6 request ok
+2020-07-13 17:57:10,141 p=5424 u=root n=paramiko.transport | [chan 6] EOF received (6)
+2020-07-13 17:57:10,141 p=5424 u=root n=paramiko.transport | [chan 6] EOF sent (6)
+2020-07-13 17:57:10,149 p=5420 u=root n=paramiko.transport | [chan 6] EOF received (6)
+2020-07-13 17:57:10,149 p=5420 u=root n=paramiko.transport | [chan 6] EOF sent (6)
+2020-07-13 17:57:10,152 p=5420 u=root n=paramiko.transport.sftp | [chan 3] sftp session closed.
+2020-07-13 17:57:10,152 p=5420 u=root n=paramiko.transport | [chan 3] EOF sent (3)
+2020-07-13 17:57:10,152 p=5424 u=root n=paramiko.transport.sftp | [chan 3] sftp session closed.
+2020-07-13 17:57:10,152 p=5424 u=root n=paramiko.transport | [chan 3] EOF sent (3)
+2020-07-13 17:57:10,187 p=5424 u=root n=paramiko.transport | EOF in transport thread
+2020-07-13 17:57:10,192 p=5420 u=root n=paramiko.transport | EOF in transport thread
+2020-07-13 17:57:10,202 p=4211 u=root n=ansible | TASK [bootstrap-os : Install dbus for the hostname module] *************************************************************
+2020-07-13 17:57:10,203 p=4211 u=root n=ansible | [WARNING]: Updating cache and auto-installing missing dependency: python-apt
+
+2020-07-13 17:57:10,204 p=4211 u=root n=ansible | [WARNING]: Platform linux on host node1 is using the discovered Python interpreter at /usr/bin/python, but future
+installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more information.
+
+2020-07-13 17:57:10,221 p=4211 u=root n=ansible | fatal: [node1]: FAILED! => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python"}, "changed": false, "cmd": "apt-get update", "msg": "E: Could not get lock /var/lib/apt/lists/lock - open (11: Resource temporarily unavailable)\nE: Unable to lock directory /var/lib/apt/lists/", "rc": 100, "stderr": "E: Could not get lock /var/lib/apt/lists/lock - open (11: Resource temporarily unavailable)\nE: Unable to lock directory /var/lib/apt/lists/\n", "stderr_lines": ["E: Could not get lock /var/lib/apt/lists/lock - open (11: Resource temporarily unavailable)", "E: Unable to lock directory /var/lib/apt/lists/"], "stdout": "Reading package lists...\n", "stdout_lines": ["Reading package lists..."]}
+2020-07-13 17:57:10,228 p=4211 u=root n=ansible | [WARNING]: Platform linux on host master-3 is using the discovered Python interpreter at /usr/bin/python, but future
+installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more information.
+
+2020-07-13 17:57:10,237 p=4211 u=root n=ansible | fatal: [master-3]: FAILED! => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python"}, "changed": false, "cmd": "apt-get update", "msg": "E: Could not get lock /var/lib/apt/lists/lock - open (11: Resource temporarily unavailable)\nE: Unable to lock directory /var/lib/apt/lists/", "rc": 100, "stderr": "E: Could not get lock /var/lib/apt/lists/lock - open (11: Resource temporarily unavailable)\nE: Unable to lock directory /var/lib/apt/lists/\n", "stderr_lines": ["E: Could not get lock /var/lib/apt/lists/lock - open (11: Resource temporarily unavailable)", "E: Unable to lock directory /var/lib/apt/lists/"], "stdout": "Reading package lists...\n", "stdout_lines": ["Reading package lists..."]}
+2020-07-13 17:57:10,252 p=5870 u=root n=paramiko.transport | starting thread (client mode): 0xbc929250L
+2020-07-13 17:57:10,252 p=5870 u=root n=paramiko.transport | Local version/idstring: SSH-2.0-paramiko_2.0.0
+2020-07-13 17:57:10,253 p=5870 u=root n=paramiko.transport | Remote version/idstring: SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.3
+2020-07-13 17:57:10,253 p=5870 u=root n=paramiko.transport | Connected (version 2.0, client OpenSSH_7.6p1)
+2020-07-13 17:57:10,254 p=5870 u=root n=paramiko.transport | kex algos:[u'curve25519-sha256', u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group16-sha512', u'diffie-hellman-group18-sha512', u'diffie-hellman-group14-sha256', u'diffie-hellman-group14-sha1'] server key:[u'ssh-rsa', u'rsa-sha2-512', u'rsa-sha2-256', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] server encrypt:[u'chacha20-poly1305@openssh.com', u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com'] client mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] server mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2020-07-13 17:57:10,254 p=5870 u=root n=paramiko.transport | Kex agreed: diffie-hellman-group-exchange-sha256
+2020-07-13 17:57:10,254 p=5870 u=root n=paramiko.transport | Cipher agreed: aes128-ctr
+2020-07-13 17:57:10,254 p=5870 u=root n=paramiko.transport | MAC agreed: hmac-sha2-256
+2020-07-13 17:57:10,254 p=5870 u=root n=paramiko.transport | Compression agreed: none
+2020-07-13 17:57:10,300 p=5870 u=root n=paramiko.transport | Got server p (2048 bits)
+2020-07-13 17:57:10,369 p=5870 u=root n=paramiko.transport | kex engine KexGexSHA256 specified hash_algo <built-in function openssl_sha256>
+2020-07-13 17:57:10,370 p=5870 u=root n=paramiko.transport | Switch to new keys ...
+2020-07-13 17:57:10,377 p=5870 u=root n=paramiko.transport | Trying discovered key 34865c0c941133d046e30121a4991953 in /root/.ssh/id_rsa
+2020-07-13 17:57:10,412 p=5870 u=root n=paramiko.transport | userauth is OK
+2020-07-13 17:57:10,418 p=5870 u=root n=paramiko.transport | Authentication (publickey) successful!
+2020-07-13 17:57:10,445 p=5870 u=root n=paramiko.transport | [chan 0] Max packet in: 32768 bytes
+2020-07-13 17:57:11,338 p=5417 u=root n=paramiko.transport | Sending global request "keepalive@lag.net"
+2020-07-13 17:57:11,420 p=5870 u=root n=paramiko.transport | Received global request "hostkeys-00@openssh.com"
+2020-07-13 17:57:11,420 p=5870 u=root n=paramiko.transport | Rejecting "hostkeys-00@openssh.com" global request from server.
+2020-07-13 17:57:11,465 p=5870 u=root n=paramiko.transport | [chan 0] Max packet out: 32768 bytes
+2020-07-13 17:57:11,465 p=5870 u=root n=paramiko.transport | Secsh channel 0 opened.
+2020-07-13 17:57:11,471 p=5870 u=root n=paramiko.transport | [chan 0] Sesch channel 0 request ok
+2020-07-13 17:57:11,489 p=5870 u=root n=paramiko.transport | [chan 0] EOF received (0)
+2020-07-13 17:57:11,489 p=5870 u=root n=paramiko.transport | [chan 0] EOF sent (0)
+2020-07-13 17:57:11,490 p=5870 u=root n=paramiko.transport | [chan 1] Max packet in: 32768 bytes
+2020-07-13 17:57:11,532 p=5870 u=root n=paramiko.transport | [chan 1] Max packet out: 32768 bytes
+2020-07-13 17:57:11,532 p=5870 u=root n=paramiko.transport | Secsh channel 1 opened.
+2020-07-13 17:57:11,555 p=5870 u=root n=paramiko.transport | [chan 1] Sesch channel 1 request ok
+2020-07-13 17:57:11,560 p=5870 u=root n=paramiko.transport | [chan 1] EOF received (1)
+2020-07-13 17:57:11,560 p=5870 u=root n=paramiko.transport | [chan 1] EOF sent (1)
+2020-07-13 17:57:11,562 p=5870 u=root n=paramiko.transport | [chan 2] Max packet in: 32768 bytes
+2020-07-13 17:57:11,603 p=5870 u=root n=paramiko.transport | [chan 2] Max packet out: 32768 bytes
+2020-07-13 17:57:11,604 p=5870 u=root n=paramiko.transport | Secsh channel 2 opened.
+2020-07-13 17:57:11,629 p=5870 u=root n=paramiko.transport | [chan 2] Sesch channel 2 request ok
+2020-07-13 17:57:11,635 p=5870 u=root n=paramiko.transport | [chan 2] EOF received (2)
+2020-07-13 17:57:11,635 p=5870 u=root n=paramiko.transport | [chan 2] EOF sent (2)
+2020-07-13 17:57:11,639 p=5870 u=root n=paramiko.transport | [chan 3] Max packet in: 32768 bytes
+2020-07-13 17:57:11,666 p=5418 u=root n=paramiko.transport | Sending global request "keepalive@lag.net"
+2020-07-13 17:57:11,679 p=5870 u=root n=paramiko.transport | [chan 3] Max packet out: 32768 bytes
+2020-07-13 17:57:11,680 p=5870 u=root n=paramiko.transport | Secsh channel 3 opened.
+2020-07-13 17:57:11,707 p=5870 u=root n=paramiko.transport | [chan 3] Sesch channel 3 request ok
+2020-07-13 17:57:11,710 p=5870 u=root n=paramiko.transport.sftp | [chan 3] Opened sftp connection (server version 3)
+2020-07-13 17:57:11,710 p=5870 u=root n=paramiko.transport.sftp | [chan 3] open('/home/kurkin/.ansible/tmp/ansible-tmp-1594663030.24-37917939678662/AnsiballZ_apt.py', 'wb')
+2020-07-13 17:57:11,711 p=5870 u=root n=paramiko.transport.sftp | [chan 3] open('/home/kurkin/.ansible/tmp/ansible-tmp-1594663030.24-37917939678662/AnsiballZ_apt.py', 'wb') -> 00000000
+2020-07-13 17:57:11,713 p=5870 u=root n=paramiko.transport.sftp | [chan 3] close(00000000)
+2020-07-13 17:57:11,717 p=5870 u=root n=paramiko.transport.sftp | [chan 3] stat('/home/kurkin/.ansible/tmp/ansible-tmp-1594663030.24-37917939678662/AnsiballZ_apt.py')
+2020-07-13 17:57:11,718 p=5870 u=root n=paramiko.transport | [chan 4] Max packet in: 32768 bytes
+2020-07-13 17:57:11,718 p=5870 u=root n=paramiko.transport | [chan 4] Max packet out: 32768 bytes
+2020-07-13 17:57:11,718 p=5870 u=root n=paramiko.transport | Secsh channel 4 opened.
+2020-07-13 17:57:11,719 p=5870 u=root n=paramiko.transport | [chan 4] Sesch channel 4 request ok
+2020-07-13 17:57:11,723 p=5870 u=root n=paramiko.transport | [chan 4] EOF received (4)
+2020-07-13 17:57:11,723 p=5870 u=root n=paramiko.transport | [chan 4] EOF sent (4)
+2020-07-13 17:57:11,724 p=5870 u=root n=paramiko.transport | [chan 5] Max packet in: 32768 bytes
+2020-07-13 17:57:11,772 p=5870 u=root n=paramiko.transport | [chan 5] Max packet out: 32768 bytes
+2020-07-13 17:57:11,772 p=5870 u=root n=paramiko.transport | Secsh channel 5 opened.
+2020-07-13 17:57:11,791 p=5870 u=root n=paramiko.transport | [chan 5] Sesch channel 5 request ok
+2020-07-13 17:57:11,792 p=5870 u=root n=paramiko.transport | [chan 5] Sesch channel 5 request ok
+2020-07-13 17:57:11,843 p=5426 u=root n=paramiko.transport | Sending global request "keepalive@lag.net"
+2020-07-13 17:57:13,423 p=5870 u=root n=paramiko.transport | [chan 5] EOF received (5)
+2020-07-13 17:57:13,423 p=5870 u=root n=paramiko.transport | [chan 5] EOF sent (5)
+2020-07-13 17:57:13,426 p=5870 u=root n=paramiko.transport | [chan 6] Max packet in: 32768 bytes
+2020-07-13 17:57:13,468 p=5870 u=root n=paramiko.transport | [chan 6] Max packet out: 32768 bytes
+2020-07-13 17:57:13,468 p=5870 u=root n=paramiko.transport | Secsh channel 6 opened.
+2020-07-13 17:57:13,492 p=5870 u=root n=paramiko.transport | [chan 6] Sesch channel 6 request ok
+2020-07-13 17:57:13,498 p=5870 u=root n=paramiko.transport | [chan 6] EOF received (6)
+2020-07-13 17:57:13,499 p=5870 u=root n=paramiko.transport | [chan 6] EOF sent (6)
+2020-07-13 17:57:13,500 p=5870 u=root n=paramiko.transport.sftp | [chan 3] sftp session closed.
+2020-07-13 17:57:13,501 p=5870 u=root n=paramiko.transport | [chan 3] EOF sent (3)
+2020-07-13 17:57:13,539 p=5870 u=root n=paramiko.transport | EOF in transport thread
+2020-07-13 17:57:13,568 p=4211 u=root n=ansible | [WARNING]: Platform linux on host ingress1 is using the discovered Python interpreter at /usr/bin/python, but future
+installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more information.
+
+2020-07-13 17:57:13,569 p=4211 u=root n=ansible | ok: [ingress1]
+2020-07-13 17:57:14,309 p=5417 u=root n=paramiko.transport | [chan 5] EOF received (5)
+2020-07-13 17:57:14,310 p=5417 u=root n=paramiko.transport | [chan 5] EOF sent (5)
+2020-07-13 17:57:14,311 p=5417 u=root n=paramiko.transport | [chan 6] Max packet in: 32768 bytes
+2020-07-13 17:57:14,312 p=5417 u=root n=paramiko.transport | [chan 6] Max packet out: 32768 bytes
+2020-07-13 17:57:14,312 p=5417 u=root n=paramiko.transport | Secsh channel 6 opened.
+2020-07-13 17:57:14,314 p=5417 u=root n=paramiko.transport | [chan 6] Sesch channel 6 request ok
+2020-07-13 17:57:14,317 p=5417 u=root n=paramiko.transport | [chan 6] EOF received (6)
+2020-07-13 17:57:14,317 p=5417 u=root n=paramiko.transport | [chan 6] EOF sent (6)
+2020-07-13 17:57:14,319 p=5417 u=root n=paramiko.transport.sftp | [chan 3] sftp session closed.
+2020-07-13 17:57:14,319 p=5417 u=root n=paramiko.transport | [chan 3] EOF sent (3)
+2020-07-13 17:57:14,359 p=5417 u=root n=paramiko.transport | EOF in transport thread
+2020-07-13 17:57:14,393 p=4211 u=root n=ansible | [WARNING]: Platform linux on host master-1 is using the discovered Python interpreter at /usr/bin/python, but future
+installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more information.
+
+2020-07-13 17:57:14,394 p=4211 u=root n=ansible | ok: [master-1]
+2020-07-13 17:57:16,696 p=5418 u=root n=paramiko.transport | Sending global request "keepalive@lag.net"
+2020-07-13 17:57:16,872 p=5426 u=root n=paramiko.transport | Sending global request "keepalive@lag.net"
+2020-07-13 17:57:18,205 p=5418 u=root n=paramiko.transport | [chan 5] EOF received (5)
+2020-07-13 17:57:18,205 p=5418 u=root n=paramiko.transport | [chan 5] EOF sent (5)
+2020-07-13 17:57:18,207 p=5418 u=root n=paramiko.transport | [chan 6] Max packet in: 32768 bytes
+2020-07-13 17:57:18,208 p=5418 u=root n=paramiko.transport | [chan 6] Max packet out: 32768 bytes
+2020-07-13 17:57:18,208 p=5418 u=root n=paramiko.transport | Secsh channel 6 opened.
+2020-07-13 17:57:18,210 p=5418 u=root n=paramiko.transport | [chan 6] Sesch channel 6 request ok
+2020-07-13 17:57:18,214 p=5418 u=root n=paramiko.transport | [chan 6] EOF received (6)
+2020-07-13 17:57:18,215 p=5418 u=root n=paramiko.transport | [chan 6] EOF sent (6)
+2020-07-13 17:57:18,217 p=5418 u=root n=paramiko.transport.sftp | [chan 3] sftp session closed.
+2020-07-13 17:57:18,217 p=5418 u=root n=paramiko.transport | [chan 3] EOF sent (3)
+2020-07-13 17:57:18,257 p=5418 u=root n=paramiko.transport | EOF in transport thread
+2020-07-13 17:57:18,270 p=4211 u=root n=ansible | [WARNING]: Platform linux on host master-2 is using the discovered Python interpreter at /usr/bin/python, but future
+installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more information.
+
+2020-07-13 17:57:18,270 p=4211 u=root n=ansible | ok: [master-2]
+2020-07-13 17:57:18,357 p=5426 u=root n=paramiko.transport | [chan 5] EOF received (5)
+2020-07-13 17:57:18,358 p=5426 u=root n=paramiko.transport | [chan 5] EOF sent (5)
+2020-07-13 17:57:18,360 p=5426 u=root n=paramiko.transport | [chan 6] Max packet in: 32768 bytes
+2020-07-13 17:57:18,361 p=5426 u=root n=paramiko.transport | [chan 6] Max packet out: 32768 bytes
+2020-07-13 17:57:18,361 p=5426 u=root n=paramiko.transport | Secsh channel 6 opened.
+2020-07-13 17:57:18,363 p=5426 u=root n=paramiko.transport | [chan 6] Sesch channel 6 request ok
+2020-07-13 17:57:18,368 p=5426 u=root n=paramiko.transport | [chan 6] EOF received (6)
+2020-07-13 17:57:18,369 p=5426 u=root n=paramiko.transport | [chan 6] EOF sent (6)
+2020-07-13 17:57:18,370 p=5426 u=root n=paramiko.transport.sftp | [chan 3] sftp session closed.
+2020-07-13 17:57:18,370 p=5426 u=root n=paramiko.transport | [chan 3] EOF sent (3)
+2020-07-13 17:57:18,413 p=5426 u=root n=paramiko.transport | EOF in transport thread
+2020-07-13 17:57:18,422 p=4211 u=root n=ansible | [WARNING]: Platform linux on host node2 is using the discovered Python interpreter at /usr/bin/python, but future
+installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more information.
+
+2020-07-13 17:57:18,423 p=4211 u=root n=ansible | ok: [node2]
+2020-07-13 17:57:18,425 p=4211 u=root n=ansible | NO MORE HOSTS LEFT *****************************************************************************************************
+2020-07-13 17:57:18,427 p=4211 u=root n=ansible | PLAY RECAP *************************************************************************************************************
+2020-07-13 17:57:18,427 p=4211 u=root n=ansible | ingress1                   : ok=9    changed=2    unreachable=0    failed=0    skipped=21   rescued=0    ignored=0   
+2020-07-13 17:57:18,428 p=4211 u=root n=ansible | localhost                  : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-07-13 17:57:18,428 p=4211 u=root n=ansible | master-1                   : ok=9    changed=2    unreachable=0    failed=0    skipped=27   rescued=0    ignored=0   
+2020-07-13 17:57:18,429 p=4211 u=root n=ansible | master-2                   : ok=9    changed=2    unreachable=0    failed=0    skipped=21   rescued=0    ignored=0   
+2020-07-13 17:57:18,430 p=4211 u=root n=ansible | master-3                   : ok=8    changed=2    unreachable=0    failed=1    skipped=21   rescued=0    ignored=0   
+2020-07-13 17:57:18,430 p=4211 u=root n=ansible | node1                      : ok=8    changed=2    unreachable=0    failed=1    skipped=21   rescued=0    ignored=0   
+2020-07-13 17:57:18,431 p=4211 u=root n=ansible | node2                      : ok=9    changed=2    unreachable=0    failed=0    skipped=21   rescued=0    ignored=0   
+2020-07-13 17:57:18,432 p=4211 u=root n=ansible | Monday 13 July 2020  17:57:18 +0000 (0:00:13.891)       0:00:30.148 *********** 
+2020-07-13 17:57:18,432 p=4211 u=root n=ansible | =============================================================================== 
+2020-07-13 17:57:18,433 p=4211 u=root n=ansible | bootstrap-os : Install dbus for the hostname module ------------------------------------------------------------ 13.89s
+2020-07-13 17:57:18,433 p=4211 u=root n=ansible | bootstrap-os : Restart systemd-resolved service ----------------------------------------------------------------- 2.95s
+2020-07-13 17:57:18,433 p=4211 u=root n=ansible | bootstrap-os : Fetch /etc/os-release ---------------------------------------------------------------------------- 2.56s
+2020-07-13 17:57:18,434 p=4211 u=root n=ansible | bootstrap-os : Check if bootstrap is needed --------------------------------------------------------------------- 2.46s
+2020-07-13 17:57:18,435 p=4211 u=root n=ansible | bootstrap-os : Check Network Name Resolution configuration ------------------------------------------------------ 2.36s
+2020-07-13 17:57:18,435 p=4211 u=root n=ansible | bootstrap-os : Change Network Name Resolution configuration ----------------------------------------------------- 2.32s
+2020-07-13 17:57:18,436 p=4211 u=root n=ansible | bootstrap-os : include_tasks ------------------------------------------------------------------------------------ 0.20s
+2020-07-13 17:57:18,436 p=4211 u=root n=ansible | Set up proxy environment ---------------------------------------------------------------------------------------- 0.18s
+2020-07-13 17:57:18,437 p=4211 u=root n=ansible | kubespray-defaults : Gather ansible_default_ipv4 from all hosts ------------------------------------------------- 0.14s
+2020-07-13 17:57:18,437 p=4211 u=root n=ansible | kubespray-defaults : Configure defaults ------------------------------------------------------------------------- 0.14s
+2020-07-13 17:57:18,437 p=4211 u=root n=ansible | bootstrap-os : include_tasks ------------------------------------------------------------------------------------ 0.12s
+2020-07-13 17:57:18,438 p=4211 u=root n=ansible | bootstrap-os : Check http::proxy in apt configuration files ----------------------------------------------------- 0.12s
+2020-07-13 17:57:18,438 p=4211 u=root n=ansible | bootstrap-os : Install python3 ---------------------------------------------------------------------------------- 0.12s
+2020-07-13 17:57:18,439 p=4211 u=root n=ansible | download : download | Download files / images ------------------------------------------------------------------- 0.12s
+2020-07-13 17:57:18,439 p=4211 u=root n=ansible | download : prep_download | Parse the outputs of the previous commands ------------------------------------------- 0.12s
+2020-07-13 17:57:18,439 p=4211 u=root n=ansible | download : prep_download | Set image info command for containerd and crio --------------------------------------- 0.12s
+2020-07-13 17:57:18,440 p=4211 u=root n=ansible | kubespray-defaults : Populates no_proxy to all hosts ------------------------------------------------------------ 0.12s
+2020-07-13 17:57:18,446 p=4211 u=root n=ansible | kubespray-defaults : set fallback_ips --------------------------------------------------------------------------- 0.12s
+2020-07-13 17:57:18,447 p=4211 u=root n=ansible | download : prep_download | Check that local user is in group or can become root --------------------------------- 0.12s
+2020-07-13 17:57:18,447 p=4211 u=root n=ansible | download : include_tasks ---------------------------------------------------------------------------------------- 0.12s
