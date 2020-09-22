@@ -1,0 +1,305 @@
+Sep 22 16:53:58 master-1 systemd[1]: Started Kubernetes Kubelet Server.
+Sep 22 16:53:58 master-1 kubelet[13745]: F0922 16:53:58.742948   13745 server.go:198] failed to load Kubelet config file /var/lib/kubelet/config.yaml, error failed to read kubelet config file "/var/lib/kubelet/config.yaml", error: open /var/lib/kubelet/config.yaml: no such file or directory
+Sep 22 16:53:58 master-1 kubelet[13745]: goroutine 1 [running]:
+Sep 22 16:53:58 master-1 kubelet[13745]: k8s.io/kubernetes/vendor/k8s.io/klog/v2.stacks(0xc0001a2001, 0xc0001b8840, 0xfb, 0x14d)
+Sep 22 16:53:58 master-1 kubelet[13745]: /workspace/anago-v1.19.2-rc.0.12+19706d90d87784/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/klog/v2/klog.go:996 +0xb9
+Sep 22 16:53:58 master-1 kubelet[13745]: k8s.io/kubernetes/vendor/k8s.io/klog/v2.(*loggingT).output(0x6cf6140, 0xc000000003, 0x0, 0x0, 0xc000a61b20, 0x6b49c19, 0x9, 0xc6, 0xc0003e7c00)
+Sep 22 16:53:58 master-1 kubelet[13745]: /workspace/anago-v1.19.2-rc.0.12+19706d90d87784/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/klog/v2/klog.go:945 +0x191
+Sep 22 16:53:58 master-1 kubelet[13745]: k8s.io/kubernetes/vendor/k8s.io/klog/v2.(*loggingT).printDepth(0x6cf6140, 0x3, 0x0, 0x0, 0x1, 0xc000bbfd00, 0x1, 0x1)
+Sep 22 16:53:58 master-1 kubelet[13745]: /workspace/anago-v1.19.2-rc.0.12+19706d90d87784/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/klog/v2/klog.go:718 +0x165
+Sep 22 16:53:58 master-1 kubelet[13745]: k8s.io/kubernetes/vendor/k8s.io/klog/v2.(*loggingT).print(...)
+Sep 22 16:53:58 master-1 kubelet[13745]: /workspace/anago-v1.19.2-rc.0.12+19706d90d87784/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/klog/v2/klog.go:703
+Sep 22 16:53:58 master-1 kubelet[13745]: k8s.io/kubernetes/vendor/k8s.io/klog/v2.Fatal(...)
+Sep 22 16:53:58 master-1 kubelet[13745]: /workspace/anago-v1.19.2-rc.0.12+19706d90d87784/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/klog/v2/klog.go:1436
+Sep 22 16:53:58 master-1 kubelet[13745]: k8s.io/kubernetes/cmd/kubelet/app.NewKubeletCommand.func1(0xc0001d9600, 0xc0001a6010, 0x3, 0x3)
+Sep 22 16:53:58 master-1 kubelet[13745]: /workspace/anago-v1.19.2-rc.0.12+19706d90d87784/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/cmd/kubelet/app/server.go:198 +0xa05
+Sep 22 16:53:58 master-1 kubelet[13745]: k8s.io/kubernetes/vendor/github.com/spf13/cobra.(*Command).execute(0xc0001d9600, 0xc0001a6010, 0x3, 0x3, 0xc0001d9600, 0xc0001a6010)
+Sep 22 16:53:58 master-1 kubelet[13745]: /workspace/anago-v1.19.2-rc.0.12+19706d90d87784/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/github.com/spf13/cobra/command.go:846 +0x2c2
+Sep 22 16:53:58 master-1 kubelet[13745]: k8s.io/kubernetes/vendor/github.com/spf13/cobra.(*Command).ExecuteC(0xc0001d9600, 0x16371f82b1befb80, 0x6cf5c60, 0x409b05)
+Sep 22 16:53:58 master-1 systemd[1]: kubelet.service: main process exited, code=exited, status=255/n/a
+Sep 22 16:53:58 master-1 kubelet[13745]: /workspace/anago-v1.19.2-rc.0.12+19706d90d87784/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/github.com/spf13/cobra/command.go:950 +0x375
+Sep 22 16:53:58 master-1 kubelet[13745]: k8s.io/kubernetes/vendor/github.com/spf13/cobra.(*Command).Execute(...)
+Sep 22 16:53:58 master-1 kubelet[13745]: /workspace/anago-v1.19.2-rc.0.12+19706d90d87784/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/github.com/spf13/cobra/command.go:887
+Sep 22 16:53:58 master-1 kubelet[13745]: main.main()
+Sep 22 16:53:58 master-1 kubelet[13745]: _output/dockerized/go/src/k8s.io/kubernetes/cmd/kubelet/kubelet.go:41 +0xe5
+Sep 22 16:53:58 master-1 kubelet[13745]: goroutine 35 [chan receive]:
+Sep 22 16:53:58 master-1 kubelet[13745]: k8s.io/kubernetes/vendor/k8s.io/klog/v2.(*loggingT).flushDaemon(0x6cf6140)
+Sep 22 16:53:58 master-1 kubelet[13745]: /workspace/anago-v1.19.2-rc.0.12+19706d90d87784/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/klog/v2/klog.go:1131 +0x8b
+Sep 22 16:53:58 master-1 kubelet[13745]: created by k8s.io/kubernetes/vendor/k8s.io/klog/v2.init.0
+Sep 22 16:53:58 master-1 kubelet[13745]: /workspace/anago-v1.19.2-rc.0.12+19706d90d87784/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/klog/v2/klog.go:416 +0xd8
+Sep 22 16:53:58 master-1 kubelet[13745]: goroutine 127 [select]:
+Sep 22 16:53:58 master-1 kubelet[13745]: k8s.io/kubernetes/vendor/k8s.io/apimachinery/pkg/util/wait.BackoffUntil(0x4794628, 0x4becee0, 0xc0003ff290, 0x1, 0xc0001800c0)
+Sep 22 16:53:58 master-1 kubelet[13745]: /workspace/anago-v1.19.2-rc.0.12+19706d90d87784/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/apimachinery/pkg/util/wait/wait.go:167 +0x149
+Sep 22 16:53:58 master-1 kubelet[13745]: k8s.io/kubernetes/vendor/k8s.io/apimachinery/pkg/util/wait.JitterUntil(0x4794628, 0x12a05f200, 0x0, 0xc0006ece01, 0xc0001800c0)
+Sep 22 16:53:58 master-1 kubelet[13745]: /workspace/anago-v1.19.2-rc.0.12+19706d90d87784/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/apimachinery/pkg/util/wait/wait.go:133 +0x98
+Sep 22 16:53:58 master-1 kubelet[13745]: k8s.io/kubernetes/vendor/k8s.io/apimachinery/pkg/util/wait.Until(...)
+Sep 22 16:53:58 master-1 kubelet[13745]: /workspace/anago-v1.19.2-rc.0.12+19706d90d87784/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/apimachinery/pkg/util/wait/wait.go:90
+Sep 22 16:53:58 master-1 kubelet[13745]: k8s.io/kubernetes/vendor/k8s.io/apimachinery/pkg/util/wait.Forever(0x4794628, 0x12a05f200)
+Sep 22 16:53:58 master-1 systemd[1]: Unit kubelet.service entered failed state.
+Sep 22 16:53:58 master-1 kubelet[13745]: /workspace/anago-v1.19.2-rc.0.12+19706d90d87784/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/apimachinery/pkg/util/wait/wait.go:81 +0x4f
+Sep 22 16:53:58 master-1 kubelet[13745]: created by k8s.io/kubernetes/vendor/k8s.io/component-base/logs.InitLogs
+Sep 22 16:53:58 master-1 kubelet[13745]: /workspace/anago-v1.19.2-rc.0.12+19706d90d87784/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/component-base/logs/logs.go:58 +0x8a
+Sep 22 16:53:58 master-1 kubelet[13745]: goroutine 85 [select]:
+Sep 22 16:53:58 master-1 kubelet[13745]: k8s.io/kubernetes/vendor/go.opencensus.io/stats/view.(*worker).start(0xc0005405f0)
+Sep 22 16:53:58 master-1 kubelet[13745]: /workspace/anago-v1.19.2-rc.0.12+19706d90d87784/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/go.opencensus.io/stats/view/worker.go:154 +0x105
+Sep 22 16:53:58 master-1 kubelet[13745]: created by k8s.io/kubernetes/vendor/go.opencensus.io/stats/view.init.0
+Sep 22 16:53:58 master-1 kubelet[13745]: /workspace/anago-v1.19.2-rc.0.12+19706d90d87784/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/go.opencensus.io/stats/view/worker.go:32 +0x57
+Sep 22 16:53:58 master-1 systemd[1]: kubelet.service failed.
+Sep 22 16:54:08 master-1 systemd[1]: kubelet.service holdoff time over, scheduling restart.
+Sep 22 16:54:08 master-1 systemd[1]: Stopped Kubernetes Kubelet Server.
+Sep 22 16:54:08 master-1 systemd[1]: Started Kubernetes Kubelet Server.
+Sep 22 16:54:08 master-1 kubelet[13945]: F0922 16:54:08.976818   13945 server.go:198] failed to load Kubelet config file /var/lib/kubelet/config.yaml, error failed to read kubelet config file "/var/lib/kubelet/config.yaml", error: open /var/lib/kubelet/config.yaml: no such file or directory
+Sep 22 16:54:08 master-1 kubelet[13945]: goroutine 1 [running]:
+Sep 22 16:54:08 master-1 kubelet[13945]: k8s.io/kubernetes/vendor/k8s.io/klog/v2.stacks(0xc000010001, 0xc0007d6160, 0xfb, 0x14d)
+Sep 22 16:54:08 master-1 kubelet[13945]: /workspace/anago-v1.19.2-rc.0.12+19706d90d87784/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/klog/v2/klog.go:996 +0xb9
+Sep 22 16:54:08 master-1 kubelet[13945]: k8s.io/kubernetes/vendor/k8s.io/klog/v2.(*loggingT).output(0x6cf6140, 0xc000000003, 0x0, 0x0, 0xc000bae7e0, 0x6b49c19, 0x9, 0xc6, 0xc00061ef00)
+Sep 22 16:54:08 master-1 kubelet[13945]: /workspace/anago-v1.19.2-rc.0.12+19706d90d87784/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/klog/v2/klog.go:945 +0x191
+Sep 22 16:54:08 master-1 kubelet[13945]: k8s.io/kubernetes/vendor/k8s.io/klog/v2.(*loggingT).printDepth(0x6cf6140, 0x3, 0x0, 0x0, 0x1, 0xc000abfd00, 0x1, 0x1)
+Sep 22 16:54:08 master-1 kubelet[13945]: /workspace/anago-v1.19.2-rc.0.12+19706d90d87784/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/klog/v2/klog.go:718 +0x165
+Sep 22 16:54:08 master-1 kubelet[13945]: k8s.io/kubernetes/vendor/k8s.io/klog/v2.(*loggingT).print(...)
+Sep 22 16:54:08 master-1 kubelet[13945]: /workspace/anago-v1.19.2-rc.0.12+19706d90d87784/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/klog/v2/klog.go:703
+Sep 22 16:54:08 master-1 kubelet[13945]: k8s.io/kubernetes/vendor/k8s.io/klog/v2.Fatal(...)
+Sep 22 16:54:08 master-1 kubelet[13945]: /workspace/anago-v1.19.2-rc.0.12+19706d90d87784/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/klog/v2/klog.go:1436
+Sep 22 16:54:08 master-1 kubelet[13945]: k8s.io/kubernetes/cmd/kubelet/app.NewKubeletCommand.func1(0xc000b85600, 0xc00004e0d0, 0x3, 0x3)
+Sep 22 16:54:08 master-1 kubelet[13945]: /workspace/anago-v1.19.2-rc.0.12+19706d90d87784/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/cmd/kubelet/app/server.go:198 +0xa05
+Sep 22 16:54:08 master-1 kubelet[13945]: k8s.io/kubernetes/vendor/github.com/spf13/cobra.(*Command).execute(0xc000b85600, 0xc00004e0d0, 0x3, 0x3, 0xc000b85600, 0xc00004e0d0)
+Sep 22 16:54:08 master-1 kubelet[13945]: /workspace/anago-v1.19.2-rc.0.12+19706d90d87784/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/github.com/spf13/cobra/command.go:846 +0x2c2
+Sep 22 16:54:08 master-1 kubelet[13945]: k8s.io/kubernetes/vendor/github.com/spf13/cobra.(*Command).ExecuteC(0xc000b85600, 0x16371f8513bdd13f, 0x6cf5c60, 0x409b05)
+Sep 22 16:54:08 master-1 kubelet[13945]: /workspace/anago-v1.19.2-rc.0.12+19706d90d87784/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/github.com/spf13/cobra/command.go:950 +0x375
+Sep 22 16:54:08 master-1 kubelet[13945]: k8s.io/kubernetes/vendor/github.com/spf13/cobra.(*Command).Execute(...)
+Sep 22 16:54:08 master-1 kubelet[13945]: /workspace/anago-v1.19.2-rc.0.12+19706d90d87784/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/github.com/spf13/cobra/command.go:887
+Sep 22 16:54:08 master-1 kubelet[13945]: main.main()
+Sep 22 16:54:08 master-1 kubelet[13945]: _output/dockerized/go/src/k8s.io/kubernetes/cmd/kubelet/kubelet.go:41 +0xe5
+Sep 22 16:54:08 master-1 kubelet[13945]: goroutine 6 [chan receive]:
+Sep 22 16:54:08 master-1 kubelet[13945]: k8s.io/kubernetes/vendor/k8s.io/klog/v2.(*loggingT).flushDaemon(0x6cf6140)
+Sep 22 16:54:08 master-1 kubelet[13945]: /workspace/anago-v1.19.2-rc.0.12+19706d90d87784/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/klog/v2/klog.go:1131 +0x8b
+Sep 22 16:54:08 master-1 kubelet[13945]: created by k8s.io/kubernetes/vendor/k8s.io/klog/v2.init.0
+Sep 22 16:54:08 master-1 kubelet[13945]: /workspace/anago-v1.19.2-rc.0.12+19706d90d87784/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/klog/v2/klog.go:416 +0xd8
+Sep 22 16:54:08 master-1 kubelet[13945]: goroutine 44 [select]:
+Sep 22 16:54:08 master-1 kubelet[13945]: k8s.io/kubernetes/vendor/go.opencensus.io/stats/view.(*worker).start(0xc0000aaaf0)
+Sep 22 16:54:08 master-1 kubelet[13945]: /workspace/anago-v1.19.2-rc.0.12+19706d90d87784/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/go.opencensus.io/stats/view/worker.go:154 +0x105
+Sep 22 16:54:08 master-1 kubelet[13945]: created by k8s.io/kubernetes/vendor/go.opencensus.io/stats/view.init.0
+Sep 22 16:54:08 master-1 kubelet[13945]: /workspace/anago-v1.19.2-rc.0.12+19706d90d87784/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/go.opencensus.io/stats/view/worker.go:32 +0x57
+Sep 22 16:54:08 master-1 kubelet[13945]: goroutine 64 [select]:
+Sep 22 16:54:08 master-1 kubelet[13945]: k8s.io/kubernetes/vendor/k8s.io/apimachinery/pkg/util/wait.BackoffUntil(0x4794628, 0x4becee0, 0xc000655d10, 0x1, 0xc0000ac0c0)
+Sep 22 16:54:08 master-1 kubelet[13945]: /workspace/anago-v1.19.2-rc.0.12+19706d90d87784/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/apimachinery/pkg/util/wait/wait.go:167 +0x149
+Sep 22 16:54:08 master-1 kubelet[13945]: k8s.io/kubernetes/vendor/k8s.io/apimachinery/pkg/util/wait.JitterUntil(0x4794628, 0x12a05f200, 0x0, 0xc000a25001, 0xc0000ac0c0)
+Sep 22 16:54:08 master-1 kubelet[13945]: /workspace/anago-v1.19.2-rc.0.12+19706d90d87784/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/apimachinery/pkg/util/wait/wait.go:133 +0x98
+Sep 22 16:54:08 master-1 kubelet[13945]: k8s.io/kubernetes/vendor/k8s.io/apimachinery/pkg/util/wait.Until(...)
+Sep 22 16:54:08 master-1 kubelet[13945]: k8s.io/kubernetes/vendor/k8s.io/apimachinery/pkg/util/wait.Forever(0x4794628, 0x12a05f200)
+Sep 22 16:54:08 master-1 kubelet[13945]: /workspace/anago-v1.19.2-rc.0.12+19706d90d87784/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/apimachinery/pkg/util/wait/wait.go:81 +0x4f
+Sep 22 16:54:08 master-1 kubelet[13945]: created by k8s.io/kubernetes/vendor/k8s.io/component-base/logs.InitLogs
+Sep 22 16:54:08 master-1 kubelet[13945]: /workspace/anago-v1.19.2-rc.0.12+19706d90d87784/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/component-base/logs/logs.go:58 +0x8a
+Sep 22 16:54:08 master-1 systemd[1]: kubelet.service: main process exited, code=exited, status=255/n/a
+Sep 22 16:54:08 master-1 systemd[1]: Unit kubelet.service entered failed state.
+Sep 22 16:54:08 master-1 systemd[1]: kubelet.service failed.
+Sep 22 16:54:12 master-1 systemd[1]: Stopped Kubernetes Kubelet Server.
+Sep 22 16:54:12 master-1 systemd[1]: Started Kubernetes Kubelet Server.
+Sep 22 16:54:12 master-1 kubelet[14390]: Flag --cgroup-driver has been deprecated, This parameter should be set via the config file specified by the Kubelet's --config flag. See https://kubernetes.io/docs/tasks/administer-cluster/kubelet-config-file/ for more information.
+Sep 22 16:54:12 master-1 kubelet[14390]: Flag --cgroup-driver has been deprecated, This parameter should be set via the config file specified by the Kubelet's --config flag. See https://kubernetes.io/docs/tasks/administer-cluster/kubelet-config-file/ for more information.
+Sep 22 16:54:13 master-1 kubelet[14390]: I0922 16:54:13.066140   14390 server.go:411] Version: v1.19.2
+Sep 22 16:54:13 master-1 kubelet[14390]: I0922 16:54:13.067766   14390 server.go:831] Client rotation is on, will bootstrap in background
+Sep 22 16:54:13 master-1 kubelet[14390]: F0922 16:54:13.067999   14390 server.go:265] failed to run Kubelet: unable to load bootstrap kubeconfig: stat /etc/kubernetes/bootstrap-kubelet.conf: no such file or directory
+Sep 22 16:54:13 master-1 kubelet[14390]: goroutine 1 [running]:
+Sep 22 16:54:13 master-1 kubelet[14390]: k8s.io/kubernetes/vendor/k8s.io/klog/v2.stacks(0xc000010001, 0xc000ea0000, 0xb0, 0xb3)
+Sep 22 16:54:13 master-1 kubelet[14390]: /workspace/anago-v1.19.2-rc.0.12+19706d90d87784/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/klog/v2/klog.go:996 +0xb9
+Sep 22 16:54:13 master-1 kubelet[14390]: k8s.io/kubernetes/vendor/k8s.io/klog/v2.(*loggingT).output(0x6cf6140, 0xc000000003, 0x0, 0x0, 0xc0004eb880, 0x6b49c19, 0x9, 0x109, 0x0)
+Sep 22 16:54:13 master-1 kubelet[14390]: /workspace/anago-v1.19.2-rc.0.12+19706d90d87784/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/klog/v2/klog.go:945 +0x191
+Sep 22 16:54:13 master-1 kubelet[14390]: k8s.io/kubernetes/vendor/k8s.io/klog/v2.(*loggingT).printDepth(0x6cf6140, 0xc000000003, 0x0, 0x0, 0x1, 0xc000f1fc80, 0x1, 0x1)
+Sep 22 16:54:13 master-1 kubelet[14390]: /workspace/anago-v1.19.2-rc.0.12+19706d90d87784/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/klog/v2/klog.go:718 +0x165
+Sep 22 16:54:13 master-1 kubelet[14390]: k8s.io/kubernetes/vendor/k8s.io/klog/v2.(*loggingT).print(...)
+Sep 22 16:54:13 master-1 kubelet[14390]: /workspace/anago-v1.19.2-rc.0.12+19706d90d87784/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/klog/v2/klog.go:703
+Sep 22 16:54:13 master-1 kubelet[14390]: k8s.io/kubernetes/vendor/k8s.io/klog/v2.Fatal(...)
+Sep 22 16:54:13 master-1 kubelet[14390]: /workspace/anago-v1.19.2-rc.0.12+19706d90d87784/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/klog/v2/klog.go:1436
+Sep 22 16:54:13 master-1 kubelet[14390]: k8s.io/kubernetes/cmd/kubelet/app.NewKubeletCommand.func1(0xc000a12b00, 0xc00004e080, 0x6, 0x6)
+Sep 22 16:54:13 master-1 kubelet[14390]: /workspace/anago-v1.19.2-rc.0.12+19706d90d87784/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/cmd/kubelet/app/server.go:265 +0x63e
+Sep 22 16:54:13 master-1 kubelet[14390]: k8s.io/kubernetes/vendor/github.com/spf13/cobra.(*Command).execute(0xc000a12b00, 0xc00004e080, 0x6, 0x6, 0xc000a12b00, 0xc00004e080)
+Sep 22 16:54:13 master-1 kubelet[14390]: /workspace/anago-v1.19.2-rc.0.12+19706d90d87784/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/github.com/spf13/cobra/command.go:846 +0x2c2
+Sep 22 16:54:13 master-1 kubelet[14390]: k8s.io/kubernetes/vendor/github.com/spf13/cobra.(*Command).ExecuteC(0xc000a12b00, 0x16371f85f962db55, 0x6cf5c60, 0x409b05)
+Sep 22 16:54:13 master-1 systemd[1]: kubelet.service: main process exited, code=exited, status=255/n/a
+Sep 22 16:54:13 master-1 kubelet[14390]: /workspace/anago-v1.19.2-rc.0.12+19706d90d87784/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/github.com/spf13/cobra/command.go:950 +0x375
+Sep 22 16:54:13 master-1 kubelet[14390]: k8s.io/kubernetes/vendor/github.com/spf13/cobra.(*Command).Execute(...)
+Sep 22 16:54:13 master-1 kubelet[14390]: /workspace/anago-v1.19.2-rc.0.12+19706d90d87784/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/github.com/spf13/cobra/command.go:887
+Sep 22 16:54:13 master-1 kubelet[14390]: main.main()
+Sep 22 16:54:13 master-1 kubelet[14390]: _output/dockerized/go/src/k8s.io/kubernetes/cmd/kubelet/kubelet.go:41 +0xe5
+Sep 22 16:54:13 master-1 kubelet[14390]: goroutine 6 [chan receive]:
+Sep 22 16:54:13 master-1 kubelet[14390]: k8s.io/kubernetes/vendor/k8s.io/klog/v2.(*loggingT).flushDaemon(0x6cf6140)
+Sep 22 16:54:13 master-1 kubelet[14390]: /workspace/anago-v1.19.2-rc.0.12+19706d90d87784/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/klog/v2/klog.go:1131 +0x8b
+Sep 22 16:54:13 master-1 kubelet[14390]: created by k8s.io/kubernetes/vendor/k8s.io/klog/v2.init.0
+Sep 22 16:54:13 master-1 kubelet[14390]: /workspace/anago-v1.19.2-rc.0.12+19706d90d87784/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/klog/v2/klog.go:416 +0xd8
+Sep 22 16:54:13 master-1 kubelet[14390]: goroutine 95 [select]:
+Sep 22 16:54:13 master-1 kubelet[14390]: k8s.io/kubernetes/vendor/k8s.io/apimachinery/pkg/util/wait.BackoffUntil(0x4794628, 0x4becee0, 0xc00001eab0, 0x1, 0xc0000ae0c0)
+Sep 22 16:54:13 master-1 kubelet[14390]: /workspace/anago-v1.19.2-rc.0.12+19706d90d87784/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/apimachinery/pkg/util/wait/wait.go:167 +0x149
+Sep 22 16:54:13 master-1 kubelet[14390]: k8s.io/kubernetes/vendor/k8s.io/apimachinery/pkg/util/wait.JitterUntil(0x4794628, 0x12a05f200, 0x0, 0xc0006bd001, 0xc0000ae0c0)
+Sep 22 16:54:13 master-1 kubelet[14390]: /workspace/anago-v1.19.2-rc.0.12+19706d90d87784/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/apimachinery/pkg/util/wait/wait.go:133 +0x98
+Sep 22 16:54:13 master-1 kubelet[14390]: k8s.io/kubernetes/vendor/k8s.io/apimachinery/pkg/util/wait.Until(...)
+Sep 22 16:54:13 master-1 kubelet[14390]: /workspace/anago-v1.19.2-rc.0.12+19706d90d87784/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/apimachinery/pkg/util/wait/wait.go:90
+Sep 22 16:54:13 master-1 kubelet[14390]: k8s.io/kubernetes/vendor/k8s.io/apimachinery/pkg/util/wait.Forever(0x4794628, 0x12a05f200)
+Sep 22 16:54:13 master-1 systemd[1]: Unit kubelet.service entered failed state.
+Sep 22 16:54:13 master-1 kubelet[14390]: /workspace/anago-v1.19.2-rc.0.12+19706d90d87784/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/apimachinery/pkg/util/wait/wait.go:81 +0x4f
+Sep 22 16:54:13 master-1 kubelet[14390]: created by k8s.io/kubernetes/vendor/k8s.io/component-base/logs.InitLogs
+Sep 22 16:54:13 master-1 kubelet[14390]: /workspace/anago-v1.19.2-rc.0.12+19706d90d87784/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/component-base/logs/logs.go:58 +0x8a
+Sep 22 16:54:13 master-1 kubelet[14390]: goroutine 32 [select]:
+Sep 22 16:54:13 master-1 kubelet[14390]: k8s.io/kubernetes/vendor/go.opencensus.io/stats/view.(*worker).start(0xc000112be0)
+Sep 22 16:54:13 master-1 kubelet[14390]: /workspace/anago-v1.19.2-rc.0.12+19706d90d87784/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/go.opencensus.io/stats/view/worker.go:154 +0x105
+Sep 22 16:54:13 master-1 kubelet[14390]: created by k8s.io/kubernetes/vendor/go.opencensus.io/stats/view.init.0
+Sep 22 16:54:13 master-1 kubelet[14390]: /workspace/anago-v1.19.2-rc.0.12+19706d90d87784/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/go.opencensus.io/stats/view/worker.go:32 +0x57
+Sep 22 16:54:13 master-1 kubelet[14390]: goroutine 124 [chan receive]:
+Sep 22 16:54:13 master-1 kubelet[14390]: k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/server.SetupSignalContext.func1(0xc0006ed450)
+Sep 22 16:54:13 master-1 kubelet[14390]: /workspace/anago-v1.19.2-rc.0.12+19706d90d87784/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/server/signal.go:48 +0x36
+Sep 22 16:54:13 master-1 kubelet[14390]: created by k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/server.SetupSignalContext
+Sep 22 16:54:13 master-1 kubelet[14390]: /workspace/anago-v1.19.2-rc.0.12+19706d90d87784/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/server/signal.go:47 +0xf3
+Sep 22 16:54:13 master-1 kubelet[14390]: goroutine 146 [syscall]:
+Sep 22 16:54:13 master-1 kubelet[14390]: os/signal.signal_recv(0x0)
+Sep 22 16:54:13 master-1 kubelet[14390]: /usr/local/go/src/runtime/sigqueue.go:147 +0x9d
+Sep 22 16:54:13 master-1 kubelet[14390]: os/signal.loop()
+Sep 22 16:54:13 master-1 kubelet[14390]: /usr/local/go/src/os/signal/signal_unix.go:23 +0x25
+Sep 22 16:54:13 master-1 kubelet[14390]: created by os/signal.Notify.func1.1
+Sep 22 16:54:13 master-1 kubelet[14390]: /usr/local/go/src/os/signal/signal.go:150 +0x45
+Sep 22 16:54:13 master-1 systemd[1]: kubelet.service failed.
+Sep 22 16:54:23 master-1 systemd[1]: kubelet.service holdoff time over, scheduling restart.
+Sep 22 16:54:23 master-1 systemd[1]: Stopped Kubernetes Kubelet Server.
+Sep 22 16:54:23 master-1 systemd[1]: Started Kubernetes Kubelet Server.
+Sep 22 16:54:23 master-1 kubelet[14406]: Flag --cgroup-driver has been deprecated, This parameter should be set via the config file specified by the Kubelet's --config flag. See https://kubernetes.io/docs/tasks/administer-cluster/kubelet-config-file/ for more information.
+Sep 22 16:54:23 master-1 kubelet[14406]: Flag --cgroup-driver has been deprecated, This parameter should be set via the config file specified by the Kubelet's --config flag. See https://kubernetes.io/docs/tasks/administer-cluster/kubelet-config-file/ for more information.
+Sep 22 16:54:23 master-1 kubelet[14406]: I0922 16:54:23.305255   14406 server.go:411] Version: v1.19.2
+Sep 22 16:54:23 master-1 kubelet[14406]: I0922 16:54:23.305643   14406 server.go:831] Client rotation is on, will bootstrap in background
+Sep 22 16:54:23 master-1 kubelet[14406]: I0922 16:54:23.312550   14406 dynamic_cafile_content.go:167] Starting client-ca-bundle::/etc/kubernetes/ssl/ca.crt
+Sep 22 16:54:23 master-1 kubelet[14406]: E0922 16:54:23.326839   14406 certificate_manager.go:437] Failed while requesting a signed certificate from the master: cannot create certificate signing request: Post "https://172.18.207.112:6443/apis/certificates.k8s.io/v1/certificatesigningrequests": dial tcp 172.18.207.112:6443: connect: connection refused
+Sep 22 16:54:25 master-1 kubelet[14406]: E0922 16:54:25.451305   14406 certificate_manager.go:437] Failed while requesting a signed certificate from the master: cannot create certificate signing request: Post "https://172.18.207.112:6443/apis/certificates.k8s.io/v1/certificatesigningrequests": dial tcp 172.18.207.112:6443: connect: connection refused
+Sep 22 16:54:28 master-1 kubelet[14406]: W0922 16:54:28.323803   14406 nvidia.go:61] NVIDIA GPU metrics will not be available: no NVIDIA devices found
+Sep 22 16:54:28 master-1 kubelet[14406]: I0922 16:54:28.334156   14406 server.go:640] --cgroups-per-qos enabled, but --cgroup-root was not specified.  defaulting to /
+Sep 22 16:54:28 master-1 kubelet[14406]: I0922 16:54:28.335281   14406 container_manager_linux.go:276] container manager verified user specified cgroup-root exists: []
+Sep 22 16:54:28 master-1 kubelet[14406]: I0922 16:54:28.335360   14406 container_manager_linux.go:281] Creating Container Manager object based on Node Config: {RuntimeCgroupsName: SystemCgroupsName: KubeletCgroupsName: ContainerRuntime:docker CgroupsPerQOS:true CgroupRoot:/ CgroupDriver:cgroupfs KubeletRootDir:/var/lib/kubelet ProtectKernelDefaults:false NodeAllocatableConfig:{KubeReservedCgroupName: SystemReservedCgroupName: ReservedSystemCPUs: EnforceNodeAllocatable:map[pods:{}] KubeReserved:map[] SystemReserved:map[] HardEvictionThresholds:[{Signal:imagefs.available Operator:LessThan Value:{Quantity:<nil> Percentage:0.15} GracePeriod:0s MinReclaim:<nil>} {Signal:memory.available Operator:LessThan Value:{Quantity:100Mi Percentage:0} GracePeriod:0s MinReclaim:<nil>} {Signal:nodefs.available Operator:LessThan Value:{Quantity:<nil> Percentage:0.1} GracePeriod:0s MinReclaim:<nil>} {Signal:nodefs.inodesFree Operator:LessThan Value:{Quantity:<nil> Percentage:0.05} GracePeriod:0s MinReclaim:<nil>}]} QOSReserved:map[] ExperimentalCPUManagerPolicy:none ExperimentalCPUManagerReconcilePeriod:10s ExperimentalPodPidsLimit:-1 EnforceCPULimits:true CPUCFSQuotaPeriod:100ms ExperimentalTopologyManagerPolicy:none}
+Sep 22 16:54:28 master-1 kubelet[14406]: I0922 16:54:28.335615   14406 topology_manager.go:126] [topologymanager] Creating topology manager with none policy
+Sep 22 16:54:28 master-1 kubelet[14406]: I0922 16:54:28.335635   14406 container_manager_linux.go:311] [topologymanager] Initializing Topology Manager with none policy
+Sep 22 16:54:28 master-1 kubelet[14406]: I0922 16:54:28.335648   14406 container_manager_linux.go:316] Creating device plugin manager: true
+Sep 22 16:54:28 master-1 kubelet[14406]: I0922 16:54:28.336002   14406 client.go:77] Connecting to docker on unix:///var/run/docker.sock
+Sep 22 16:54:28 master-1 kubelet[14406]: I0922 16:54:28.336032   14406 client.go:94] Start docker client with request timeout=2m0s
+Sep 22 16:54:28 master-1 kubelet[14406]: W0922 16:54:28.339286   14406 docker_service.go:565] Hairpin mode set to "promiscuous-bridge" but kubenet is not enabled, falling back to "hairpin-veth"
+Sep 22 16:54:28 master-1 kubelet[14406]: I0922 16:54:28.339343   14406 docker_service.go:241] Hairpin mode set to "hairpin-veth"
+Sep 22 16:54:28 master-1 kubelet[14406]: W0922 16:54:28.339550   14406 cni.go:239] Unable to update cni config: no networks found in /etc/cni/net.d
+Sep 22 16:54:28 master-1 kubelet[14406]: W0922 16:54:28.346932   14406 cni.go:239] Unable to update cni config: no networks found in /etc/cni/net.d
+Sep 22 16:54:28 master-1 kubelet[14406]: I0922 16:54:28.347082   14406 docker_service.go:256] Docker cri networking managed by cni
+Sep 22 16:54:28 master-1 kubelet[14406]: W0922 16:54:28.347173   14406 cni.go:239] Unable to update cni config: no networks found in /etc/cni/net.d
+Sep 22 16:54:28 master-1 kubelet[14406]: I0922 16:54:28.365307   14406 docker_service.go:261] Docker Info: &{ID:UXV7:K63O:3GMZ:V2HX:RZUB:WUYH:OBIP:7EU5:FGHE:AFXS:4HJU:GJFS Containers:1 ContainersRunning:1 ContainersPaused:0 ContainersStopped:0 Images:15 Driver:overlay2 DriverStatus:[[Backing Filesystem xfs] [Supports d_type true] [Native Overlay Diff true]] SystemStatus:[] Plugins:{Volume:[local] Network:[bridge host macvlan null overlay] Authorization:[] Log:[awslogs fluentd gcplogs gelf journald json-file local logentries splunk syslog]} MemoryLimit:true SwapLimit:true KernelMemory:true KernelMemoryTCP:false CPUCfsPeriod:true CPUCfsQuota:true CPUShares:true CPUSet:true PidsLimit:false IPv4Forwarding:true BridgeNfIptables:true BridgeNfIP6tables:true Debug:false NFd:32 OomKillDisable:true NGoroutines:52 SystemTime:2020-09-22T16:54:28.350737674+03:00 LoggingDriver:json-file CgroupDriver:cgroupfs NEventsListener:0 KernelVersion:4.20.13-1.el7.elrepo.x86_64 OperatingSystem:CentOS Linux 7 (Core) OSType:linux Architecture:x86_64 IndexServerAddress:https://index.docker.io/v1/ RegistryConfig:0xc000d39f80 NCPU:8 MemTotal:84464586752 GenericResources:[] DockerRootDir:/var/lib/docker HTTPProxy: HTTPSProxy: NoProxy: Name:master-1 Labels:[] ExperimentalBuild:false ServerVersion:18.09.9 ClusterStore: ClusterAdvertise: Runtimes:map[runc:{Path:runc Args:[]}] DefaultRuntime:runc Swarm:{NodeID: NodeAddr: LocalNodeState:inactive ControlAvailable:false Error: RemoteManagers:[] Nodes:0 Managers:0 Cluster:<nil> Warnings:[]} LiveRestoreEnabled:false Isolation: InitBinary:docker-init ContainerdCommit:{ID:8fba4e9a7d01810a393d5d25a3621dc101981175 Expected:8fba4e9a7d01810a393d5d25a3621dc101981175} RuncCommit:{ID:dc9208a3303feef5b3839f4323d9beb36df0a9dd Expected:dc9208a3303feef5b3839f4323d9beb36df0a9dd} InitCommit:{ID:fec3683 Expected:fec3683} SecurityOptions:[name=seccomp,profile=default] ProductLicense:Community Engine Warnings:[]}
+Sep 22 16:54:28 master-1 kubelet[14406]: I0922 16:54:28.365404   14406 docker_service.go:274] Setting cgroupDriver to cgroupfs
+Sep 22 16:54:28 master-1 kubelet[14406]: I0922 16:54:28.383332   14406 remote_runtime.go:59] parsed scheme: ""
+Sep 22 16:54:28 master-1 kubelet[14406]: I0922 16:54:28.383357   14406 remote_runtime.go:59] scheme "" not registered, fallback to default scheme
+Sep 22 16:54:28 master-1 kubelet[14406]: I0922 16:54:28.383393   14406 passthrough.go:48] ccResolverWrapper: sending update to cc: {[{/var/run/dockershim.sock  <nil> 0 <nil>}] <nil> <nil>}
+Sep 22 16:54:28 master-1 kubelet[14406]: I0922 16:54:28.383404   14406 clientconn.go:948] ClientConn switching balancer to "pick_first"
+Sep 22 16:54:28 master-1 kubelet[14406]: I0922 16:54:28.383470   14406 remote_image.go:50] parsed scheme: ""
+Sep 22 16:54:28 master-1 kubelet[14406]: I0922 16:54:28.383476   14406 remote_image.go:50] scheme "" not registered, fallback to default scheme
+Sep 22 16:54:28 master-1 kubelet[14406]: I0922 16:54:28.383484   14406 passthrough.go:48] ccResolverWrapper: sending update to cc: {[{/var/run/dockershim.sock  <nil> 0 <nil>}] <nil> <nil>}
+Sep 22 16:54:28 master-1 kubelet[14406]: I0922 16:54:28.383489   14406 clientconn.go:948] ClientConn switching balancer to "pick_first"
+Sep 22 16:54:28 master-1 kubelet[14406]: I0922 16:54:28.383513   14406 kubelet.go:261] Adding pod path: /etc/kubernetes/manifests
+Sep 22 16:54:28 master-1 kubelet[14406]: I0922 16:54:28.383533   14406 kubelet.go:273] Watching apiserver
+Sep 22 16:54:28 master-1 kubelet[14406]: E0922 16:54:28.384394   14406 reflector.go:127] k8s.io/kubernetes/pkg/kubelet/config/apiserver.go:46: Failed to watch *v1.Pod: failed to list *v1.Pod: Get "https://172.18.207.112:6443/api/v1/pods?fieldSelector=spec.nodeName%3Dmaster-1&limit=500&resourceVersion=0": dial tcp 172.18.207.112:6443: connect: connection refused
+Sep 22 16:54:28 master-1 kubelet[14406]: E0922 16:54:28.385567   14406 reflector.go:127] k8s.io/kubernetes/pkg/kubelet/kubelet.go:438: Failed to watch *v1.Node: failed to list *v1.Node: Get "https://172.18.207.112:6443/api/v1/nodes?fieldSelector=metadata.name%3Dmaster-1&limit=500&resourceVersion=0": dial tcp 172.18.207.112:6443: connect: connection refused
+Sep 22 16:54:28 master-1 kubelet[14406]: E0922 16:54:28.385662   14406 reflector.go:127] k8s.io/client-go/informers/factory.go:134: Failed to watch *v1.Service: failed to list *v1.Service: Get "https://172.18.207.112:6443/api/v1/services?limit=500&resourceVersion=0": dial tcp 172.18.207.112:6443: connect: connection refused
+Sep 22 16:54:29 master-1 kubelet[14406]: E0922 16:54:29.404513   14406 reflector.go:127] k8s.io/kubernetes/pkg/kubelet/config/apiserver.go:46: Failed to watch *v1.Pod: failed to list *v1.Pod: Get "https://172.18.207.112:6443/api/v1/pods?fieldSelector=spec.nodeName%3Dmaster-1&limit=500&resourceVersion=0": dial tcp 172.18.207.112:6443: connect: connection refused
+Sep 22 16:54:29 master-1 kubelet[14406]: E0922 16:54:29.423728   14406 reflector.go:127] k8s.io/client-go/informers/factory.go:134: Failed to watch *v1.Service: failed to list *v1.Service: Get "https://172.18.207.112:6443/api/v1/services?limit=500&resourceVersion=0": dial tcp 172.18.207.112:6443: connect: connection refused
+Sep 22 16:54:29 master-1 kubelet[14406]: E0922 16:54:29.623481   14406 certificate_manager.go:437] Failed while requesting a signed certificate from the master: cannot create certificate signing request: Post "https://172.18.207.112:6443/apis/certificates.k8s.io/v1/certificatesigningrequests": dial tcp 172.18.207.112:6443: connect: connection refused
+Sep 22 16:54:29 master-1 kubelet[14406]: E0922 16:54:29.790516   14406 reflector.go:127] k8s.io/kubernetes/pkg/kubelet/kubelet.go:438: Failed to watch *v1.Node: failed to list *v1.Node: Get "https://172.18.207.112:6443/api/v1/nodes?fieldSelector=metadata.name%3Dmaster-1&limit=500&resourceVersion=0": dial tcp 172.18.207.112:6443: connect: connection refused
+Sep 22 16:54:31 master-1 kubelet[14406]: E0922 16:54:31.919185   14406 reflector.go:127] k8s.io/kubernetes/pkg/kubelet/config/apiserver.go:46: Failed to watch *v1.Pod: failed to list *v1.Pod: Get "https://172.18.207.112:6443/api/v1/pods?fieldSelector=spec.nodeName%3Dmaster-1&limit=500&resourceVersion=0": dial tcp 172.18.207.112:6443: connect: connection refused
+Sep 22 16:54:31 master-1 kubelet[14406]: E0922 16:54:31.934949   14406 reflector.go:127] k8s.io/kubernetes/pkg/kubelet/kubelet.go:438: Failed to watch *v1.Node: failed to list *v1.Node: Get "https://172.18.207.112:6443/api/v1/nodes?fieldSelector=metadata.name%3Dmaster-1&limit=500&resourceVersion=0": dial tcp 172.18.207.112:6443: connect: connection refused
+Sep 22 16:54:31 master-1 kubelet[14406]: E0922 16:54:31.988511   14406 reflector.go:127] k8s.io/client-go/informers/factory.go:134: Failed to watch *v1.Service: failed to list *v1.Service: Get "https://172.18.207.112:6443/api/v1/services?limit=500&resourceVersion=0": dial tcp 172.18.207.112:6443: connect: connection refused
+Sep 22 16:54:33 master-1 kubelet[14406]: W0922 16:54:33.347609   14406 cni.go:239] Unable to update cni config: no networks found in /etc/cni/net.d
+Sep 22 16:54:34 master-1 kubelet[14406]: E0922 16:54:34.666171   14406 aws_credentials.go:77] while getting AWS credentials NoCredentialProviders: no valid providers in chain. Deprecated.
+Sep 22 16:54:34 master-1 kubelet[14406]: For verbose messaging see aws.Config.CredentialsChainVerboseErrors
+Sep 22 16:54:34 master-1 kubelet[14406]: I0922 16:54:34.668751   14406 kuberuntime_manager.go:214] Container runtime docker initialized, version: 18.09.9, apiVersion: 1.39.0
+Sep 22 16:54:34 master-1 kubelet[14406]: I0922 16:54:34.669980   14406 server.go:1147] Started kubelet
+Sep 22 16:54:34 master-1 kubelet[14406]: E0922 16:54:34.670102   14406 kubelet.go:1218] Image garbage collection failed once. Stats initialization may not have completed yet: failed to get imageFs info: unable to find data in memory cache
+Sep 22 16:54:34 master-1 kubelet[14406]: I0922 16:54:34.670138   14406 server.go:152] Starting to listen on 0.0.0.0:10250
+Sep 22 16:54:34 master-1 kubelet[14406]: E0922 16:54:34.670297   14406 event.go:273] Unable to write event: 'Post "https://172.18.207.112:6443/api/v1/namespaces/default/events": dial tcp 172.18.207.112:6443: connect: connection refused' (may retry after sleeping)
+Sep 22 16:54:34 master-1 kubelet[14406]: I0922 16:54:34.671452   14406 server.go:424] Adding debug handlers to kubelet server.
+Sep 22 16:54:34 master-1 kubelet[14406]: I0922 16:54:34.672204   14406 fs_resource_analyzer.go:64] Starting FS ResourceAnalyzer
+Sep 22 16:54:34 master-1 kubelet[14406]: I0922 16:54:34.672623   14406 volume_manager.go:265] Starting Kubelet Volume Manager
+Sep 22 16:54:34 master-1 kubelet[14406]: I0922 16:54:34.672973   14406 desired_state_of_world_populator.go:139] Desired state populator starts to run
+Sep 22 16:54:34 master-1 kubelet[14406]: E0922 16:54:34.673107   14406 reflector.go:127] k8s.io/client-go/informers/factory.go:134: Failed to watch *v1.CSIDriver: failed to list *v1.CSIDriver: Get "https://172.18.207.112:6443/apis/storage.k8s.io/v1/csidrivers?limit=500&resourceVersion=0": dial tcp 172.18.207.112:6443: connect: connection refused
+Sep 22 16:54:34 master-1 kubelet[14406]: E0922 16:54:34.673316   14406 controller.go:136] failed to ensure node lease exists, will retry in 200ms, error: Get "https://172.18.207.112:6443/apis/coordination.k8s.io/v1/namespaces/kube-node-lease/leases/master-1?timeout=10s": dial tcp 172.18.207.112:6443: connect: connection refused
+Sep 22 16:54:34 master-1 kubelet[14406]: E0922 16:54:34.680449   14406 remote_runtime.go:329] ContainerStatus "23d21567a36747a4a74a7a7cc1ef774e953b9d1a60bf670700f92be7b2cbe5ab" from runtime service failed: rpc error: code = Unknown desc = Error: No such container: 23d21567a36747a4a74a7a7cc1ef774e953b9d1a60bf670700f92be7b2cbe5ab
+Sep 22 16:54:34 master-1 kubelet[14406]: I0922 16:54:34.680507   14406 kuberuntime_gc.go:360] Error getting ContainerStatus for containerID "23d21567a36747a4a74a7a7cc1ef774e953b9d1a60bf670700f92be7b2cbe5ab": rpc error: code = Unknown desc = Error: No such container: 23d21567a36747a4a74a7a7cc1ef774e953b9d1a60bf670700f92be7b2cbe5ab
+Sep 22 16:54:34 master-1 kubelet[14406]: E0922 16:54:34.680552   14406 kubelet.go:2103] Container runtime network not ready: NetworkReady=false reason:NetworkPluginNotReady message:docker: network plugin is not ready: cni config uninitialized
+Sep 22 16:54:34 master-1 kubelet[14406]: I0922 16:54:34.681296   14406 client.go:87] parsed scheme: "unix"
+Sep 22 16:54:34 master-1 kubelet[14406]: I0922 16:54:34.681308   14406 client.go:87] scheme "unix" not registered, fallback to default scheme
+Sep 22 16:54:34 master-1 kubelet[14406]: I0922 16:54:34.681328   14406 passthrough.go:48] ccResolverWrapper: sending update to cc: {[{unix:///run/containerd/containerd.sock  <nil> 0 <nil>}] <nil> <nil>}
+Sep 22 16:54:34 master-1 kubelet[14406]: I0922 16:54:34.681337   14406 clientconn.go:948] ClientConn switching balancer to "pick_first"
+Sep 22 16:54:34 master-1 kubelet[14406]: E0922 16:54:34.681364   14406 remote_runtime.go:329] ContainerStatus "6301e1392acd177f5b41642b2e71b02466d1ca5102ea2c4cbb031e45c86c787a" from runtime service failed: rpc error: code = Unknown desc = Error: No such container: 6301e1392acd177f5b41642b2e71b02466d1ca5102ea2c4cbb031e45c86c787a
+Sep 22 16:54:34 master-1 kubelet[14406]: I0922 16:54:34.681388   14406 kuberuntime_gc.go:360] Error getting ContainerStatus for containerID "6301e1392acd177f5b41642b2e71b02466d1ca5102ea2c4cbb031e45c86c787a": rpc error: code = Unknown desc = Error: No such container: 6301e1392acd177f5b41642b2e71b02466d1ca5102ea2c4cbb031e45c86c787a
+Sep 22 16:54:34 master-1 kubelet[14406]: E0922 16:54:34.682324   14406 remote_runtime.go:329] ContainerStatus "561e617e04d548dd5b185257f2a5c96797f367b650a8616e060fcb45c2175adc" from runtime service failed: rpc error: code = Unknown desc = Error: No such container: 561e617e04d548dd5b185257f2a5c96797f367b650a8616e060fcb45c2175adc
+Sep 22 16:54:34 master-1 kubelet[14406]: I0922 16:54:34.682344   14406 kuberuntime_gc.go:360] Error getting ContainerStatus for containerID "561e617e04d548dd5b185257f2a5c96797f367b650a8616e060fcb45c2175adc": rpc error: code = Unknown desc = Error: No such container: 561e617e04d548dd5b185257f2a5c96797f367b650a8616e060fcb45c2175adc
+Sep 22 16:54:34 master-1 kubelet[14406]: E0922 16:54:34.682870   14406 remote_runtime.go:329] ContainerStatus "941c503b9695040607c1726f34f74b01d80804e0fe81b37c0c60efef16939591" from runtime service failed: rpc error: code = Unknown desc = Error: No such container: 941c503b9695040607c1726f34f74b01d80804e0fe81b37c0c60efef16939591
+Sep 22 16:54:34 master-1 kubelet[14406]: I0922 16:54:34.682889   14406 kuberuntime_gc.go:360] Error getting ContainerStatus for containerID "941c503b9695040607c1726f34f74b01d80804e0fe81b37c0c60efef16939591": rpc error: code = Unknown desc = Error: No such container: 941c503b9695040607c1726f34f74b01d80804e0fe81b37c0c60efef16939591
+Sep 22 16:54:34 master-1 kubelet[14406]: I0922 16:54:34.702852   14406 status_manager.go:158] Starting to sync pod status with apiserver
+Sep 22 16:54:34 master-1 kubelet[14406]: I0922 16:54:34.702901   14406 kubelet.go:1741] Starting kubelet main sync loop.
+Sep 22 16:54:34 master-1 kubelet[14406]: E0922 16:54:34.702953   14406 kubelet.go:1765] skipping pod synchronization - [container runtime status check may not have completed yet, PLEG is not healthy: pleg has yet to be successful]
+Sep 22 16:54:34 master-1 kubelet[14406]: E0922 16:54:34.703537   14406 reflector.go:127] k8s.io/client-go/informers/factory.go:134: Failed to watch *v1beta1.RuntimeClass: failed to list *v1beta1.RuntimeClass: Get "https://172.18.207.112:6443/apis/node.k8s.io/v1beta1/runtimeclasses?limit=500&resourceVersion=0": dial tcp 172.18.207.112:6443: connect: connection refused
+Sep 22 16:54:34 master-1 kubelet[14406]: E0922 16:54:34.773345   14406 kubelet.go:2183] node "master-1" not found
+Sep 22 16:54:34 master-1 kubelet[14406]: I0922 16:54:34.776788   14406 kubelet_node_status.go:70] Attempting to register node master-1
+Sep 22 16:54:34 master-1 kubelet[14406]: E0922 16:54:34.777161   14406 kubelet_node_status.go:92] Unable to register node "master-1" with API server: Post "https://172.18.207.112:6443/api/v1/nodes": dial tcp 172.18.207.112:6443: connect: connection refused
+Sep 22 16:54:34 master-1 kubelet[14406]: I0922 16:54:34.784022   14406 cpu_manager.go:184] [cpumanager] starting with none policy
+Sep 22 16:54:34 master-1 kubelet[14406]: I0922 16:54:34.784054   14406 cpu_manager.go:185] [cpumanager] reconciling every 10s
+Sep 22 16:54:34 master-1 kubelet[14406]: I0922 16:54:34.784084   14406 state_mem.go:36] [cpumanager] initializing new in-memory state store
+Sep 22 16:54:34 master-1 kubelet[14406]: I0922 16:54:34.785673   14406 policy_none.go:43] [cpumanager] none policy: Start
+Sep 22 16:54:34 master-1 kubelet[14406]: W0922 16:54:34.786713   14406 manager.go:596] Failed to retrieve checkpoint for "kubelet_internal_checkpoint": checkpoint is not found
+Sep 22 16:54:34 master-1 kubelet[14406]: E0922 16:54:34.787089   14406 eviction_manager.go:260] eviction manager: failed to get summary stats: failed to get node info: node "master-1" not found
+Sep 22 16:54:34 master-1 kubelet[14406]: I0922 16:54:34.787171   14406 plugin_manager.go:114] Starting Kubelet Plugin Manager
+Sep 22 16:54:34 master-1 kubelet[14406]: I0922 16:54:34.803099   14406 topology_manager.go:233] [topologymanager] Topology Admit Handler
+Sep 22 16:54:34 master-1 kubelet[14406]: I0922 16:54:34.809764   14406 topology_manager.go:233] [topologymanager] Topology Admit Handler
+Sep 22 16:54:34 master-1 kubelet[14406]: W0922 16:54:34.813087   14406 status_manager.go:550] Failed to get status for pod "kube-scheduler-master-1_kube-system(3a341a47a6f2657ea62a00ca5c549ca3)": Get "https://172.18.207.112:6443/api/v1/namespaces/kube-system/pods/kube-scheduler-master-1": dial tcp 172.18.207.112:6443: connect: connection refused
+Sep 22 16:54:34 master-1 kubelet[14406]: I0922 16:54:34.813579   14406 topology_manager.go:233] [topologymanager] Topology Admit Handler
+Sep 22 16:54:34 master-1 kubelet[14406]: W0922 16:54:34.816154   14406 status_manager.go:550] Failed to get status for pod "nginx-proxy-master-1_kube-system(3e8dcdb2ef65cedf18202025487c9da2)": Get "https://172.18.207.112:6443/api/v1/namespaces/kube-system/pods/nginx-proxy-master-1": dial tcp 172.18.207.112:6443: connect: connection refused
+Sep 22 16:54:34 master-1 kubelet[14406]: I0922 16:54:34.816547   14406 topology_manager.go:233] [topologymanager] Topology Admit Handler
+Sep 22 16:54:34 master-1 kubelet[14406]: W0922 16:54:34.818744   14406 status_manager.go:550] Failed to get status for pod "kube-apiserver-master-1_kube-system(ea9d6ce7e60c920fed954b82dec36c16)": Get "https://172.18.207.112:6443/api/v1/namespaces/kube-system/pods/kube-apiserver-master-1": dial tcp 172.18.207.112:6443: connect: connection refused
+Sep 22 16:54:34 master-1 kubelet[14406]: W0922 16:54:34.821751   14406 status_manager.go:550] Failed to get status for pod "kube-controller-manager-master-1_kube-system(068977ea04b6851ca736d2c5b6759174)": Get "https://172.18.207.112:6443/api/v1/namespaces/kube-system/pods/kube-controller-manager-master-1": dial tcp 172.18.207.112:6443: connect: connection refused
+Sep 22 16:54:34 master-1 kubelet[14406]: E0922 16:54:34.873519   14406 kubelet.go:2183] node "master-1" not found
+Sep 22 16:54:34 master-1 kubelet[14406]: E0922 16:54:34.873933   14406 controller.go:136] failed to ensure node lease exists, will retry in 400ms, error: Get "https://172.18.207.112:6443/apis/coordination.k8s.io/v1/namespaces/kube-node-lease/leases/master-1?timeout=10s": dial tcp 172.18.207.112:6443: connect: connection refused
+Sep 22 16:54:34 master-1 kubelet[14406]: I0922 16:54:34.973457   14406 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "kubeconfig" (UniqueName: "kubernetes.io/host-path/3a341a47a6f2657ea62a00ca5c549ca3-kubeconfig") pod "kube-scheduler-master-1" (UID: "3a341a47a6f2657ea62a00ca5c549ca3")
+Sep 22 16:54:34 master-1 kubelet[14406]: I0922 16:54:34.973552   14406 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "etc-nginx" (UniqueName: "kubernetes.io/host-path/3e8dcdb2ef65cedf18202025487c9da2-etc-nginx") pod "nginx-proxy-master-1" (UID: "3e8dcdb2ef65cedf18202025487c9da2")
+Sep 22 16:54:34 master-1 kubelet[14406]: I0922 16:54:34.973590   14406 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "ca-certs" (UniqueName: "kubernetes.io/host-path/ea9d6ce7e60c920fed954b82dec36c16-ca-certs") pod "kube-apiserver-master-1" (UID: "ea9d6ce7e60c920fed954b82dec36c16")
+Sep 22 16:54:34 master-1 kubelet[14406]: E0922 16:54:34.973625   14406 kubelet.go:2183] node "master-1" not found
+Sep 22 16:54:34 master-1 kubelet[14406]: I0922 16:54:34.973790   14406 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "etc-pki" (UniqueName: "kubernetes.io/host-path/ea9d6ce7e60c920fed954b82dec36c16-etc-pki") pod "kube-apiserver-master-1" (UID: "ea9d6ce7e60c920fed954b82dec36c16")
+Sep 22 16:54:34 master-1 kubelet[14406]: I0922 16:54:34.973886   14406 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "etc-pki-ca-trust" (UniqueName: "kubernetes.io/host-path/ea9d6ce7e60c920fed954b82dec36c16-etc-pki-ca-trust") pod "kube-apiserver-master-1" (UID: "ea9d6ce7e60c920fed954b82dec36c16")
+Sep 22 16:54:34 master-1 kubelet[14406]: I0922 16:54:34.973934   14406 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "k8s-certs" (UniqueName: "kubernetes.io/host-path/ea9d6ce7e60c920fed954b82dec36c16-k8s-certs") pod "kube-apiserver-master-1" (UID: "ea9d6ce7e60c920fed954b82dec36c16")
+Sep 22 16:54:34 master-1 kubelet[14406]: I0922 16:54:34.973971   14406 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "etc-pki" (UniqueName: "kubernetes.io/host-path/068977ea04b6851ca736d2c5b6759174-etc-pki") pod "kube-controller-manager-master-1" (UID: "068977ea04b6851ca736d2c5b6759174")
+Sep 22 16:54:34 master-1 kubelet[14406]: I0922 16:54:34.974027   14406 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "k8s-certs" (UniqueName: "kubernetes.io/host-path/068977ea04b6851ca736d2c5b6759174-k8s-certs") pod "kube-controller-manager-master-1" (UID: "068977ea04b6851ca736d2c5b6759174")
+Sep 22 16:54:34 master-1 kubelet[14406]: I0922 16:54:34.974064   14406 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "kubeconfig" (UniqueName: "kubernetes.io/host-path/068977ea04b6851ca736d2c5b6759174-kubeconfig") pod "kube-controller-manager-master-1" (UID: "068977ea04b6851ca736d2c5b6759174")
+Sep 22 16:54:34 master-1 kubelet[14406]: I0922 16:54:34.974097   14406 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "etc-pki-tls" (UniqueName: "kubernetes.io/host-path/ea9d6ce7e60c920fed954b82dec36c16-etc-pki-tls") pod "kube-apiserver-master-1" (UID: "ea9d6ce7e60c920fed954b82dec36c16")
+Sep 22 16:54:34 master-1 kubelet[14406]: I0922 16:54:34.974141   14406 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "etcd-certs-0" (UniqueName: "kubernetes.io/host-path/ea9d6ce7e60c920fed954b82dec36c16-etcd-certs-0") pod "kube-apiserver-master-1" (UID: "ea9d6ce7e60c920fed954b82dec36c16")
+Sep 22 16:54:34 master-1 kubelet[14406]: I0922 16:54:34.974175   14406 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "ca-certs" (UniqueName: "kubernetes.io/host-path/068977ea04b6851ca736d2c5b6759174-ca-certs") pod "kube-controller-manager-master-1" (UID: "068977ea04b6851ca736d2c5b6759174")
+Sep 22 16:54:34 master-1 kubelet[14406]: I0922 16:54:34.980576   14406 kubelet_node_status.go:70] Attempting to register node master-1
+Sep 22 16:54:34 master-1 kubelet[14406]: E0922 16:54:34.980928   14406 kubelet_node_status.go:92] Unable to register node "master-1" with API server: Post "https://172.18.207.112:6443/api/v1/nodes": dial tcp 172.18.207.112:6443: connect: connection refused
+Sep 22 16:54:35 master-1 kubelet[14406]: E0922 16:54:35.073672   14406 kubelet.go:2183] node "master-1" not found
+Sep 22 16:54:35 master-1 kubelet[14406]: E0922 16:54:35.173871   14406 kubelet.go:2183] node "master-1" not found
+Sep 22 16:54:35 master-1 kubelet[14406]: E0922 16:54:35.274039   14406 kubelet.go:2183] node "master-1" not found
+Sep 22 16:54:35 master-1 kubelet[14406]: E0922 16:54:35.274561   14406 controller.go:136] failed to ensure node lease exists, will retry in 800ms, error: Get "https://172.18.207.112:6443/apis/coordination.k8s.io/v1/namespaces/kube-node-lease/leases/master-1?timeout=10s": dial tcp 172.18.207.112:6443: connect: connection refused
+Sep 22 16:54:35 master-1 kubelet[14406]: E0922 16:54:35.374187   14406 kubelet.go:2183] node "master-1" not found
+Sep 22 16:54:35 master-1 kubelet[14406]: I0922 16:54:35.383601   14406 kubelet_node_status.go:70] Attempting to register node master-1
+Sep 22 16:54:35 master-1 kubelet[14406]: E0922 16:54:35.384069   14406 kubelet_node_status.go:92] Unable to register node "master-1" with API server: Post "https://172.18.207.112:6443/api/v1/nodes": dial tcp 172.18.207.112:6443: connect: connection refused
+Sep 22 16:54:35 master-1 kubelet[14406]: W0922 16:54:35.456099   14406 docker_container.go:245] Deleted previously existing symlink file: "/var/log/pods/kube-system_nginx-proxy-master-1_3e8dcdb2ef65cedf18202025487c9da2/nginx-proxy/0.log"
+Sep 22 16:54:35 master-1 kubelet[14406]: E0922 16:54:35.466082   14406 reflector.go:127] k8s.io/kubernetes/pkg/kubelet/kubelet.go:438: Failed to watch *v1.Node: failed to list *v1.Node: Get "https://172.18.207.112:6443/api/v1/nodes?fieldSelector=metadata.name%3Dmaster-1&limit=500&resourceVersion=0": dial tcp 172.18.207.112:6443: connect: connection refused
+Sep 22 16:54:35 master-1 kubelet[14406]: E0922 16:54:35.474334   14406 kubelet.go:2183] node "master-1" not found
+Sep 22 16:54:35 master-1 kubelet[14406]: W0922 16:54:35.497933   14406 docker_container.go:245] Deleted previously existing symlink file: "/var/log/pods/kube-system_kube-controller-manager-master-1_068977ea04b6851ca736d2c5b6759174/kube-controller-manager/0.log"
+Sep 22 16:54:35 master-1 kubelet[14406]: W0922 16:54:35.506299   14406 docker_container.go:245] Deleted previously existing symlink file: "/var/log/pods/kube-system_kube-scheduler-master-1_3a341a47a6f2657ea62a00ca5c549ca3/kube-scheduler/0.log"
+Sep 22 16:54:35 master-1 kubelet[14406]: E0922 16:54:35.534498   14406 reflector.go:127] k8s.io/client-go/informers/factory.go:134: Failed to watch *v1.CSIDriver: failed to list *v1.CSIDriver: Get "https://172.18.207.112:6443/apis/storage.k8s.io/v1/csidrivers?limit=500&resourceVersion=0": dial tcp 172.18.207.112:6443: connect: connection refused
+Sep 22 16:54:35 master-1 kubelet[14406]: E0922 16:54:35.574506   14406 kubelet.go:2183] node "master-1" not found
+Sep 22 16:54:35 master-1 kubelet[14406]: E0922 16:54:35.674721   14406 kubelet.go:2183] node "master-1" not found
+Sep 22 16:54:35 master-1 kubelet[14406]: W0922 16:54:35.725482   14406 status_manager.go:550] Failed to get status for pod "nginx-proxy-master-1_kube-system(3e8dcdb2ef65cedf18202025487c9da2)": Get "https://172.18.207.112:6443/api/v1/namespaces/kube-system/pods/nginx-proxy-master-1": dial tcp 172.18.207.112:6443: connect: connection refused
+Sep 22 16:54:35 master-1 kubelet[14406]: W0922 16:54:35.731157   14406 status_manager.go:550] Failed to get status for pod "kube-scheduler-master-1_kube-system(3a341a47a6f2657ea62a00ca5c549ca3)": Get "https://172.18.207.112:6443/api/v1/namespaces/kube-system/pods/kube-scheduler-master-1": dial tcp 172.18.207.112:6443: connect: connection refused
+Sep 22 16:54:35 master-1 kubelet[14406]: I0922 16:54:35.740888   14406 topology_manager.go:219] [topologymanager] RemoveContainer - Container ID: 8fa5d1d317289e769cdba2d622a3c12f4454ac525ff6cdbcaaf95683aaa643fd
+Sep 22 16:54:35 master-1 kubelet[14406]: E0922 16:54:35.774949   14406 kubelet.go:2183] node "master-1" not found
+Sep 22 16:54:35 master-1 kubelet[14406]: W0922 16:54:35.870607   14406 status_manager.go:550] Failed to get status for pod "kube-controller-manager-master-1_kube-system(068977ea04b6851ca736d2c5b6759174)": Get "https://172.18.207.112:6443/api/v1/namespaces/kube-system/pods/kube-controller-manager-master-1": dial tcp 172.18.207.112:6443: connect: connection refused
+Sep 22 16:54:35 master-1 kubelet[14406]: E0922 16:54:35.875117   14406 kubelet.go:2183] node "master-1" not found
+Sep 22 16:54:35 master-1 kubelet[14406]: E0922 16:54:35.975371   14406 kubelet.go:2183] node "master-1" not found
+Sep 22 16:54:36 master-1 kubelet[14406]: W0922 16:54:36.071199   14406 status_manager.go:550] Failed to get status for pod "kube-apiserver-master-1_kube-system(ea9d6ce7e60c920fed954b82dec36c16)": Get "https://172.18.207.112:6443/api/v1/namespaces/kube-system/pods/kube-apiserver-master-1": dial tcp 172.18.207.112:6443: connect: connection refused
+Sep 22 16:54:36 master-1 kubelet[14406]: E0922 16:54:36.075084   14406 controller.go:136] failed to ensure node lease exists, will retry in 1.6s, error: Get "https://172.18.207.112:6443/apis/coordination.k8s.io/v1/namespaces/kube-node-lease/leases/master-1?timeout=10s": dial tcp 172.18.207.112:6443: connect: connection refused
+Sep 22 16:54:36 master-1 kubelet[14406]: E0922 16:54:36.075540   14406 kubelet.go:2183] node "master-1" not found
+Sep 22 16:54:36 master-1 kubelet[14406]: E0922 16:54:36.175712   14406 kubelet.go:2183] node "master-1" not found
+Sep 22 16:54:36 master-1 kubelet[14406]: I0922 16:54:36.188701   14406 kubelet_node_status.go:70] Attempting to register node master-1
+Sep 22 16:54:36 master-1 kubelet[14406]: W0922 16:54:36.270689   14406 status_manager.go:550] Failed to get status for pod "nginx-proxy-master-1_kube-system(3e8dcdb2ef65cedf18202025487c9da2)": Get "https://172.18.207.112:6443/api/v1/namespaces/kube-system/pods/nginx-proxy-master-1": dial tcp 172.18.207.112:6443: connect: connection refused
+Sep 22 16:54:36 master-1 kubelet[14406]: E0922 16:54:36.275890   14406 kubelet.go:2183] node "master-1" not found
+Sep 22 16:54:36 master-1 kubelet[14406]: E0922 16:54:36.376119   14406 kubelet.go:2183] node "master-1" not found
+Sep 22 16:54:36 master-1 kubelet[14406]: E0922 16:54:36.470851   14406 reflector.go:127] k8s.io/client-go/informers/factory.go:134: Failed to watch *v1beta1.RuntimeClass: failed to list *v1beta1.RuntimeClass: Get "https://172.18.207.112:6443/apis/node.k8s.io/v1beta1/runtimeclasses?limit=500&resourceVersion=0": dial tcp 172.18.207.112:6443: connect: connection refused
+Sep 22 16:54:36 master-1 kubelet[14406]: E0922 16:54:36.476323   14406 kubelet.go:2183] node "master-1" not found
+
